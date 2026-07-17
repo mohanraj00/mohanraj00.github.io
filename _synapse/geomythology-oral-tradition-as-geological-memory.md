@@ -18,6 +18,10 @@ Three cases have one.
 
 Geographer Patrick Nunn and linguist Nicholas Reid catalogued 18 groups of Aboriginal Australian stories, from all around the continent's coast, that describe the shoreline sitting much further out than it does now. Islands that were hills you could walk to. Bays that were dry hunting ground. The Yidindji describe Fitzroy Island as once joined to the mainland. The Narrangga describe dry country where Spencer Gulf is today.
 
+<img src="/assets/synapse/reef.jpg" alt="Satellite view of the Australian coast and Great Barrier Reef: turquoise shallows and drowned sandbars visible beneath the water along the shoreline." style="max-width:100%;height:auto;">
+
+*The drowned landscape the stories describe, from orbit. NASA (public domain).*
+
 Here's the clock. After the last Ice Age, sea level rose roughly 120 metres and settled at about its present height around 7,000 years ago. That's not from the stories, it's from sediment cores and coral records. If these stories describe the coast before it drowned, they are at least 7,000 years old, and some may reach 13,000. That's around 300 generations of telling.
 
 ## Oregon: the mountain that fell
@@ -25,6 +29,10 @@ Here's the clock. After the last Ice Age, sea level rose roughly 120 metres and 
 The Klamath tell of a battle between Llao, chief of the world below, and Skell, chief of the world above. It ends with the mountain collapsing in fire and filling with water.
 
 Mount Mazama erupted and collapsed about 7,700 years ago. The caldera it left is Crater Lake. Sandals and other artifacts have been found buried under the Mazama ash, so we know people were there to watch. The story tracks the physical sequence: eruption, collapse, water.
+
+<img src="/assets/synapse/crater-lake.jpg" alt="Crater Lake in winter: the deep blue caldera lake ringed by snow-covered rim cliffs, with Wizard Island rising from the water." style="max-width:100%;height:auto;">
+
+*What the collapsed mountain looks like today. National Park Service (public domain).*
 
 ## The Pacific Northwest: the cleanest date in the field
 
@@ -39,6 +47,10 @@ Three separate records caught it anyway:
 - **The stories.** The Huu-ay-aht and neighbouring peoples tell of a winter night when the ground shook and the sea destroyed the villages, leaving few survivors.
 
 A foreign document, a tree ring, and an oral tradition, none of which knew about the others, all pointing at the same night.
+
+<img src="/assets/synapse/hokusai-wave.jpg" alt="Hokusai's woodblock print The Great Wave off Kanagawa: an enormous cresting wave with foam claws towering over boats, Mount Fuji small in the distance." style="max-width:100%;height:auto;">
+
+*Japan knew tsunamis well enough to notice one with no earthquake attached. Hokusai, c. 1831 (public domain).*
 
 ## The mechanism, and the honest caveat
 

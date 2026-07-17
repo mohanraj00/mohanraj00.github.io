@@ -20,6 +20,10 @@ The awkward part: no vent like that had ever been found. He was describing a pla
 
 Seven years later, in 2000, a research cruise in the mid-Atlantic found one. White carbonate chimneys, up to sixty metres tall, warm and alkaline and venting hydrogen. They called it the Lost City. It was, roughly, what Russell said would be there.
 
+<img src="/assets/synapse/lost-city.jpg" alt="Pale carbonate chimneys of the Lost City hydrothermal field rising from the dark seafloor, lit by a submersible." style="max-width:100%;height:auto;">
+
+*The Lost City vent field: the place Russell described before anyone had seen it. NOAA (public domain).*
+
 <img src="/assets/synapse/enceladus-prediction-timeline.svg" alt="Timeline of four events. 1993: Michael Russell predicts life began at alkaline hydrothermal vents, though no such vent had been found. 2000, seven years later on Earth: the Lost City vent field is discovered in the mid-Atlantic, matching the prediction. 2015 and 2017, on a moon of Saturn: Cassini detects silica requiring water hotter than 90 degrees Celsius, then molecular hydrogen in the plume of Enceladus. 2023: hydrogen cyanide is identified in archived plume data." style="max-width:100%;height:auto;">
 
 *A prediction, then two confirmations. The second one wasn't on this planet.*
@@ -27,6 +31,10 @@ Seven years later, in 2000, a research cruise in the mid-Atlantic found one. Whi
 ## The part that isn't on Earth
 
 Enceladus is a small moon of Saturn, about 500 kilometres across, covered in ice. In 2005 the Cassini spacecraft photographed something remarkable at its south pole: geysers, erupting through fractures in the ice, throwing water hundreds of kilometres into space. There's a liquid ocean under that shell, and it leaks.
+
+<img src="/assets/synapse/enceladus-plume.jpg" alt="Cassini image of Enceladus backlit by the Sun: the moon appears as a dark crescent with bright plumes of ice particles fanning out from its south pole into space." style="max-width:100%;height:auto;">
+
+*Enceladus backlit, plumes fanning off the south pole. Cassini, NASA/JPL-Caltech (public domain).*
 
 So Cassini did the obvious thing. It flew through the plume and tasted it.
 
