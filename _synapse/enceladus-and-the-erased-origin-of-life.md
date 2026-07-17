@@ -12,6 +12,13 @@ The chemistry that became life happened somewhere around four billion years ago.
 
 That's the setup for the best story I've read all month.
 
+<div class="synapse-watch" style="max-width:320px;margin:2rem auto;">
+  <div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px;">
+    <iframe src="https://www.youtube-nocookie.com/embed/lRhgQGNSTBo" title="The chemistry that started life is running on a moon of Saturn — a Midweek Synapse Short" loading="lazy" allowfullscreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+  </div>
+  <p style="text-align:center;margin:.6rem 0 0;font-size:.9rem;"><em>The 55-second version. Watch on <a href="https://www.youtube.com/shorts/lRhgQGNSTBo">YouTube</a> or <a href="https://www.instagram.com/p/Da54mdRMOML/">Instagram</a>.</em></p>
+</div>
+
 ## A prediction with nothing to point at
 
 In 1993, a geochemist named Michael Russell proposed that life started at alkaline hydrothermal vents on the seafloor. Not the scalding black smokers everyone knew about, but something gentler: places where seawater reacts with mantle rock, and the rock gives off hydrogen. Get hydrogen meeting carbon dioxide across a mineral membrane and you have a natural proton gradient, which is, more or less, how every living cell on Earth still makes its energy today.

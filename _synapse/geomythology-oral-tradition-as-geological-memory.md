@@ -10,6 +10,13 @@ I keep a wiki of everything I read, and every Wednesday I pull one thread out of
 
 The claim underneath it is a big one. Some of the world's oldest stories might not be metaphors at all. They might be reports, from people who were there.
 
+<div class="synapse-watch" style="max-width:320px;margin:2rem auto;">
+  <div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px;">
+    <iframe src="https://www.youtube-nocookie.com/embed/2_zOhCk2Krg" title="Some myths are eyewitness reports, and we can check — a Midweek Synapse Short" loading="lazy" allowfullscreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+  </div>
+  <p style="text-align:center;margin:.6rem 0 0;font-size:.9rem;"><em>The 55-second version. Watch on <a href="https://www.youtube.com/shorts/2_zOhCk2Krg">YouTube</a> or <a href="https://www.instagram.com/p/Da54AU5Mn87/">Instagram</a>.</em></p>
+</div>
+
 The reason that's hard to test is obvious enough. A story has no date stamp. Anyone can look at a legend about a flood, find a flood in the geological record, and declare a match. That's not evidence, that's pattern matching after the fact. So the interesting question isn't "does this myth sound like a real event", it's **is there an independent clock?** Something outside the story that says when.
 
 Three cases have one.
