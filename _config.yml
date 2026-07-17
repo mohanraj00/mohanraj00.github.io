@@ -1,0 +1,34 @@
+title: Mohan Raj
+description: "Solo builder. Engineering writeups on architecture, technology, and how teams (human or agent) are organized to build; plus Midweek Synapse, syntheses from my second-brain wiki."
+url: "https://mohanraj00.github.io"
+theme: minima
+
+collections:
+  tech:
+    output: true
+    permalink: /tech/:title/
+  synapse:
+    output: true
+    permalink: /synapse/:title/
+
+defaults:
+  - scope:
+      type: tech
+    values:
+      layout: post
+  - scope:
+      type: synapse
+    values:
+      layout: post
+
+plugins:
+  - jekyll-feed
+
+feed:
+  collections:
+    - tech
+    - synapse
+
+header_pages:
+  - tech/index.md
+  - synapse/index.md
