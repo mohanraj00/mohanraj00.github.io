@@ -1,0 +1,33 @@
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "fontFamily": "-apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif",
+    "fontSize": "14px",
+    "primaryColor": "#f7f7f8",
+    "primaryBorderColor": "#555555",
+    "primaryTextColor": "#222222",
+    "lineColor": "#555555"
+  },
+  "flowchart": { "curve": "basis", "nodeSpacing": 30, "rankSpacing": 70 }
+}}%%
+flowchart TB
+  M["<b>Mohan</b><br/>one human at the top"]
+  C["<b>Coordinator session</b><br/>the ONLY git identity that pushes<br/>verifies · integrates · walls"]
+  L1["<b>Lane agent</b> (disposable)<br/>worktree · branch · identity<br/>never pushes"]
+  L2["<b>Lane agent</b> (disposable)<br/>worktree · branch · identity<br/>never pushes"]
+  L3["<b>Lane agent</b> (disposable)<br/>worktree · branch · identity<br/>never pushes"]
+  O["<b>origin/main</b><br/>one writer, computed attribution"]
+
+  M <-->|"⇩ talks only to<br/>⇧ undecidable: walled, with evidence"| C
+  C <--> L1
+  C <-->|"⇩ dispatch per task<br/>⇧ report: paths · evidence"| L2
+  C <--> L3
+  C ==>|"coordinator re-runs the verifier<br/>adversarial refuter on money paths<br/>cherry-pick · push under own identity"| O
+
+  classDef coord stroke:#2a7d7d,stroke-width:2.5px,fill:#f7f7f8;
+  classDef gold fill:#eef4f4,stroke:#2a7d7d,stroke-width:1.5px;
+  classDef lane fill:#fdfdfd,stroke:#888888;
+  class C coord;
+  class O gold;
+  class L1,L2,L3 lane;
+  linkStyle 4 stroke:#2a7d7d,stroke-width:2px;

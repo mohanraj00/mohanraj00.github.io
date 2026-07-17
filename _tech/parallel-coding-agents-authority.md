@@ -29,7 +29,7 @@ There is now exactly one standing session, a coordinator. It is the only thing I
 
 ![Authority flow: Mohan talks only to the coordinator session. The coordinator dispatches disposable lane agents, each in its own git worktree, branch, and git identity; lanes report back with paths and evidence and never push. The coordinator re-runs the deterministic verifier, applies an adversarial refuter on money paths, cherry-picks under its own identity, and is the only writer to origin/main. Undecidable work is walled back to Mohan with evidence.](/assets/org-v2-authority-flow.svg)
 
-*The authority flow. Isolation lives on the right; every arrow that touches origin/main passes through one identity.*
+*The authority flow. Isolation is the row of disposable lanes; every arrow that touches origin/main passes through one identity.*
 
 Verification changed shape too. A lane reporting green is a claim, not a fact. The coordinator re-runs the named deterministic verifier itself before integrating anything, and it is not a solo decider: for higher-value integrations it takes input from adversarial agents, including an independent refuter that re-derives money-path logic from the primary source rather than reviewing the diff. When a determination cannot be made either way, the work is walled and lands on my desk with the evidence attached. Below that tier, routine verified work integrates without me; novel or high-blast-radius changes are always mine.
 
