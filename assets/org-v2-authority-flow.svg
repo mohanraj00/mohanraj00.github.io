@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" role="img" aria-label="Single-integrator agent org: the coordinator is the only identity that pushes">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#555"/>
+    </marker>
+    <marker id="arrowdash" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#999"/>
+    </marker>
+  </defs>
+
+  <!-- Mohan -->
+  <rect x="120" y="24" width="220" height="56" rx="6" fill="#f7f7f8" stroke="#555" stroke-width="1.5"/>
+  <text x="230" y="48" text-anchor="middle" font-size="15" font-weight="600" fill="#222">Mohan</text>
+  <text x="230" y="67" text-anchor="middle" font-size="12" fill="#666">one human at the top</text>
+
+  <!-- talks to -->
+  <line x1="230" y1="80" x2="230" y2="150" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="240" y="120" font-size="12" fill="#666">talks only to</text>
+
+  <!-- walled (dashed, up the left side) -->
+  <path d="M 100 200 C 40 200 40 52 112 52" fill="none" stroke="#999" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arrowdash)"/>
+  <text x="8" y="222" font-size="12" fill="#666">undecidable:</text>
+  <text x="8" y="238" font-size="12" fill="#666">walled, with</text>
+  <text x="8" y="254" font-size="12" fill="#666">evidence</text>
+
+  <!-- Coordinator -->
+  <rect x="100" y="154" width="260" height="92" rx="6" fill="#f7f7f8" stroke="#2a7d7d" stroke-width="2.5"/>
+  <text x="230" y="182" text-anchor="middle" font-size="15" font-weight="600" fill="#222">Coordinator session</text>
+  <text x="230" y="203" text-anchor="middle" font-size="12" fill="#666">the ONLY git identity that pushes</text>
+  <text x="230" y="222" text-anchor="middle" font-size="12" fill="#666">verifies · integrates · walls</text>
+
+  <!-- dispatch arrows to lanes -->
+  <line x1="360" y1="178" x2="520" y2="150" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="360" y1="200" x2="520" y2="240" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="360" y1="222" x2="520" y2="330" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="410" y="160" font-size="12" fill="#666">dispatch per task</text>
+
+  <!-- report arrows back -->
+  <line x1="520" y1="180" x2="382" y2="230" stroke="#999" stroke-width="1.2" marker-end="url(#arrowdash)"/>
+  <text x="530" y="200" font-size="11.5" fill="#666">report: paths · evidence · lanes never push</text>
+
+  <!-- Lane boxes -->
+  <g>
+    <rect x="524" y="118" width="300" height="64" rx="6" fill="#fdfdfd" stroke="#888" stroke-width="1.2"/>
+    <text x="674" y="144" text-anchor="middle" font-size="13.5" font-weight="600" fill="#222">Lane agent (disposable)</text>
+    <text x="674" y="164" text-anchor="middle" font-size="12" fill="#666">own worktree · branch · git identity</text>
+  </g>
+  <g>
+    <rect x="524" y="208" width="300" height="64" rx="6" fill="#fdfdfd" stroke="#888" stroke-width="1.2"/>
+    <text x="674" y="234" text-anchor="middle" font-size="13.5" font-weight="600" fill="#222">Lane agent (disposable)</text>
+    <text x="674" y="254" text-anchor="middle" font-size="12" fill="#666">own worktree · branch · git identity</text>
+  </g>
+  <g>
+    <rect x="524" y="298" width="300" height="64" rx="6" fill="#fdfdfd" stroke="#888" stroke-width="1.2"/>
+    <text x="674" y="324" text-anchor="middle" font-size="13.5" font-weight="600" fill="#222">Lane agent (disposable)</text>
+    <text x="674" y="344" text-anchor="middle" font-size="12" fill="#666">own worktree · branch · git identity</text>
+  </g>
+
+  <!-- verify + push spine -->
+  <line x1="230" y1="246" x2="230" y2="428" stroke="#2a7d7d" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="244" y="300" font-size="12" fill="#2a7d7d">re-run deterministic verifier</text>
+  <text x="244" y="318" font-size="12" fill="#2a7d7d">adversarial refuter on money paths</text>
+  <text x="244" y="336" font-size="12" fill="#2a7d7d">cherry-pick under own identity</text>
+  <text x="244" y="354" font-size="12" fill="#2a7d7d">push, explicit refspec</text>
+
+  <!-- origin -->
+  <rect x="130" y="432" width="200" height="56" rx="6" fill="#eef4f4" stroke="#2a7d7d" stroke-width="1.5"/>
+  <text x="230" y="456" text-anchor="middle" font-size="15" font-weight="600" fill="#222">origin/main</text>
+  <text x="230" y="475" text-anchor="middle" font-size="12" fill="#666">one writer, computed attribution</text>
+</svg>
