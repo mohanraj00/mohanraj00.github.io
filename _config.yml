@@ -1,7 +1,7 @@
 title: Mohan Raj
 description: "Solo builder. Engineering writeups on architecture, technology, and how teams (human or agent) are organized to build; plus Midweek Synapse, syntheses from my second-brain wiki."
 url: "https://mohanraj00.github.io"
-theme: minima
+remote_theme: mmistakes/jekyll-theme-basically-basic
 
 collections:
   tech:
@@ -23,12 +23,14 @@ defaults:
 
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 feed:
   collections:
     - tech
     - synapse
 
+# Basically Basic reads nav from _data/navigation.yml; header_pages kept harmlessly for minima fallback
 header_pages:
   - tech/index.md
   - synapse/index.md
