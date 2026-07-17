@@ -1,0 +1,24 @@
+---
+layout: post
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/synapse.css' | relative_url }}">
+
+<div class="synapse-wrap">
+  {% if page.synapse %}
+  <p class="synapse-badge">
+    <span class="synapse-mark" aria-hidden="true">வி</span>
+    Midweek Synapse #{{ page.synapse }}
+  </p>
+  {% endif %}
+
+  {{ content }}
+
+  <hr class="synapse-rule">
+  <p class="synapse-outro">
+    Every Wednesday I pull a thread from my second brain and chase a new idea, usually where two
+    fields meet. It is my quest to understand a bit more, and wire up a new synapse.
+    <a href="{{ '/synapse/' | relative_url }}">Read the rest of the series</a>, or follow the
+    60-second versions at <a href="https://instagram.com/vinavu.ai">@vinavu.ai</a>.
+  </p>
+</div>

@@ -19,7 +19,7 @@ defaults:
   - scope:
       type: synapse
     values:
-      layout: post
+      layout: synapse
 
 plugins:
   - jekyll-feed

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="800" height="250" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">Timeline: a prediction about the origin of life, then two confirmations</title>
+  <desc id="d">A horizontal timeline with four marked events. 1993: Michael Russell predicts life began at alkaline hydrothermal vents; no such vent had been found. 2000, seven years later: the Lost City vent field is discovered in the mid-Atlantic, matching the prediction. 2015 and 2017: Cassini flies through the plume of Saturn's moon Enceladus and detects silica requiring water hotter than 90 degrees Celsius, then molecular hydrogen. 2023: hydrogen cyanide is identified in archived plume data. The first two events are on Earth; the last two are at Saturn.</desc>
+
+  <g font-size="11.5" fill="#5b6472">
+    <text x="105" y="42" text-anchor="middle">Life began at</text>
+    <text x="105" y="57" text-anchor="middle">alkaline sea vents</text>
+    <text x="300" y="42" text-anchor="middle">Lost City vent field,</text>
+    <text x="300" y="57" text-anchor="middle">mid-Atlantic</text>
+    <text x="500" y="42" text-anchor="middle">Hot-water silica, then</text>
+    <text x="500" y="57" text-anchor="middle">hydrogen in the plume</text>
+    <text x="695" y="42" text-anchor="middle">Hydrogen cyanide</text>
+    <text x="695" y="57" text-anchor="middle">in archived data</text>
+  </g>
+
+  <g fill="#1a2433" font-size="13.5" font-weight="600">
+    <text x="105" y="82" text-anchor="middle">The prediction</text>
+    <text x="300" y="82" text-anchor="middle">Found on Earth</text>
+    <text x="500" y="82" text-anchor="middle">Found at Saturn</text>
+    <text x="695" y="82" text-anchor="middle">A building block</text>
+  </g>
+
+  <line x1="105" y1="125" x2="695" y2="125" stroke="#c9ced6" stroke-width="2"/>
+
+  <line x1="400" y1="100" x2="400" y2="185" stroke="#c9ced6" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <circle cx="105" cy="125" r="9" fill="#ffffff" stroke="#8a93a2" stroke-width="2.5"/>
+  <circle cx="300" cy="125" r="9" fill="#2f6f9f"/>
+  <circle cx="500" cy="125" r="9" fill="#2f6f9f"/>
+  <circle cx="695" cy="125" r="9" fill="#2f6f9f"/>
+
+  <g fill="#5b6472" font-size="12.5">
+    <text x="105" y="155" text-anchor="middle">1993</text>
+    <text x="300" y="155" text-anchor="middle">2000</text>
+    <text x="500" y="155" text-anchor="middle">2015 · 2017</text>
+    <text x="695" y="155" text-anchor="middle">2023</text>
+  </g>
+
+  <g font-size="11" fill="#8a93a2">
+    <text x="202" y="112" text-anchor="middle">7 years</text>
+    <text x="105" y="176" text-anchor="middle" font-style="italic">no vent found yet</text>
+  </g>
+
+  <g font-size="11.5" fill="#5b6472" font-style="italic">
+    <text x="252" y="205" text-anchor="middle">on Earth</text>
+    <text x="548" y="205" text-anchor="middle">on a moon of Saturn</text>
+  </g>
+</svg>

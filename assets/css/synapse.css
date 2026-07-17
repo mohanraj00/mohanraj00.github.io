@@ -1,0 +1,115 @@
+/* Midweek Synapse section styling.
+   Palette matches the Vinavu videos: deep night blue + the caption blue accent.
+   Scoped to .synapse-wrap so /tech and the rest of the site are untouched. */
+
+.synapse-wrap {
+  --synapse-ink: #0a1628;
+  --synapse-accent: #2f6f9f;
+  --synapse-accent-soft: #eaf4fb;
+  --synapse-muted: #5b6472;
+}
+
+.synapse-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 1.6rem;
+  padding: 0.3rem 0.75rem 0.3rem 0.3rem;
+  border-radius: 999px;
+  background: var(--synapse-accent-soft);
+  color: var(--synapse-accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.synapse-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: var(--synapse-ink);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-transform: none;
+}
+
+/* Long-form reading: a touch more air than the tech section. */
+.synapse-wrap p {
+  line-height: 1.75;
+}
+
+.synapse-wrap h2 {
+  margin-top: 2.4rem;
+  padding-top: 0.9rem;
+  border-top: 2px solid var(--synapse-accent-soft);
+  font-size: 1.35rem;
+  letter-spacing: -0.01em;
+}
+
+/* The lede carries the hook; give it presence. */
+.synapse-wrap > p:first-of-type,
+.synapse-badge + p {
+  font-size: 1.12rem;
+  color: var(--synapse-ink);
+}
+
+.synapse-wrap blockquote {
+  border-left: 3px solid var(--synapse-accent);
+  background: var(--synapse-accent-soft);
+  margin: 1.6rem 0;
+  padding: 0.8rem 1.1rem;
+  color: var(--synapse-ink);
+}
+
+.synapse-wrap img,
+.synapse-wrap svg,
+.synapse-wrap video {
+  display: block;
+  margin: 1.6rem auto 0.6rem;
+}
+
+/* Figure captions: the italic line under a diagram or video. */
+.synapse-wrap img + em,
+.synapse-wrap video + p em,
+.synapse-wrap p > em:only-child {
+  display: block;
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--synapse-muted);
+  font-style: italic;
+}
+
+.synapse-rule {
+  margin: 2.8rem 0 1.2rem;
+  border: 0;
+  border-top: 1px solid #e3e7ec;
+}
+
+.synapse-outro {
+  font-size: 0.92rem;
+  color: var(--synapse-muted);
+}
+
+.synapse-outro a {
+  color: var(--synapse-accent);
+}
+
+@media (prefers-color-scheme: dark) {
+  .synapse-wrap {
+    --synapse-ink: #e8eef6;
+    --synapse-accent: #8fd8ff;
+    --synapse-accent-soft: rgba(143, 216, 255, 0.12);
+    --synapse-muted: #9aa6b6;
+  }
+  .synapse-mark {
+    background: #8fd8ff;
+    color: #0a1628;
+  }
+  .synapse-rule {
+    border-top-color: rgba(255, 255, 255, 0.12);
+  }
+}
