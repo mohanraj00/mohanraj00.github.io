@@ -98,7 +98,78 @@
   color: var(--synapse-accent);
 }
 
-/* No dark-mode block on purpose: the base theme (basically-basic) has no dark
-   mode, so the page background is always white. A prefers-color-scheme:dark
-   override here turned the ink near-white -> light text on a white page.
-   ponytail: one light palette until /synapse gets its own dark-aware theme. */
+/* ============================================================
+   Dark theme for /synapse — the section's own look.
+   Scoped to body.layout--synapse (the theme stamps layout--<layout> on <body>),
+   AND this file only loads on /synapse pages, so /tech and the rest stay light.
+   Not gated on prefers-color-scheme: /synapse is dark for everyone, on purpose.
+   Palette = the Vinavu videos: deep night blue + caption-blue accent.
+   ============================================================ */
+
+body.layout--synapse {
+  background: #0b1524;
+  color: #c9d4e1;
+}
+
+/* The theme paints white on these wrappers above <body>; repaint them dark. */
+body.layout--synapse .wrapper,
+body.layout--synapse .inner,
+body.layout--synapse .sidebar-toggle-wrapper {
+  background-color: #0b1524;
+}
+
+/* Hamburger icon + label: dark bars would vanish on the dark page. */
+body.layout--synapse .navicon,
+body.layout--synapse .navicon::before,
+body.layout--synapse .navicon::after {
+  background: #c9d4e1;
+}
+body.layout--synapse .sidebar-toggle-label { color: #c9d4e1; }
+
+/* Flip the content-scoped variables to dark; every var-based rule above
+   (badge, h2 top-border, blockquote, captions, outro) follows automatically. */
+body.layout--synapse .synapse-wrap {
+  --synapse-ink: #eef4fb;
+  --synapse-accent: #8fd8ff;
+  --synapse-accent-soft: rgba(143, 216, 255, 0.13);
+  --synapse-muted: #93a1b4;
+}
+
+/* Masthead + title */
+body.layout--synapse .site-title,
+body.layout--synapse .site-title a { color: #eef4fb; }
+body.layout--synapse .intro-title { color: #f3f8fd; }
+body.layout--synapse .entry-meta { color: #8493a6; }
+
+/* Body copy + links */
+body.layout--synapse .entry-content { color: #c9d4e1; }
+body.layout--synapse .entry-content strong { color: #eef4fb; }
+body.layout--synapse a,
+body.layout--synapse .entry-content a { color: #8fd8ff; }
+body.layout--synapse a:hover,
+body.layout--synapse .entry-content a:hover { color: #bfe8ff; }
+
+/* Code, if a post ever carries any */
+body.layout--synapse code,
+body.layout--synapse pre {
+  background: #0f1d30;
+  color: #d7e0ec;
+}
+
+/* Photos: lift them off the dark page. Diagrams (SVG) get a light card so a
+   figure drawn for white paper stays legible. */
+body.layout--synapse .synapse-wrap img {
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.45);
+}
+body.layout--synapse .synapse-wrap svg,
+body.layout--synapse .synapse-wrap img[src$=".svg"] {
+  background: #f5f8fc;
+  border-radius: 10px;
+  padding: 0.8rem;
+}
+
+/* Footer */
+body.layout--synapse .site-footer { color: #7e8b9d; }
+body.layout--synapse .site-footer a { color: #8fd8ff; }
+
+body.layout--synapse ::selection { background: #8fd8ff; color: #0b1524; }
