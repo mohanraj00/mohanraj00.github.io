@@ -1,0 +1,12 @@
+<script>
+  /* Apply a saved theme choice before paint, so an overrider doesn't flash the
+     device default. No choice saved -> leave it to the CSS media query. */
+  (function () {
+    try {
+      var t = localStorage.getItem('synapse-theme');
+      if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  })();
+</script>
+
+<link rel="stylesheet" href="{{ '/assets/css/synapse.css' | relative_url }}">

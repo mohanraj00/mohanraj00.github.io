@@ -1,14 +1,14 @@
 /* Midweek Synapse section styling.
    Palette matches the Vinavu videos: deep night blue + the caption blue accent.
    This file only loads on /synapse pages, and every rule is scoped to
-   body.layout--synapse, so /tech and the rest of the site are untouched.
+   body[class*="layout--synapse"], so /tech and the rest of the site are untouched.
 
    Theming: all colours are CSS variables. Light is the default; dark applies
    when the device prefers dark OR the reader forces it with the toggle.
    The toggle writes data-theme="dark|light" on <html>; that overrides the
    device preference and is remembered in localStorage. See _layouts/synapse.html. */
 
-body.layout--synapse {
+body[class*="layout--synapse"] {
   /* Content palette (badge, headings, links, rules) */
   --synapse-ink: #0a1628;
   --synapse-accent: #2f6f9f;
@@ -31,7 +31,7 @@ body.layout--synapse {
    forced light, OR when the reader has explicitly chosen dark. The two blocks
    carry identical values; only the trigger differs. */
 @media (prefers-color-scheme: dark) {
-  html:not([data-theme="light"]) body.layout--synapse {
+  html:not([data-theme="light"]) body[class*="layout--synapse"] {
     --synapse-ink: #eef4fb;
     --synapse-accent: #8fd8ff;
     --synapse-accent-soft: rgba(143, 216, 255, 0.13);
@@ -48,7 +48,7 @@ body.layout--synapse {
     --s-img-shadow: 0 10px 34px rgba(0, 0, 0, 0.45);
   }
 }
-html[data-theme="dark"] body.layout--synapse {
+html[data-theme="dark"] body[class*="layout--synapse"] {
   --synapse-ink: #eef4fb;
   --synapse-accent: #8fd8ff;
   --synapse-accent-soft: rgba(143, 216, 255, 0.13);
@@ -66,35 +66,35 @@ html[data-theme="dark"] body.layout--synapse {
 }
 
 /* ---- Page + chrome (repaint the theme's wrappers, which are always white) ---- */
-body.layout--synapse { background: var(--s-bg); }
-body.layout--synapse .wrapper,
-body.layout--synapse .inner,
-body.layout--synapse .sidebar-toggle-wrapper { background-color: var(--s-bg); }
+body[class*="layout--synapse"] { background: var(--s-bg); }
+body[class*="layout--synapse"] .wrapper,
+body[class*="layout--synapse"] .inner,
+body[class*="layout--synapse"] .sidebar-toggle-wrapper { background-color: var(--s-bg); }
 
-body.layout--synapse .navicon,
-body.layout--synapse .navicon::before,
-body.layout--synapse .navicon::after { background: var(--s-icon); }
-body.layout--synapse .sidebar-toggle-label { color: var(--s-icon); }
+body[class*="layout--synapse"] .navicon,
+body[class*="layout--synapse"] .navicon::before,
+body[class*="layout--synapse"] .navicon::after { background: var(--s-icon); }
+body[class*="layout--synapse"] .sidebar-toggle-label { color: var(--s-icon); }
 
-body.layout--synapse .site-title,
-body.layout--synapse .site-title a,
-body.layout--synapse .intro-title { color: var(--s-title); }
-body.layout--synapse .entry-meta { color: var(--synapse-muted); }
+body[class*="layout--synapse"] .site-title,
+body[class*="layout--synapse"] .site-title a,
+body[class*="layout--synapse"] .intro-title { color: var(--s-title); }
+body[class*="layout--synapse"] .entry-meta { color: var(--synapse-muted); }
 
-body.layout--synapse .entry-content { color: var(--s-body-text); }
-body.layout--synapse .entry-content strong { color: var(--synapse-ink); }
-body.layout--synapse a,
-body.layout--synapse .entry-content a { color: var(--synapse-accent); }
+body[class*="layout--synapse"] .entry-content { color: var(--s-body-text); }
+body[class*="layout--synapse"] .entry-content strong { color: var(--synapse-ink); }
+body[class*="layout--synapse"] a,
+body[class*="layout--synapse"] .entry-content a { color: var(--synapse-accent); }
 
-body.layout--synapse code,
-body.layout--synapse pre {
+body[class*="layout--synapse"] code,
+body[class*="layout--synapse"] pre {
   background: var(--s-code-bg);
   color: var(--s-code-text);
 }
 
-body.layout--synapse .site-footer { color: var(--synapse-muted); }
-body.layout--synapse .site-footer a { color: var(--synapse-accent); }
-body.layout--synapse ::selection { background: var(--synapse-accent); color: var(--s-bg); }
+body[class*="layout--synapse"] .site-footer { color: var(--synapse-muted); }
+body[class*="layout--synapse"] .site-footer a { color: var(--synapse-accent); }
+body[class*="layout--synapse"] ::selection { background: var(--synapse-accent); color: var(--s-bg); }
 
 /* ---- The reading column ---- */
 .synapse-wrap { position: relative; }
@@ -193,6 +193,25 @@ body.layout--synapse ::selection { background: var(--synapse-accent); color: var
   color: var(--synapse-muted);
 }
 .synapse-outro a { color: var(--synapse-accent); }
+
+/* ---- Listing page (/synapse/) ---- */
+.synapse-list { list-style: none; margin: 2rem 0 0; padding: 0; }
+.synapse-item { padding: 1.2rem 0; border-top: 1px solid var(--s-rule); }
+.synapse-item-title {
+  font-size: 1.18rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--synapse-ink);
+}
+.synapse-item-title:hover { color: var(--synapse-accent); }
+.synapse-item-meta {
+  margin: 0.25rem 0 0.5rem;
+  font-size: 0.8rem;
+  color: var(--synapse-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.synapse-item-excerpt { margin: 0; color: var(--s-body-text); line-height: 1.6; }
 
 /* ---- Light/dark toggle (top-right of the reading column) ---- */
 .synapse-theme-toggle {
