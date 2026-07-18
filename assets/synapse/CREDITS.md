@@ -12,5 +12,7 @@ screenshots).
 | lost-city.jpg | Lost City hydrothermal chimneys | NOAA Photo Library (expl1169) | PD (NOAA) |
 | enceladus-plume.jpg | Enceladus backlit plumes (PIA06443) | NASA/JPL-Caltech, Cassini | PD (NASA) |
 | enceladus-prediction-timeline.svg | 1993 prediction → 2000/2017 confirmations timeline | self-made | own work |
+| culture-iceberg-two-directions.svg | one culture iceberg read in two opposite directions (anthropology vs marketing) | self-made | own work |
+| turing-nobel-convergence.svg | Simon and Hinton, two paradigms converging on "search under limits" | self-made | own work |
 
 Originals and their full provenance live with the video episodes in `~/Works/synapse-video/episodes/*/PROVENANCE.md`.

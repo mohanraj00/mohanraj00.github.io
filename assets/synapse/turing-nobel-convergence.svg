@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">Two Turing-and-Nobel laureates, two rival paradigms, one shared claim</title>
+  <desc id="d">Two columns. On the left, Herbert Simon: Turing Award 1975 and Nobel Prize in Economics 1978, standard-bearer of symbolic AI and bounded rationality. On the right, Geoffrey Hinton: Turing Award 2018 and Nobel Prize in Physics 2024, standard-bearer of deep learning and the Boltzmann machine. The two paradigms are usually treated as rivals. Arrows from both columns converge on a single box at the bottom that reads: Intelligence is search under limits. A caption notes they differ only on what the search space is made of, discrete symbols or continuous weights.</desc>
+
+  <rect x="0" y="0" width="800" height="420" rx="14" fill="#f7f8fa"/>
+
+  <!-- left column: Simon -->
+  <rect x="40" y="34" width="300" height="150" rx="10" fill="#ffffff" stroke="#c9ced6" stroke-width="1.5"/>
+  <text x="190" y="64" text-anchor="middle" font-size="16" font-weight="700" fill="#1a2433">Herbert Simon</text>
+  <text x="190" y="88" text-anchor="middle" font-size="12.5" fill="#5b6472">Turing Award 1975 · Nobel 1978</text>
+  <line x1="70" y1="104" x2="310" y2="104" stroke="#e2e6ec" stroke-width="1"/>
+  <text x="190" y="128" text-anchor="middle" font-size="13" font-weight="600" fill="#2f6f9f">Symbolic AI</text>
+  <text x="190" y="150" text-anchor="middle" font-size="11.5" fill="#5b6472">rules over symbols;</text>
+  <text x="190" y="166" text-anchor="middle" font-size="11.5" fill="#5b6472">bounded rationality, satisficing</text>
+
+  <!-- right column: Hinton -->
+  <rect x="460" y="34" width="300" height="150" rx="10" fill="#ffffff" stroke="#c9ced6" stroke-width="1.5"/>
+  <text x="610" y="64" text-anchor="middle" font-size="16" font-weight="700" fill="#1a2433">Geoffrey Hinton</text>
+  <text x="610" y="88" text-anchor="middle" font-size="12.5" fill="#5b6472">Turing Award 2018 · Nobel 2024</text>
+  <line x1="490" y1="104" x2="730" y2="104" stroke="#e2e6ec" stroke-width="1"/>
+  <text x="610" y="128" text-anchor="middle" font-size="13" font-weight="600" fill="#2f6f9f">Connectionism</text>
+  <text x="610" y="150" text-anchor="middle" font-size="11.5" fill="#5b6472">learned weights;</text>
+  <text x="610" y="166" text-anchor="middle" font-size="11.5" fill="#5b6472">Hopfield net, Boltzmann machine</text>
+
+  <text x="400" y="212" text-anchor="middle" font-size="12" fill="#8a93a2" font-style="italic">usually told as a paradigm war...</text>
+
+  <!-- converging arrows -->
+  <path d="M 190 184 C 190 240, 320 236, 380 268" fill="none" stroke="#c0563a" stroke-width="2.5" marker-end="url(#ah)"/>
+  <path d="M 610 184 C 610 240, 480 236, 420 268" fill="none" stroke="#c0563a" stroke-width="2.5" marker-end="url(#ah)"/>
+
+  <!-- shared claim -->
+  <rect x="230" y="284" width="340" height="82" rx="10" fill="#fbeee9" stroke="#c0563a" stroke-width="2"/>
+  <text x="400" y="318" text-anchor="middle" font-size="16.5" font-weight="700" fill="#1a2433">Intelligence is search</text>
+  <text x="400" y="340" text-anchor="middle" font-size="16.5" font-weight="700" fill="#1a2433">under limits</text>
+
+  <text x="400" y="396" text-anchor="middle" font-size="12" fill="#5b6472">They differ only on what the search space is made of: discrete symbols, or continuous weights.</text>
+
+  <defs>
+    <marker id="ah" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#c0563a"/>
+    </marker>
+  </defs>
+</svg>
