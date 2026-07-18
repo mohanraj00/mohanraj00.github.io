@@ -1,77 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 470" width="880" height="470" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" role="img" aria-labelledby="t d">
-  <title id="t">One culture iceberg, two opposite directions of concern</title>
-  <desc id="d">A single iceberg labelled Culture sits in water. Its small visible tip above the waterline is the traditions, language, and artifacts; the much larger mass below is the assumptions, beliefs, and thought processes, about ninety percent. On the left, Anthropology reads the iceberg with an arrow curving back toward the observer, labelled correct the observer, its relativism turning the idea back on you. On the right, Marketing reads the same iceberg with an arrow pointing outward to the observed, labelled reach the observed, segmenting and selling to them. Same diagram, opposite direction of concern.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">One culture model, two opposite uses</title>
+  <desc id="d">One shared model at the top, the culture iceberg, feeds two fields. Arrows fan down to two cards. Anthropology, on the left, uses the model to correct the observer: relativism, understand a practice on its own terms and check your own bias first; its concern points back at you. Marketing, on the right, uses the same model to reach the observed: segment, target, and sell faster; its concern points out at them. Same model, opposite direction of concern.</desc>
 
   <defs>
-    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffffff"/>
-      <stop offset="1" stop-color="#f3f6fa"/>
+    <linearGradient id="cardG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f3f6fa"/>
     </linearGradient>
-    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#e8eff6"/>
-      <stop offset="1" stop-color="#dbe6f1"/>
+    <linearGradient id="paneG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f7f9fc"/>
     </linearGradient>
-    <linearGradient id="iceTip" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffffff"/>
-      <stop offset="1" stop-color="#eaf1f8"/>
+    <linearGradient id="chipG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef4fa"/><stop offset="1" stop-color="#e3edf6"/>
     </linearGradient>
-    <linearGradient id="iceSub" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#dae7f3"/>
-      <stop offset="1" stop-color="#bcd2e6"/>
-    </linearGradient>
-    <clipPath id="cardClip"><rect x="10" y="10" width="860" height="450" rx="20"/></clipPath>
     <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#1a2740" flood-opacity="0.10"/>
     </filter>
-    <filter id="lift" x="-40%" y="-40%" width="180%" height="180%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#20344f" flood-opacity="0.16"/>
+    <filter id="lift" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="9" flood-color="#20344f" flood-opacity="0.13"/>
     </filter>
-    <marker id="arrowL" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto"><path d="M0,0 L6.5,3 L0,6 Z" fill="#c2603f"/></marker>
-    <marker id="arrowR" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto"><path d="M0,0 L6.5,3 L0,6 Z" fill="#c2603f"/></marker>
+    <marker id="fan" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto"><path d="M0,0 L6.5,3 L0,6 Z" fill="#c2603f"/></marker>
+    <marker id="dirL" markerWidth="10" markerHeight="10" refX="7" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 Z" fill="#2f6f9f"/></marker>
   </defs>
 
-  <rect x="10" y="10" width="860" height="450" rx="20" fill="url(#card)" stroke="#e4e9f1" stroke-width="1.5" filter="url(#soft)"/>
+  <rect x="10" y="10" width="860" height="380" rx="20" fill="url(#cardG)" stroke="#e4e9f1" stroke-width="1.5" filter="url(#soft)"/>
 
-  <g clip-path="url(#cardClip)">
-    <rect x="10" y="206" width="860" height="254" fill="url(#water)"/>
-    <line x1="10" y1="206" x2="870" y2="206" stroke="#a9c0d6" stroke-width="1.5"/>
-    <!-- iceberg -->
-    <g filter="url(#lift)">
-      <polygon points="440,96 506,206 374,206" fill="url(#iceTip)" stroke="#b6c6d6" stroke-width="1.75" stroke-linejoin="round"/>
-      <polygon points="374,206 506,206 548,372 332,372" fill="url(#iceSub)" stroke="#a6bdd2" stroke-width="1.5" stroke-linejoin="round" opacity="0.96"/>
-    </g>
-    <line x1="452" y1="120" x2="430" y2="200" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
-  </g>
+  <!-- shared model chip -->
+  <g filter="url(#lift)"><rect x="330" y="32" width="220" height="56" rx="12" fill="url(#chipG)" stroke="#cdddec" stroke-width="1.5"/></g>
+  <text x="440" y="56" text-anchor="middle" font-size="11" font-weight="700" fill="#2f6f9f" letter-spacing="1.5">THE SHARED MODEL</text>
+  <text x="440" y="76" text-anchor="middle" font-size="14.5" font-weight="700" fill="#12203a">Culture as an iceberg</text>
 
-  <text x="34" y="200" font-size="10.5" fill="#93a3b5" font-style="italic">waterline</text>
+  <!-- fan arrows -->
+  <path d="M 405 90 C 340 118, 280 120, 232 138" fill="none" stroke="#c2603f" stroke-width="2.5" stroke-linecap="round" marker-end="url(#fan)"/>
+  <path d="M 475 90 C 540 118, 600 120, 648 138" fill="none" stroke="#c2603f" stroke-width="2.5" stroke-linecap="round" marker-end="url(#fan)"/>
 
-  <text x="440" y="160" text-anchor="middle" font-size="18" font-weight="700" fill="#122038" letter-spacing="1.5">CULTURE</text>
-  <text x="440" y="256" text-anchor="middle" font-size="12" fill="#54637b">assumptions, beliefs,</text>
-  <text x="440" y="273" text-anchor="middle" font-size="12" fill="#54637b">thought processes</text>
-  <text x="440" y="312" text-anchor="middle" font-size="16" font-weight="700" fill="#2a3c5a">the ~90%</text>
-  <text x="440" y="352" text-anchor="middle" font-size="10.5" fill="#7d8ea3" font-style="italic">tip: traditions, language, artifacts</text>
+  <!-- LEFT card: anthropology -->
+  <g filter="url(#lift)"><rect x="46" y="150" width="360" height="212" rx="14" fill="url(#paneG)" stroke="#dde3ec" stroke-width="1.5"/></g>
+  <text x="226" y="188" text-anchor="middle" font-size="14" font-weight="700" fill="#12203a" letter-spacing="2">ANTHROPOLOGY</text>
+  <line x1="150" y1="200" x2="302" y2="200" stroke="#2f6f9f" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="226" y="230" text-anchor="middle" font-size="15.5" font-weight="700" fill="#31405a">Correct the observer</text>
+  <text x="226" y="256" text-anchor="middle" font-size="12" fill="#5a6880">Relativism: understand a practice on</text>
+  <text x="226" y="273" text-anchor="middle" font-size="12" fill="#5a6880">its own terms, and check your own bias.</text>
+  <line x1="150" y1="320" x2="302" y2="320" stroke="#2f6f9f" stroke-width="2.5" stroke-linecap="round" marker-end="url(#dirL)" transform="rotate(180 226 320)"/>
+  <text x="226" y="344" text-anchor="middle" font-size="11.5" fill="#8a97a9" font-style="italic">concern points back at you</text>
 
-  <!-- LEFT: anthropology -->
-  <g>
-    <text x="150" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="#122038" letter-spacing="2">ANTHROPOLOGY</text>
-    <line x1="96" y1="128" x2="204" y2="128" stroke="#2f6f9f" stroke-width="2.5" stroke-linecap="round"/>
-    <path d="M 322 168 C 268 150, 222 146, 190 150" fill="none" stroke="#c2603f" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrowL)"/>
-    <text x="150" y="186" text-anchor="middle" font-size="14.5" font-weight="600" fill="#31405a">correct the observer</text>
-    <text x="150" y="210" text-anchor="middle" font-size="11" fill="#8a97a9">relativism turns the</text>
-    <text x="150" y="226" text-anchor="middle" font-size="11" fill="#8a97a9">idea back on you</text>
-  </g>
+  <!-- RIGHT card: marketing -->
+  <g filter="url(#lift)"><rect x="474" y="150" width="360" height="212" rx="14" fill="url(#paneG)" stroke="#dde3ec" stroke-width="1.5"/></g>
+  <text x="654" y="188" text-anchor="middle" font-size="14" font-weight="700" fill="#12203a" letter-spacing="2">MARKETING</text>
+  <line x1="578" y1="200" x2="730" y2="200" stroke="#2f6f9f" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="654" y="230" text-anchor="middle" font-size="15.5" font-weight="700" fill="#31405a">Reach the observed</text>
+  <text x="654" y="256" text-anchor="middle" font-size="12" fill="#5a6880">Read the hidden mass to segment,</text>
+  <text x="654" y="273" text-anchor="middle" font-size="12" fill="#5a6880">target, and sell to it, faster.</text>
+  <line x1="578" y1="320" x2="730" y2="320" stroke="#2f6f9f" stroke-width="2.5" stroke-linecap="round" marker-end="url(#dirL)"/>
+  <text x="654" y="344" text-anchor="middle" font-size="11.5" fill="#8a97a9" font-style="italic">concern points out at them</text>
 
-  <!-- RIGHT: marketing -->
-  <g>
-    <text x="730" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="#122038" letter-spacing="2">MARKETING</text>
-    <line x1="676" y1="128" x2="784" y2="128" stroke="#2f6f9f" stroke-width="2.5" stroke-linecap="round"/>
-    <path d="M 558 168 C 612 150, 658 146, 690 150" fill="none" stroke="#c2603f" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrowR)"/>
-    <text x="730" y="186" text-anchor="middle" font-size="14.5" font-weight="600" fill="#31405a">reach the observed</text>
-    <text x="730" y="210" text-anchor="middle" font-size="11" fill="#8a97a9">it segments and sells</text>
-    <text x="730" y="226" text-anchor="middle" font-size="11" fill="#8a97a9">to them</text>
-  </g>
-
-  <!-- footer statement -->
-  <line x1="300" y1="416" x2="580" y2="416" stroke="#dce3ec" stroke-width="1.5"/>
-  <text x="440" y="443" text-anchor="middle" font-size="13.5" font-weight="600" fill="#2a3c5a">Same diagram. Opposite direction of concern.</text>
+  <text x="440" y="384" text-anchor="middle" font-size="13.5" font-weight="600" fill="#2a3c5a">Same model. Opposite direction of concern.</text>
 </svg>
