@@ -213,24 +213,26 @@ body[class*="layout--synapse"] ::selection { background: var(--synapse-accent); 
 }
 .synapse-item-excerpt { margin: 0; color: var(--s-body-text); line-height: 1.6; }
 
-/* ---- Light/dark toggle (top-right of the reading column) ---- */
+/* ---- Light/dark toggle: its own line at the top-right of the column, so it
+   never overlaps the text. margin-left:auto right-aligns the block. ---- */
 .synapse-theme-toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: inline-grid;
+  display: grid;
   place-items: center;
-  width: 2.3rem;
-  height: 2.3rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: 0 0 0.75rem auto;
   padding: 0;
-  border: 1px solid var(--synapse-accent-soft);
+  border: 1.5px solid var(--synapse-accent);
   border-radius: 50%;
-  background: transparent;
+  background: var(--synapse-accent-soft);
   color: var(--synapse-accent);
   cursor: pointer;
-  transition: border-color 0.2s, color 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
-.synapse-theme-toggle:hover { border-color: var(--synapse-accent); }
+.synapse-theme-toggle:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
 .synapse-theme-toggle svg { width: 18px; height: 18px; display: block; }
 .synapse-theme-toggle .icon-sun { display: none; }
 .synapse-theme-toggle[data-mode="dark"] .icon-moon { display: none; }
