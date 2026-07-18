@@ -174,10 +174,15 @@ body[class*="layout--synapse"] ::selection { background: var(--synapse-accent); 
   padding: var(--s-svg-pad);
 }
 
-/* Figure captions: the italic line under a diagram or video. */
+/* Figure captions: the italic line under a diagram or video. Only an italic
+   paragraph DIRECTLY after an image (or video) counts — a bare
+   p > em:only-child also matches prose whose one styled phrase is a
+   mid-sentence italic (e.g. a book title), which was getting ripped out
+   and centered as a fake caption. */
 .synapse-wrap img + em,
 .synapse-wrap video + p em,
-.synapse-wrap p > em:only-child {
+.synapse-wrap p:has(> img) + p > em:only-child,
+.synapse-wrap .synapse-watch + p > em:only-child {
   display: block;
   text-align: center;
   font-size: 0.88rem;
