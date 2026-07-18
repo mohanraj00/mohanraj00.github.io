@@ -10,6 +10,10 @@ excerpt: "Marketing borrowed anthropology's definition of culture and its actual
 
 They almost do. The "almost" is the whole story.
 
+<img src="/assets/synapse/iceberg-underside.webp" alt="An iceberg in the Arctic photographed at the waterline: a small white crown above the surface, and a far larger turquoise mass visible descending into dark water below." style="max-width:100%;height:auto;">
+
+*The metaphor, in the wild: most of the iceberg is under the waterline. AWeith, Wikimedia Commons, CC BY-SA 4.0.*
+
 ## The map transfers
 
 Both fields define culture the same way: learned, shared, and mostly invisible. And marketing does not just arrive at a similar definition on its own. It borrows anthropology's actual instruments.

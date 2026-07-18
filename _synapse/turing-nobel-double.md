@@ -16,9 +16,17 @@ Geoffrey Hinton won the 2018 Turing Award for deep learning, and in 2024 he won 
 
 Two is somehow a better number than one, because of *who* the two are.
 
+<img src="/assets/synapse/herbert-simon.webp" alt="A painted portrait of Herbert Simon in reds: an older man in a jacket, arms crossed, looking off to the side against a rough red background." style="max-width:min(100%,420px);height:auto;display:block;margin:0 auto;">
+
+*Herbert Simon, in Richard Rappaport's portrait. Wikimedia Commons, CC BY 3.0.*
+
 Simon won his Turing Award in 1975, with Allen Newell, for founding symbolic AI: the idea that a machine shuffling symbols according to rules has everything it needs for intelligence. He won his Nobel three years later for bounded rationality, the argument that real decision-makers cannot optimise and instead search until something is good enough.
 
 Hinton won his Turing Award for the neural networks that displaced Simon's whole paradigm, and his Nobel for the physics underneath them: networks that learn not by applying rules to symbols, but by settling into low-energy states.
+
+<img src="/assets/synapse/hinton-nobel-2024.webp" alt="Geoffrey Hinton standing at a wooden lectern bearing the Royal Swedish Academy of Sciences sign, delivering a lecture against a dark stage." style="max-width:100%;height:auto;">
+
+*Geoffrey Hinton at the 2024 Nobel lectures in Stockholm, the week he became the second person to hold both prizes. Jay Dixit, Wikimedia Commons, CC BY-SA 4.0.*
 
 So the only two people who ever bridged computing and the Nobel committee are the standard-bearers of the two theories of mind that AI has spent seventy years choosing between. Symbolic versus connectionist. Rules versus learned weights. Simon's side is the one Hinton's work is usually said to have beaten.
 
