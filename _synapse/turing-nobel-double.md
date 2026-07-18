@@ -16,9 +16,9 @@ Geoffrey Hinton won the 2018 Turing Award for deep learning, and in 2024 he won 
 
 Two is somehow a better number than one, because of *who* the two are.
 
-<img src="/assets/synapse/herbert-simon.webp" alt="A painted portrait of Herbert Simon in reds: an older man in a jacket, arms crossed, looking off to the side against a rough red background." style="max-width:min(100%,420px);height:auto;display:block;margin:0 auto;">
+<img src="/assets/synapse/herbert-simon.webp" alt="Black-and-white photographic portrait of Herbert Simon smiling slightly, in a suit and tie." style="max-width:min(100%,420px);height:auto;display:block;margin:0 auto;">
 
-*Herbert Simon, in Richard Rappaport's portrait. Wikimedia Commons, CC BY 3.0.*
+*Herbert Simon. Rochester Institute of Technology, via Wikimedia Commons (public domain).*
 
 Simon won his Turing Award in 1975, with Allen Newell, for founding symbolic AI: the idea that a machine shuffling symbols according to rules has everything it needs for intelligence. He won his Nobel three years later for bounded rationality, the argument that real decision-makers cannot optimise and instead search until something is good enough.
 
