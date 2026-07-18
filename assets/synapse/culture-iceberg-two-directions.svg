@@ -1,47 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 470" width="880" height="470" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" role="img" aria-labelledby="t d">
   <title id="t">One culture iceberg, two opposite directions of concern</title>
-  <desc id="d">A single iceberg labelled Culture sits in water. Its visible tip above the waterline is labelled traditions, language, and artifacts; the much larger mass below is labelled assumptions, beliefs, and thought processes, about ninety percent. On the left, Anthropology reads the iceberg with an arrow curving back toward the observer, labelled correct the observer, cultural relativism. On the right, Marketing reads the same iceberg with an arrow pointing outward to the observed, labelled reach the observed, segment and sell. Same diagram, opposite direction of concern.</desc>
-
-  <rect x="0" y="0" width="800" height="400" rx="14" fill="#f7f8fa"/>
-
-  <!-- water -->
-  <rect x="16" y="150" width="768" height="234" rx="0" fill="#e7edf3"/>
-  <line x1="16" y1="150" x2="784" y2="150" stroke="#9fb2c4" stroke-width="1.5"/>
-  <text x="30" y="145" font-size="10.5" fill="#8a93a2" font-style="italic">waterline</text>
-
-  <!-- iceberg -->
-  <polygon points="400,66 452,150 348,150" fill="#ffffff" stroke="#8a93a2" stroke-width="2"/>
-  <polygon points="348,150 452,150 486,300 314,300" fill="#dfe8f0" stroke="#9fb2c4" stroke-width="1.5"/>
-  <text x="400" y="112" text-anchor="middle" font-size="15" font-weight="700" fill="#1a2433">CULTURE</text>
-  <text x="400" y="210" text-anchor="middle" font-size="11.5" fill="#5b6472">assumptions,</text>
-  <text x="400" y="227" text-anchor="middle" font-size="11.5" fill="#5b6472">beliefs, thought</text>
-  <text x="400" y="252" text-anchor="middle" font-size="12" font-weight="600" fill="#3a4552">the ~90%</text>
-
-  <g font-size="10.5" fill="#8a93a2">
-    <text x="400" y="330" text-anchor="middle" font-style="italic">tip: traditions, language, artifacts</text>
-  </g>
-
-  <!-- left: anthropology -->
-  <text x="150" y="70" text-anchor="middle" font-size="15" font-weight="700" fill="#1a2433">ANTHROPOLOGY</text>
-  <text x="150" y="90" text-anchor="middle" font-size="12" fill="#5b6472">correct the observer</text>
-  <path d="M 300 130 C 250 130, 210 128, 176 118" fill="none" stroke="#c0563a" stroke-width="2.5" marker-end="url(#ah)"/>
-  <text x="150" y="150" text-anchor="middle" font-size="11" fill="#c0563a" font-style="italic">cultural relativism</text>
-  <text x="150" y="176" text-anchor="middle" font-size="11" fill="#8a93a2">the concept turns</text>
-  <text x="150" y="191" text-anchor="middle" font-size="11" fill="#8a93a2">back on you</text>
-
-  <!-- right: marketing -->
-  <text x="650" y="70" text-anchor="middle" font-size="15" font-weight="700" fill="#1a2433">MARKETING</text>
-  <text x="650" y="90" text-anchor="middle" font-size="12" fill="#5b6472">reach the observed</text>
-  <path d="M 500 130 C 550 130, 590 128, 624 118" fill="none" stroke="#c0563a" stroke-width="2.5" marker-end="url(#ah)"/>
-  <text x="650" y="150" text-anchor="middle" font-size="11" fill="#c0563a" font-style="italic">segment and sell</text>
-  <text x="650" y="176" text-anchor="middle" font-size="11" fill="#8a93a2">the concept points</text>
-  <text x="650" y="191" text-anchor="middle" font-size="11" fill="#8a93a2">out at them</text>
-
-  <text x="400" y="378" text-anchor="middle" font-size="12" font-weight="600" fill="#3a4552">Same diagram. Opposite direction of concern.</text>
+  <desc id="d">A single iceberg labelled Culture sits in water. Its small visible tip above the waterline is the traditions, language, and artifacts; the much larger mass below is the assumptions, beliefs, and thought processes, about ninety percent. On the left, Anthropology reads the iceberg with an arrow curving back toward the observer, labelled correct the observer, its relativism turning the idea back on you. On the right, Marketing reads the same iceberg with an arrow pointing outward to the observed, labelled reach the observed, segmenting and selling to them. Same diagram, opposite direction of concern.</desc>
 
   <defs>
-    <marker id="ah" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="#c0563a"/>
-    </marker>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f3f6fa"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8eff6"/>
+      <stop offset="1" stop-color="#dbe6f1"/>
+    </linearGradient>
+    <linearGradient id="iceTip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#eaf1f8"/>
+    </linearGradient>
+    <linearGradient id="iceSub" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dae7f3"/>
+      <stop offset="1" stop-color="#bcd2e6"/>
+    </linearGradient>
+    <clipPath id="cardClip"><rect x="10" y="10" width="860" height="450" rx="20"/></clipPath>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#1a2740" flood-opacity="0.10"/>
+    </filter>
+    <filter id="lift" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#20344f" flood-opacity="0.16"/>
+    </filter>
+    <marker id="arrowL" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto"><path d="M0,0 L6.5,3 L0,6 Z" fill="#c2603f"/></marker>
+    <marker id="arrowR" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto"><path d="M0,0 L6.5,3 L0,6 Z" fill="#c2603f"/></marker>
   </defs>
+
+  <rect x="10" y="10" width="860" height="450" rx="20" fill="url(#card)" stroke="#e4e9f1" stroke-width="1.5" filter="url(#soft)"/>
+
+  <g clip-path="url(#cardClip)">
+    <rect x="10" y="206" width="860" height="254" fill="url(#water)"/>
+    <line x1="10" y1="206" x2="870" y2="206" stroke="#a9c0d6" stroke-width="1.5"/>
+    <!-- iceberg -->
+    <g filter="url(#lift)">
+      <polygon points="440,96 506,206 374,206" fill="url(#iceTip)" stroke="#b6c6d6" stroke-width="1.75" stroke-linejoin="round"/>
+      <polygon points="374,206 506,206 548,372 332,372" fill="url(#iceSub)" stroke="#a6bdd2" stroke-width="1.5" stroke-linejoin="round" opacity="0.96"/>
+    </g>
+    <line x1="452" y1="120" x2="430" y2="200" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+  </g>
+
+  <text x="34" y="200" font-size="10.5" fill="#93a3b5" font-style="italic">waterline</text>
+
+  <text x="440" y="160" text-anchor="middle" font-size="18" font-weight="700" fill="#122038" letter-spacing="1.5">CULTURE</text>
+  <text x="440" y="256" text-anchor="middle" font-size="12" fill="#54637b">assumptions, beliefs,</text>
+  <text x="440" y="273" text-anchor="middle" font-size="12" fill="#54637b">thought processes</text>
+  <text x="440" y="312" text-anchor="middle" font-size="16" font-weight="700" fill="#2a3c5a">the ~90%</text>
+  <text x="440" y="352" text-anchor="middle" font-size="10.5" fill="#7d8ea3" font-style="italic">tip: traditions, language, artifacts</text>
+
+  <!-- LEFT: anthropology -->
+  <g>
+    <text x="150" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="#122038" letter-spacing="2">ANTHROPOLOGY</text>
+    <line x1="96" y1="128" x2="204" y2="128" stroke="#2f6f9f" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 322 168 C 268 150, 222 146, 190 150" fill="none" stroke="#c2603f" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrowL)"/>
+    <text x="150" y="186" text-anchor="middle" font-size="14.5" font-weight="600" fill="#31405a">correct the observer</text>
+    <text x="150" y="210" text-anchor="middle" font-size="11" fill="#8a97a9">relativism turns the</text>
+    <text x="150" y="226" text-anchor="middle" font-size="11" fill="#8a97a9">idea back on you</text>
+  </g>
+
+  <!-- RIGHT: marketing -->
+  <g>
+    <text x="730" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="#122038" letter-spacing="2">MARKETING</text>
+    <line x1="676" y1="128" x2="784" y2="128" stroke="#2f6f9f" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 558 168 C 612 150, 658 146, 690 150" fill="none" stroke="#c2603f" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrowR)"/>
+    <text x="730" y="186" text-anchor="middle" font-size="14.5" font-weight="600" fill="#31405a">reach the observed</text>
+    <text x="730" y="210" text-anchor="middle" font-size="11" fill="#8a97a9">it segments and sells</text>
+    <text x="730" y="226" text-anchor="middle" font-size="11" fill="#8a97a9">to them</text>
+  </g>
+
+  <!-- footer statement -->
+  <line x1="300" y1="416" x2="580" y2="416" stroke="#dce3ec" stroke-width="1.5"/>
+  <text x="440" y="443" text-anchor="middle" font-size="13.5" font-weight="600" fill="#2a3c5a">Same diagram. Opposite direction of concern.</text>
 </svg>

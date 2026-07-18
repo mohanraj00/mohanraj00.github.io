@@ -1,5 +1,5 @@
 ---
-title: "The culture iceberg in every marketing deck was drawn by an anthropologist"
+title: "The culture iceberg in every marketing deck came from an anthropologist"
 date: 2026-07-12
 synapse: 2
 tags: [culture, anthropology, marketing, cultural-relativism]
@@ -14,9 +14,11 @@ They almost do. The "almost" is the whole story.
 
 Both fields define culture the same way: learned, shared, and mostly invisible. And marketing does not just arrive at a similar definition on its own. It borrows anthropology's actual instruments.
 
-That cultural iceberg on the strategy slide, the small tip of traditions and language floating above a much larger mass of assumptions and beliefs, was drawn by Edward T. Hall, a working cultural anthropologist, in his 1976 book *Beyond Culture*. The marketing textbook says so in plain words. It calls him, by name, "Anthropologist Edward T. Hall." Hofstede's cultural dimensions, the other framework you have probably seen on a slide, make the same crossing from anthropology into the marketing chapter.
+That cultural iceberg on the strategy slide, the small tip of traditions and language floating above a much larger mass of assumptions and beliefs, is credited to Edward T. Hall, a working cultural anthropologist, and his 1976 book *Beyond Culture*. The marketing textbook says so in plain words. It calls him, by name, "Anthropologist Edward T. Hall." Hofstede's cultural dimensions, the other framework you have probably seen on a slide, make the same crossing into the marketing chapter.
 
-So three fields, anthropology, management, and marketing, are demonstrably drawing on one shared toolkit. The map transfers cleanly.
+The attribution is a little too tidy, as it happens, and the untidiness is worth a sentence. Hall wrote about culture in layers, overt and covert, and he was wary of the iceberg as too simple a picture. He once called the analogy inadequate. The clean diagram you know was hardened into shape by the intercultural trainers who came after him. Which is already the pattern this whole piece is about: a careful idea shedding its hedges as it travels. Hold that thought.
+
+Because whatever its exact provenance, three fields, anthropology, management, and marketing, are demonstrably drawing on one shared toolkit. The map transfers cleanly.
 
 The compass does not.
 
