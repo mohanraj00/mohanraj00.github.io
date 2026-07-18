@@ -25,6 +25,7 @@ body[class*="layout--synapse"] {
   --s-svg-card: transparent;
   --s-svg-pad: 0;
   --s-img-shadow: none;
+  --tt-track: #d8e4ef;
 }
 
 /* Dark values: applied when the device prefers dark and the reader has NOT
@@ -46,6 +47,7 @@ body[class*="layout--synapse"] {
     --s-svg-card: #f5f8fc;
     --s-svg-pad: 0.8rem;
     --s-img-shadow: 0 10px 34px rgba(0, 0, 0, 0.45);
+    --tt-track: rgba(255, 255, 255, 0.16);
   }
 }
 html[data-theme="dark"] body[class*="layout--synapse"] {
@@ -63,6 +65,7 @@ html[data-theme="dark"] body[class*="layout--synapse"] {
   --s-svg-card: #f5f8fc;
   --s-svg-pad: 0.8rem;
   --s-img-shadow: 0 10px 34px rgba(0, 0, 0, 0.45);
+  --tt-track: rgba(255, 255, 255, 0.16);
 }
 
 /* ---- Page + chrome (repaint the theme's wrappers, which are always white) ---- */
@@ -213,27 +216,52 @@ body[class*="layout--synapse"] ::selection { background: var(--synapse-accent); 
 }
 .synapse-item-excerpt { margin: 0; color: var(--s-body-text); line-height: 1.6; }
 
-/* ---- Light/dark toggle: its own line at the top-right of the column, so it
-   never overlaps the text. margin-left:auto right-aligns the block. ---- */
+/* ---- Light/dark toggle: a sliding switch on its own line at the top-right of
+   the column (margin-left:auto right-aligns it). The knob slides right and the
+   icon flips when dark is active. ---- */
 .synapse-theme-toggle {
+  position: relative;
+  display: block;
+  width: 3.7rem;
+  height: 1.95rem;
+  margin: 0 0 1rem auto;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: var(--tt-track);
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.synapse-theme-toggle .tt-knob {
+  position: absolute;
+  top: 0.2rem;
+  left: 0.2rem;
   display: grid;
   place-items: center;
-  width: 2.4rem;
-  height: 2.4rem;
-  margin: 0 0 0.75rem auto;
-  padding: 0;
-  border: 1.5px solid var(--synapse-accent);
+  width: 1.55rem;
+  height: 1.55rem;
   border-radius: 50%;
-  background: var(--synapse-accent-soft);
-  color: var(--synapse-accent);
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+  background: var(--synapse-accent);
+  transition: left 0.22s ease;
 }
-.synapse-theme-toggle:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+.synapse-theme-toggle[data-mode="dark"] .tt-knob {
+  left: calc(100% - 1.55rem - 0.2rem);
 }
-.synapse-theme-toggle svg { width: 18px; height: 18px; display: block; }
-.synapse-theme-toggle .icon-sun { display: none; }
-.synapse-theme-toggle[data-mode="dark"] .icon-moon { display: none; }
-.synapse-theme-toggle[data-mode="dark"] .icon-sun { display: block; }
+/* Reset: these icons live inside .synapse-wrap, so the content-SVG rules
+   (light card, margins) would otherwise treat them like a diagram. */
+.synapse-theme-toggle .tt-knob svg {
+  width: 13px;
+  height: 13px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  color: var(--s-bg);
+}
+.synapse-theme-toggle .icon-sun { display: block; }
+.synapse-theme-toggle .icon-moon { display: none; }
+.synapse-theme-toggle[data-mode="dark"] .icon-sun { display: none; }
+.synapse-theme-toggle[data-mode="dark"] .icon-moon { display: block; }
