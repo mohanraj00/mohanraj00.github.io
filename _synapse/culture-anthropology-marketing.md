@@ -14,7 +14,7 @@ They almost do. The "almost" is the whole story.
   <div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px;">
     <iframe src="https://www.youtube-nocookie.com/embed/CQpDr5AP6TI" title="The culture iceberg came from an anthropologist — a Midweek Synapse Short" loading="lazy" allowfullscreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
   </div>
-  <p style="text-align:center;margin:.6rem 0 0;font-size:.9rem;"><em>The 55-second version. Watch on <a href="https://www.youtube.com/shorts/CQpDr5AP6TI">YouTube</a>.</em></p>
+  <p style="text-align:center;margin:.6rem 0 0;font-size:.9rem;"><em>The 55-second version. Watch on <a href="https://www.youtube.com/shorts/CQpDr5AP6TI">YouTube</a> or <a href="https://www.instagram.com/p/DbEtCEQscnD/">Instagram</a>.</em></p>
 </div>
 
 ## The map transfers
