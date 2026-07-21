@@ -10,6 +10,13 @@ The Turing Award is the top prize in computer science. The Nobel needs no introd
 
 The interesting part is not how rare this is. It is who the two are.
 
+<div class="synapse-watch" style="max-width:320px;margin:2rem auto;">
+  <div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px;">
+    <iframe src="https://www.youtube-nocookie.com/embed/bTwMYVWyV1s" title="Only two people won both a Turing Award and a Nobel — a Midweek Synapse Short" loading="lazy" allowfullscreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+  </div>
+  <p style="text-align:center;margin:.6rem 0 0;font-size:.9rem;"><em>The 53-second version. Watch on <a href="https://www.youtube.com/shorts/bTwMYVWyV1s">YouTube</a>.</em></p>
+</div>
+
 <img src="/assets/synapse/herbert-simon.webp" alt="Black-and-white photographic portrait of Herbert Simon smiling slightly, in a suit and tie." style="max-width:min(100%,420px);height:auto;display:block;margin:0 auto;">
 
 *Herbert Simon. Rochester Institute of Technology, via Wikimedia Commons (public domain).*

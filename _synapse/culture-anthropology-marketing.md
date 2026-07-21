@@ -10,6 +10,13 @@ Two of the fields I read most both turn on a single word: culture. Anthropology 
 
 They almost do. The "almost" is the whole story.
 
+<div class="synapse-watch" style="max-width:320px;margin:2rem auto;">
+  <div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px;">
+    <iframe src="https://www.youtube-nocookie.com/embed/CQpDr5AP6TI" title="The culture iceberg came from an anthropologist — a Midweek Synapse Short" loading="lazy" allowfullscreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+  </div>
+  <p style="text-align:center;margin:.6rem 0 0;font-size:.9rem;"><em>The 55-second version. Watch on <a href="https://www.youtube.com/shorts/CQpDr5AP6TI">YouTube</a>.</em></p>
+</div>
+
 ## The map transfers
 
 Both fields define culture in nearly the same words: something learned, shared, and mostly invisible. Marketing then goes a step further and borrows anthropology's actual teaching tools.
