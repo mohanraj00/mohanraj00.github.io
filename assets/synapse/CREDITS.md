@@ -10,7 +10,7 @@ screenshots).
 | crater-lake.jpg | Crater Lake in winter | US National Park Service | PD (US Gov) |
 | hokusai-wave.jpg | The Great Wave off Kanagawa, c. 1831 | Katsushika Hokusai | PD (age) |
 | lost-city.jpg | Lost City hydrothermal chimneys | NOAA Photo Library (expl1169) | PD (NOAA) |
-| enceladus-plume.jpg | Enceladus backlit plumes along the tiger stripes, "Bursting at the Seams" (PIA11688) | NASA/JPL-Caltech, Cassini | PD (NASA) — **corrected 2026-07-23**: previously this file actually held PIA06443, an ice-grain-size spectral plot mislabeled "Enceladus Plume," not a photo at all. Same bug is live on the #4 post; flagged separately. |
+| enceladus-plume.jpg | Enceladus backlit plumes along the tiger stripes, "Bursting at the Seams" (PIA11688) | NASA/JPL-Caltech, Cassini | PD (NASA) — **corrected 2026-07-23**: previously this file actually held PIA06443, an ice-grain-size spectral plot mislabeled "Enceladus Plume," not a photo at all. Shared with the #4 post, so that post picked up the same fix automatically. |
 | enceladus-prediction-timeline.svg | 1993 prediction → 2000/2017 confirmations timeline | self-made | own work |
 | culture-iceberg-two-directions.svg | one culture iceberg read in two opposite directions (anthropology vs marketing) | self-made | own work |
 | turing-nobel-convergence.svg | Simon and Hinton, two paradigms converging on "search under limits" | self-made | own work |
