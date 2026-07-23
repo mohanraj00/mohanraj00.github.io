@@ -17,5 +17,7 @@ screenshots).
 | iceberg-underside.webp | Arctic iceberg with underside exposed | AWeith, Wikimedia Commons ("Iceberg in the Arctic with its underside exposed") | CC BY-SA 4.0 |
 | herbert-simon.webp | Herbert Simon, photographic portrait | Rochester Institute of Technology, Wikimedia Commons ("Herbert Simon close-up (cropped)") | PD (RIT/no notice) |
 | hinton-nobel-2024.webp | Geoffrey Hinton at the 2024 Nobel lectures | Jay Dixit, Wikimedia Commons ("Geoffrey Hinton at the 2024 Nobel Lectures") | CC BY-SA 4.0 |
+| voyager-distance-scale.webp | Artist's concept, solar system distances on a logarithmic scale bar (PIA17046) | NASA/JPL-Caltech | PD (NASA) |
+| two-reframed-one-wall.svg | Three assumptions about what life needs, tested against Enceladus: two reframed, one a wall | self-made | own work |
 
 Originals and their full provenance live with the video episodes in `~/Works/synapse-video/episodes/*/PROVENANCE.md`.
