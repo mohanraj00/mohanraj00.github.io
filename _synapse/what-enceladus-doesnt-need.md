@@ -6,7 +6,7 @@ tags: [astrobiology, enceladus, fermi-paradox, astronomy]
 excerpt: "No magnetic field, no atmosphere, no sunlight, and none of it turns out to matter much. What does is a number that hasn't moved since Voyager 1 launched in 1977."
 ---
 
-A friend read last week's post about the chemistry running under Enceladus's ice and pushed back with three objections, in order. No magnetic field, no atmosphere: what protects anything down there? No sunlight: what could possibly eat? And even granting both, isn't the whole thing moot given how far away it is? Two of those objections rest on an assumption carried over from Earth's surface that space doesn't share. The third does not move.
+The chemistry running under Enceladus's ice, covered here last week, raises three objections in sequence. No magnetic field, no atmosphere: what protects anything down there? No sunlight: what could possibly eat? And even granting both, isn't the whole thing moot given how far away it is? Two of those objections rest on an assumption carried over from Earth's surface that space doesn't share. The third does not move.
 
 ## No field, no air, no problem
 
