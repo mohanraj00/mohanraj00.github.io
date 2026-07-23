@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 620" width="880" height="620" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" role="img" aria-labelledby="t d">
-  <title id="t">Three assumptions about what life needs, tested one by one</title>
-  <desc id="d">Three rows, each pairing an Earth-shaped assumption with what actually happens on Enceladus. Row one: assumed necessary, a magnetic field and atmosphere; what happens instead, an ice shell tens of kilometres thick shields the ocean, so neither is needed, marked reframed. Row two: assumed necessary, sunlight; what happens instead, chemosynthesis at hydrothermal vents powers complex life in total darkness, marked reframed. Row three: assumed necessary, that the distance is crossable within reach; what happens instead, Proxima Centauri is 1,550 times farther than Voyager 1's 49-year, one-light-day journey, and no known propulsion closes that gap, marked wall, not reframed. A closing line reads: two intuitions get corrected. The third is a physical constraint that has not moved.</desc>
+  <title id="t">Three questions about what life needs, tested one by one</title>
+  <desc id="d">Three rows, each pairing an Earth-shaped assumption with what actually happens on Enceladus. Row one: assumed necessary, a magnetic field and atmosphere; what happens instead, an ice shell tens of kilometres thick shields the ocean, so neither is needed, marked reframed. Row two: assumed necessary, sunlight; what happens instead, chemosynthesis at hydrothermal vents powers complex life in total darkness, marked reframed. Row three: assumed necessary, enough time for chemistry to become biology; what happens instead, estimates for the age of Enceladus's ocean range from about one hundred million to over a billion years and are still disputed in the peer reviewed literature, marked open question. A closing line reads: two questions get answered by changing the mechanism, the third depends on a number nobody agrees on yet.</desc>
 
   <defs>
     <linearGradient id="cardG" x1="0" y1="0" x2="0" y2="1">
@@ -12,7 +12,7 @@
     <linearGradient id="okChipG" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#eef4fa"/><stop offset="1" stop-color="#e3edf6"/>
     </linearGradient>
-    <linearGradient id="wallChipG" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="openChipG" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#fdf1ec"/><stop offset="1" stop-color="#fbe6dd"/>
     </linearGradient>
     <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
@@ -61,24 +61,24 @@
 
   <!-- Row 3 -->
   <g filter="url(#lift)"><rect x="46" y="326" width="300" height="104" rx="14" fill="url(#paneG)" stroke="#dde3ec" stroke-width="1.5"/></g>
-  <text x="196" y="364" text-anchor="middle" font-size="14.5" font-weight="700" fill="#12203a">A closeable</text>
-  <text x="196" y="386" text-anchor="middle" font-size="14.5" font-weight="700" fill="#12203a">distance</text>
-  <text x="196" y="408" text-anchor="middle" font-size="11.5" fill="#5a6880">to ever go check</text>
+  <text x="196" y="364" text-anchor="middle" font-size="14.5" font-weight="700" fill="#12203a">Enough time for</text>
+  <text x="196" y="386" text-anchor="middle" font-size="14.5" font-weight="700" fill="#12203a">chemistry to become biology</text>
+  <text x="196" y="408" text-anchor="middle" font-size="11.5" fill="#5a6880">the way it did on Earth</text>
 
   <path d="M 350 378 L 404 378" fill="none" stroke="#93a3b5" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arr)"/>
 
-  <g filter="url(#lift)"><rect x="414" y="326" width="300" height="104" rx="14" fill="url(#wallChipG)" stroke="#c2603f" stroke-width="2"/></g>
-  <text x="564" y="358" text-anchor="middle" font-size="13.5" font-weight="700" fill="#31405a">Proxima Centauri is 1,550x</text>
-  <text x="564" y="378" text-anchor="middle" font-size="13.5" font-weight="700" fill="#31405a">farther than Voyager 1's</text>
-  <text x="564" y="398" text-anchor="middle" font-size="11.5" fill="#5a6880">one-light-day, 49-year journey.</text>
-  <text x="564" y="414" text-anchor="middle" font-size="11.5" fill="#5a6880">No known propulsion closes that gap.</text>
+  <g filter="url(#lift)"><rect x="414" y="326" width="300" height="104" rx="14" fill="url(#openChipG)" stroke="#c2603f" stroke-width="2"/></g>
+  <text x="564" y="356" text-anchor="middle" font-size="13.5" font-weight="700" fill="#31405a">Ocean age estimates run</text>
+  <text x="564" y="376" text-anchor="middle" font-size="13.5" font-weight="700" fill="#31405a">100 million to 1+ billion years</text>
+  <text x="564" y="398" text-anchor="middle" font-size="11.5" fill="#5a6880">Three studies disagree by roughly</text>
+  <text x="564" y="414" text-anchor="middle" font-size="11.5" fill="#5a6880">a factor of ten. Not yet settled.</text>
 
-  <g><rect x="738" y="354" width="96" height="26" rx="13" fill="#c2603f"/><text x="786" y="371.5" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="1">THE WALL</text></g>
+  <g><rect x="726" y="354" width="108" height="26" rx="13" fill="#c2603f"/><text x="780" y="371.5" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.5">OPEN QUESTION</text></g>
 
   <!-- Takeaway -->
-  <g filter="url(#lift)"><rect x="120" y="470" width="640" height="90" rx="16" fill="url(#wallChipG)" stroke="#c2603f" stroke-width="2"/></g>
-  <text x="440" y="506" text-anchor="middle" font-size="16" font-weight="700" fill="#12203a">Two intuitions get corrected.</text>
-  <text x="440" y="530" text-anchor="middle" font-size="16" font-weight="700" fill="#12203a">The third is a wall that has not moved.</text>
+  <g filter="url(#lift)"><rect x="100" y="470" width="680" height="90" rx="16" fill="url(#openChipG)" stroke="#c2603f" stroke-width="2"/></g>
+  <text x="440" y="506" text-anchor="middle" font-size="16" font-weight="700" fill="#12203a">Two questions get answered by changing the mechanism.</text>
+  <text x="440" y="530" text-anchor="middle" font-size="16" font-weight="700" fill="#12203a">The third depends on a number nobody agrees on yet.</text>
 
-  <text x="440" y="596" text-anchor="middle" font-size="12" fill="#5a6880">Scale is the reason life is probably common, and the reason confirming it is probably out of reach.</text>
+  <text x="440" y="596" text-anchor="middle" font-size="12" fill="#5a6880">Earth's own timeline is the only one we have, and it isn't a short one.</text>
 </svg>
