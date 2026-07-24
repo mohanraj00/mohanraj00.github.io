@@ -8,6 +8,13 @@ excerpt: "No magnetic field, no atmosphere, no sunlight, and none of it turns ou
 
 [Last week's post](/synapse/enceladus-and-the-erased-origin-of-life/) covered the vent chemistry that may have started life on Earth, water meeting rock and giving off hydrogen, and the case that the same reaction is running today inside Enceladus's ocean. That leaves a few threads worth pulling. No magnetic field, no atmosphere: what protects anything down there? No sunlight: what could possibly eat? And if the chemistry really is running, how long has it even had? The first two turn out to have clean answers. The third doesn't resolve nearly as neatly.
 
+<div class="synapse-watch" style="max-width:320px;margin:2rem auto;">
+  <div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px;">
+    <iframe src="https://www.youtube-nocookie.com/embed/ZzzPJ0V-BSI" title="What Enceladus doesn't need, and how much time it's had — a Midweek Synapse Short" loading="lazy" allowfullscreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+  </div>
+  <p style="text-align:center;margin:.6rem 0 0;font-size:.9rem;"><em>The 50-second version. Watch on <a href="https://youtube.com/shorts/ZzzPJ0V-BSI">YouTube</a> or <a href="https://www.instagram.com/p/DbLP6ECMDZn/">Instagram</a>.</em></p>
+</div>
+
 ## No field, no air, no problem
 
 Enceladus has no magnetic field of its own. What Cassini's magnetometer picked up near it in 2005, across three flybys in February, March, and July, was Saturn's own field bending around the moon, the same signature you would expect from a comet, not evidence of anything Enceladus generates internally. Its atmosphere tells the same story: thin, transient, sourced entirely by the plume itself, and dominated by water vapor at somewhere between 90 and 98 percent depending on which flyby you read, with carbon dioxide, methane, and ammonia making up the rest.
