@@ -10,6 +10,13 @@ Economics, entrepreneurship, and marketing each have their own theory of disrupt
 
 That economist is Clayton Christensen, and the company is Uber.
 
+<div class="synapse-watch" style="max-width:320px;margin:2rem auto;">
+  <div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px;">
+    <iframe src="https://www.youtube-nocookie.com/embed/Wi1JFUrz1GI" title="Everyone calls it disruptive. Two of three theories agree. — a Midweek Synapse Short" loading="lazy" allowfullscreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+  </div>
+  <p style="text-align:center;margin:.6rem 0 0;font-size:.9rem;"><em>The 49-second version. Watch on <a href="https://youtube.com/shorts/Wi1JFUrz1GI">YouTube</a> or <a href="https://www.instagram.com/p/Dbe1R0csAB8/">Instagram</a>.</em></p>
+</div>
+
 ## Three theories, one word
 
 **Schumpeter's creative destruction** (1942) is the oldest and the loosest: an economy-wide "perennial gale," new firms and methods sweeping away old ones, over and over, forever. It says nothing about mechanism, just that the churn is constant and, on balance, worth it.
