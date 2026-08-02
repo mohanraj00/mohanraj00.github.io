@@ -1,0 +1,10 @@
+<!-- Overrides the theme's default include, which uses the deprecated
+     Universal Analytics (analytics.js) snippet — that doesn't send data
+     to GA4 properties even when given a G- measurement ID. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.google_analytics }}');
+</script>
