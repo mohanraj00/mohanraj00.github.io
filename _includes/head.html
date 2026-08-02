@@ -1,0 +1,50 @@
+<!-- Overrides the theme's head include. The theme has no hook for extra <head>
+     content, so this is a copy of its head.html plus: the pre-paint theme
+     script, the favicon set, and site.css. Keep the copied half in sync if the
+     remote theme is ever bumped (currently Basically Basic 1.4.5). -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% if site.plugins contains 'jekyll-seo-tag' or site.gems contains 'jekyll-seo-tag' %}
+    {% include head-seo.html %}
+  {% else %}
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html', '' | absolute_url }}">
+  {% endif %}
+
+  <script>
+    /* Cut the mustard */
+    if ( 'querySelector' in document && 'addEventListener' in window ) {
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'js';
+    }
+    /* Apply a saved theme choice before first paint, so an overrider doesn't
+       get a flash of the device default. No choice saved -> leave it to the
+       CSS media query. */
+    try {
+      var t = localStorage.getItem('synapse-theme');
+      if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+
+  <link rel="icon" href="{{ '/assets/favicon.ico' | relative_url }}" sizes="any">
+  <link rel="apple-touch-icon" href="{{ '/assets/apple-touch-icon.png' | relative_url }}">
+  <link rel="manifest" href="{{ '/assets/site.webmanifest' | relative_url }}">
+  <meta name="theme-color" content="#0a1628">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+
+  <link rel="stylesheet" href="{{ '/assets/stylesheets/main.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  {% if site.data.theme.google_fonts %}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={% for font in site.data.theme.google_fonts %}{{ font.name | replace: ' ', '+' }}{% if font.weights %}:{% endif %}{{ font.weights | remove: ' ' }}{% if forloop.last != true %}|{% endif %}{% endfor %}">
+  {% endif %}
+
+  {% if site.plugins contains 'jekyll-feed' or site.gems contains 'jekyll-feed'%}
+    {% include head-feed.html %}
+  {% endif %}
+</head>

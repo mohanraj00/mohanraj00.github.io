@@ -4,6 +4,7 @@ date: 2026-07-12
 synapse: 2
 tags: [culture, anthropology, marketing, cultural-relativism]
 excerpt: "Anthropology and marketing both lean hard on the word culture, and even share the same diagram for it. Then marketing quietly drops the one idea that made the diagram worth drawing."
+image: /assets/heroes/culture-anthropology-marketing.jpg
 ---
 
 Two of the fields I read most both turn on a single word: culture. Anthropology is built on it. Marketing cannot function without it. So this week I ran a simple experiment. I put an anthropology textbook and a marketing textbook side by side and asked whether they actually mean the same thing when they say it.

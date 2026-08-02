@@ -4,6 +4,7 @@ date: 2026-07-09
 synapse: 1
 tags: [geomythology, oral-tradition, archaeology, history]
 excerpt: "Three unrelated cultures, three catastrophes, three independent clocks. What happens when you check the stories against the rocks."
+image: /assets/heroes/geomythology-oral-tradition-as-geological-memory.jpg
 ---
 
 I keep a wiki of everything I read, and every Wednesday I pull one thread out of it and chase where it goes. This week the thread was a word I had never heard: geomythology.

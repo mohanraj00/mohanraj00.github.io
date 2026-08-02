@@ -4,6 +4,19 @@ Every image on the Synapse posts is public domain or self-made. No exceptions (s
 publishing rule: self-made or properly-licensed only, never textbook figures or paywalled
 screenshots).
 
+**Hero images** live in `assets/heroes/`, one per post plus three for the landing pages, and
+each doubles as that page's `og:image` so a share card never falls back to nothing. They are
+built by `tools/gen-assets.py`, which also renders the favicon set — run `make assets` after
+adding a post. Two kinds:
+
+- **`<slug>.jpg`** — the post's own lead photo, cropped to the hero aspect and re-encoded to
+  JPEG (LinkedIn's crawler does not reliably render the WebP originals). Same source, same
+  licence as the in-post image; see the table below. Which post uses which is the
+  `PHOTO_HEROES` map in the script.
+- **`<slug>.png`** — generated abstract art, own work, for posts whose imagery is diagrams or
+  portraits that crop badly to a banner. Colour is derived from the post slug unless the post
+  sets `hero_hue:` in its frontmatter.
+
 | File | Subject | Source | License |
 |---|---|---|---|
 | reef.jpg | Australian coast / Great Barrier Reef from orbit | NASA Goddard | PD (NASA) |

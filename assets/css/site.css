@@ -1,0 +1,468 @@
+/* Site-wide styling: theme tokens, the dissolving background wash, hero
+   images, typography, and post lists.
+
+   This loads on every page, after the remote theme's main.css, and overrides
+   it. The theme (Basically Basic) is light-only and paints white onto several
+   wrappers, so a fair amount of what follows is repainting its chrome from
+   variables instead.
+
+   Theming: light is the default; dark applies when the device prefers dark OR
+   the reader forces it with the masthead toggle. The toggle writes
+   data-theme="dark|light" on <html>, which beats the device preference and is
+   remembered in localStorage. See _includes/theme-toggle.html.
+
+   /synapse layers its own content styles on top — see assets/css/synapse.css,
+   which now only carries what is genuinely Synapse-specific. */
+
+:root {
+  /* Content palette */
+  --ink: #0a1628;
+  --accent: #2f6f9f;
+  --accent-soft: #eaf4fb;
+  --muted: #5b6472;
+  /* Page palette */
+  --s-bg: #ffffff;
+  --s-body-text: #2b3038;
+  --s-title: #0a1628;
+  --s-icon: #181c22;
+  --s-code-bg: #f2f5f8;
+  --s-code-text: #26303a;
+  --s-rule: #e3e7ec;
+  --s-card: #ffffff;
+  /* Diagrams are drawn for white paper; these are no-ops in light. */
+  --s-svg-card: transparent;
+  --s-svg-pad: 0;
+  --s-img-shadow: 0 1px 2px rgba(10, 22, 40, 0.06), 0 8px 24px rgba(10, 22, 40, 0.08);
+  --tt-track: #d8e4ef;
+  /* The background wash */
+  --wash-a: rgba(47, 111, 159, 0.16);
+  --wash-b: rgba(103, 88, 184, 0.11);
+  --wash-c: rgba(0, 131, 138, 0.08);
+}
+
+/* Dark values. The two blocks carry identical values; only the trigger
+   differs — device preference vs. an explicit choice. */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme='light']) {
+    --ink: #eef4fb;
+    --accent: #8fd8ff;
+    --accent-soft: rgba(143, 216, 255, 0.13);
+    --muted: #93a1b4;
+    --s-bg: #0b1524;
+    --s-body-text: #c9d4e1;
+    --s-title: #f3f8fd;
+    --s-icon: #c9d4e1;
+    --s-code-bg: #0f1d30;
+    --s-code-text: #d7e0ec;
+    --s-rule: rgba(255, 255, 255, 0.12);
+    --s-card: rgba(255, 255, 255, 0.035);
+    --s-svg-card: #f5f8fc;
+    --s-svg-pad: 0.8rem;
+    --s-img-shadow: 0 10px 34px rgba(0, 0, 0, 0.45);
+    --tt-track: rgba(255, 255, 255, 0.16);
+    --wash-a: rgba(143, 216, 255, 0.13);
+    --wash-b: rgba(130, 105, 220, 0.16);
+    --wash-c: rgba(0, 168, 178, 0.09);
+  }
+}
+html[data-theme='dark'] {
+  --ink: #eef4fb;
+  --accent: #8fd8ff;
+  --accent-soft: rgba(143, 216, 255, 0.13);
+  --muted: #93a1b4;
+  --s-bg: #0b1524;
+  --s-body-text: #c9d4e1;
+  --s-title: #f3f8fd;
+  --s-icon: #c9d4e1;
+  --s-code-bg: #0f1d30;
+  --s-code-text: #d7e0ec;
+  --s-rule: rgba(255, 255, 255, 0.12);
+  --s-card: rgba(255, 255, 255, 0.035);
+  --s-svg-card: #f5f8fc;
+  --s-svg-pad: 0.8rem;
+  --s-img-shadow: 0 10px 34px rgba(0, 0, 0, 0.45);
+  --tt-track: rgba(255, 255, 255, 0.16);
+  --wash-a: rgba(143, 216, 255, 0.13);
+  --wash-b: rgba(130, 105, 220, 0.16);
+  --wash-c: rgba(0, 168, 178, 0.09);
+}
+
+/* ==========================================================================
+   Base + the dissolving background
+   ========================================================================== */
+
+body {
+  background: var(--s-bg);
+  color: var(--s-body-text);
+}
+
+/* The wash: three soft colour fields fixed to the viewport, masked so they
+   fade out before the content starts. Fixed rather than scrolling, so the
+   colour dissolves away as the reader moves down the page and the article
+   sits on flat background by the time they are reading it. */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(42rem 30rem at 6% -8%, var(--wash-a), transparent 68%),
+    radial-gradient(38rem 26rem at 94% 0%, var(--wash-b), transparent 66%),
+    radial-gradient(34rem 22rem at 48% -16%, var(--wash-c), transparent 70%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.5) 40%, transparent 76%);
+  mask-image: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.5) 40%, transparent 76%);
+}
+
+/* The theme paints these white, which would sit on top of the wash. */
+.canvas,
+.wrapper,
+.inner {
+  background-color: transparent;
+}
+
+/* The floating menu button needs to stay legible over scrolling content, so
+   it gets a translucent panel instead of an opaque one. */
+.sidebar-toggle-wrapper {
+  background-color: color-mix(in srgb, var(--s-bg) 76%, transparent);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.sidebar .inner {
+  background-color: var(--s-bg);
+}
+.sidebar a {
+  color: var(--s-body-text);
+}
+.sidebar a:hover {
+  color: var(--accent);
+}
+
+.navicon,
+.navicon::before,
+.navicon::after {
+  background: var(--s-icon);
+}
+.sidebar-toggle-label {
+  color: var(--s-icon);
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--s-bg);
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/* Long-form gets a serif; everything structural stays on the system sans.
+   The theme declares Fira Sans but never loads it, so the sans below is what
+   actually renders rather than a silent fallback to Helvetica. */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* .index is the home layout's content wrapper — it has no .entry-content, so
+   every rule below has to name both or the homepage silently keeps the
+   theme's defaults. */
+.entry-content,
+.index > div,
+.intro-more,
+.post-item-excerpt {
+  font-family: 'Source Serif 4', Charter, Georgia, 'Times New Roman', serif;
+  font-size: 1.06rem;
+  line-height: 1.7;
+}
+
+.entry-content,
+.index,
+.intro-text {
+  /* A measure. Long lines are the fastest way to look unedited. */
+  max-width: 44rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title,
+.intro-title,
+.entry-title {
+  color: var(--s-title);
+  letter-spacing: -0.015em;
+}
+
+.site-title a {
+  color: var(--s-title);
+}
+
+.intro-title {
+  /* The theme's fluid scale tops out at 80px, which reads as a landing page
+     rather than an article. */
+  font-size: clamp(1.9rem, 1.1rem + 2.6vw, 3rem);
+  line-height: 1.12;
+  color: var(--s-title);
+}
+
+.entry-meta,
+.entry-meta a,
+.intro-subtitle {
+  color: var(--muted);
+}
+
+.entry-content a,
+.index > div a:not(.post-item-title),
+.intro-more a,
+.post-item-excerpt a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent);
+  transition: text-decoration-color 0.15s ease;
+}
+.entry-content a:hover {
+  text-decoration-color: var(--accent);
+}
+
+.entry-content strong,
+.index > div strong {
+  color: var(--ink);
+}
+
+/* On the home page the intro title IS the site title, which the masthead
+   already shows directly above it. Clipped rather than removed so it stays
+   the skip-link target. */
+.layout--home .intro-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.layout--home .intro {
+  padding-bottom: 0;
+}
+
+.entry-content blockquote {
+  border-left: 3px solid var(--accent);
+  background: var(--accent-soft);
+  margin: 1.6rem 0;
+  padding: 0.8rem 1.1rem;
+  border-radius: 0 6px 6px 0;
+  color: var(--ink);
+  font-style: normal;
+}
+
+code,
+pre {
+  background: var(--s-code-bg);
+  color: var(--s-code-text);
+}
+pre {
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--s-rule);
+  margin: 2.6rem 0;
+}
+
+.entry-content img {
+  border-radius: 10px;
+  box-shadow: var(--s-img-shadow);
+}
+
+/* ==========================================================================
+   Hero image
+   ========================================================================== */
+
+.intro-image {
+  margin-bottom: 2.4rem;
+}
+
+/* The bottom edge is masked away rather than cut, so the hero dissolves into
+   the page instead of ending on a hard line above the title. */
+.intro-image img {
+  width: 100%;
+  height: clamp(180px, 32vw, 380px);
+  object-fit: cover;
+  border-radius: 0 0 4px 4px;
+  -webkit-mask-image: linear-gradient(to bottom, #000 58%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 58%, transparent 100%);
+}
+
+/* The theme's tint overlay is off by default, but it also positions this
+   pseudo-element over the image; keep it out of the way. */
+.intro-image::before {
+  display: none;
+}
+
+/* ==========================================================================
+   Post lists (home, /tech, /synapse)
+   ========================================================================== */
+
+.post-list {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+}
+
+.post-item {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  padding: 1.35rem 0;
+  border-top: 1px solid var(--s-rule);
+}
+
+.post-item-thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 40 / 21;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: var(--s-img-shadow);
+}
+
+/* Scoped through .post-list so these beat the generic `.entry-content a`
+   rule, which would otherwise underline every title in the list. */
+.post-list .post-item-title {
+  display: inline-block;
+  font-size: 1.16rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.012em;
+  text-decoration: none;
+  color: var(--ink);
+}
+.post-list .post-item-title:hover {
+  color: var(--accent);
+  text-decoration-color: transparent;
+}
+
+.post-item-meta {
+  margin: 0.3rem 0 0.5rem;
+  font-size: 0.76rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.post-item-excerpt {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--s-body-text);
+}
+
+@media (max-width: 33rem) {
+  .post-item {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+  .post-item-thumb {
+    aspect-ratio: 40 / 15;
+  }
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.site-footer {
+  margin-top: 4rem;
+  border-top: 1px solid var(--s-rule);
+  color: var(--muted);
+}
+.site-footer a {
+  color: var(--accent);
+}
+
+/* ==========================================================================
+   Light/dark toggle — a sliding switch in the masthead. The knob slides right
+   and the icon flips when dark is active.
+   ========================================================================== */
+
+.theme-toggle {
+  position: relative;
+  display: block;
+  flex: none;
+  width: 3.7rem;
+  height: 1.95rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: var(--tt-track);
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.theme-toggle .tt-knob {
+  position: absolute;
+  top: 0.2rem;
+  left: 0.2rem;
+  display: grid;
+  place-items: center;
+  width: 1.55rem;
+  height: 1.55rem;
+  border-radius: 50%;
+  background: var(--accent);
+  transition: left 0.22s ease;
+}
+.theme-toggle[data-mode='dark'] .tt-knob {
+  left: calc(100% - 1.55rem - 0.2rem);
+}
+
+/* Resetting the content-image rules that would otherwise treat these as
+   figures. Note the .tt-knob in the sun/moon selectors below: without it they
+   lose on specificity to this rule and BOTH icons render, stacked. */
+.theme-toggle .tt-knob svg {
+  width: 13px;
+  height: 13px;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: var(--s-bg);
+}
+.theme-toggle .tt-knob .icon-sun {
+  display: block;
+}
+.theme-toggle .tt-knob .icon-moon {
+  display: none;
+}
+.theme-toggle[data-mode='dark'] .tt-knob .icon-sun {
+  display: none;
+}
+.theme-toggle[data-mode='dark'] .tt-knob .icon-moon {
+  display: block;
+}
+
+/* Sit the switch on the masthead line, opposite the site title. The right
+   padding clears the menu button, which is position:fixed against the viewport
+   edge — without it the two overlap at any width where .inner runs full-bleed. */
+#masthead .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-right: 3.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+  }
+}

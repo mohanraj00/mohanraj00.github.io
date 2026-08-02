@@ -1,12 +1,4 @@
-<script>
-  /* Apply a saved theme choice before paint, so an overrider doesn't flash the
-     device default. No choice saved -> leave it to the CSS media query. */
-  (function () {
-    try {
-      var t = localStorage.getItem('synapse-theme');
-      if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
-    } catch (e) {}
-  })();
-</script>
-
+<!-- Synapse-only styles, layered over site.css. The pre-paint theme script that
+     used to live here moved to _includes/head.html when the light/dark toggle
+     went site-wide. -->
 <link rel="stylesheet" href="{{ '/assets/css/synapse.css' | relative_url }}">

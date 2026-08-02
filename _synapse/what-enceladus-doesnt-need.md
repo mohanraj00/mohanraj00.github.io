@@ -4,6 +4,7 @@ date: 2026-07-23
 synapse: 5
 tags: [astrobiology, enceladus, planetary-science, astronomy]
 excerpt: "No magnetic field, no atmosphere, no sunlight, and none of it turns out to matter much. The thread that's still open is a number nobody agrees on: how old the ocean underneath even is."
+image: /assets/heroes/what-enceladus-doesnt-need.jpg
 ---
 
 [Last week's post](/synapse/enceladus-and-the-erased-origin-of-life/) covered the vent chemistry that may have started life on Earth, water meeting rock and giving off hydrogen, and the case that the same reaction is running today inside Enceladus's ocean. That leaves a few threads worth pulling. No magnetic field, no atmosphere: what protects anything down there? No sunlight: what could possibly eat? And if the chemistry really is running, how long has it even had? The first two turn out to have clean answers. The third doesn't resolve nearly as neatly.

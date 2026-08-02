@@ -4,6 +4,8 @@ date: 2026-07-12
 synapse: 3
 tags: [artificial-intelligence, history-of-ai, bounded-rationality, deep-learning]
 excerpt: "Both are AI researchers, on opposite sides of the field's oldest argument. The neat story is that each proved the other wrong. The truth is better."
+image: /assets/heroes/turing-nobel-double.png
+hero_hue: 285
 ---
 
 The Turing Award is the top prize in computer science. The Nobel needs no introduction. Only two people have ever won both, and both spent their careers on artificial intelligence: Herbert Simon and Geoffrey Hinton. When Hinton won his Nobel in 2024, Carnegie Mellon noted he was only the second person to manage it. The first was their own Herbert Simon, back in 1978.

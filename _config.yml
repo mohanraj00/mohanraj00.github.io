@@ -12,19 +12,32 @@ collections:
     output: true
     permalink: /synapse/:title/
 
+author: Mohan Raj
+# jekyll-seo-tag reads these for the Open Graph / Twitter card and the
+# schema.org author block.
+social:
+  name: Mohan Raj
+  links:
+    - https://instagram.com/vinavu_ai
+
 defaults:
   - scope:
       type: tech
     values:
       layout: post
+      read_time: true
   - scope:
       type: synapse
     values:
       layout: synapse
+      read_time: true
 
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  # Without this the theme skips its head-seo include entirely: no og:image,
+  # no twitter:card, no canonical. Every share rendered as a bare link.
+  - jekyll-seo-tag
 
 feed:
   collections:

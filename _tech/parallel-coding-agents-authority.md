@@ -1,6 +1,8 @@
 ---
 title: "Parallel coding agents fail at authority, not isolation"
 date: 2026-07-17
+image: /assets/heroes/parallel-coding-agents-authority.png
+hero_hue: 190
 ---
 
 I build alone, and AI coding agents carry the whole gamut of the work: specs, scope decisions, implementation, grounding, tests, and promotion to production. Two products are in flight: a stealth vertical AI platform and a Personal CFO. A small team of agents also maintains my second-brain wiki and turns my non-professional learning into publications. My role across all of it is architecture, verification, and judgment.

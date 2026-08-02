@@ -4,6 +4,7 @@ date: 2026-07-15
 synapse: 4
 tags: [astrobiology, enceladus, origin-of-life, astronomy]
 excerpt: "A prediction made in 1993 about a vent nobody had found. What turned up seven years later, and what a spacecraft tasted 1.2 billion kilometres away."
+image: /assets/heroes/enceladus-and-the-erased-origin-of-life.jpg
 ---
 
 Here's a problem I hadn't thought about until this week. If you wanted to check how life on Earth actually began, you couldn't. Not directly.

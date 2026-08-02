@@ -1,106 +1,28 @@
 /* Midweek Synapse section styling.
-   Palette matches the Vinavu videos: deep night blue + the caption blue accent.
-   This file only loads on /synapse pages, and every rule is scoped to
-   body[class*="layout--synapse"], so /tech and the rest of the site are untouched.
 
-   Theming: all colours are CSS variables. Light is the default; dark applies
-   when the device prefers dark OR the reader forces it with the toggle.
-   The toggle writes data-theme="dark|light" on <html>; that overrides the
-   device preference and is remembered in localStorage. See _layouts/synapse.html. */
+   Theme tokens, the background wash, hero images, post lists, and the
+   light/dark toggle all live in assets/css/site.css now — they went site-wide
+   so /tech and the homepage stop being light-only next to a dark /synapse.
+   What remains here is only what is specific to the series: the badge, the
+   longer reading measure, figure captions, and the outro.
 
-body[class*="layout--synapse"] {
-  /* Content palette (badge, headings, links, rules) */
-  --synapse-ink: #0a1628;
-  --synapse-accent: #2f6f9f;
-  --synapse-accent-soft: #eaf4fb;
-  --synapse-muted: #5b6472;
-  /* Page palette (background, body copy, chrome) */
-  --s-bg: #ffffff;
-  --s-body-text: #2b3038;
-  --s-title: #0a1628;
-  --s-icon: #181c22;
-  --s-code-bg: #f2f5f8;
-  --s-code-text: #26303a;
-  --s-rule: #e3e7ec;
-  --s-svg-card: transparent;
-  --s-svg-pad: 0;
-  --s-img-shadow: none;
-  --tt-track: #d8e4ef;
+   Loaded after site.css, and every rule is still scoped to
+   body[class*="layout--synapse"] or .synapse-wrap. */
+
+/* The --synapse-* names are kept as aliases: they are threaded through the
+   rules below and through post-level inline styles, and renaming them buys
+   nothing. */
+body[class*='layout--synapse'] {
+  --synapse-ink: var(--ink);
+  --synapse-accent: var(--accent);
+  --synapse-accent-soft: var(--accent-soft);
+  --synapse-muted: var(--muted);
 }
-
-/* Dark values: applied when the device prefers dark and the reader has NOT
-   forced light, OR when the reader has explicitly chosen dark. The two blocks
-   carry identical values; only the trigger differs. */
-@media (prefers-color-scheme: dark) {
-  html:not([data-theme="light"]) body[class*="layout--synapse"] {
-    --synapse-ink: #eef4fb;
-    --synapse-accent: #8fd8ff;
-    --synapse-accent-soft: rgba(143, 216, 255, 0.13);
-    --synapse-muted: #93a1b4;
-    --s-bg: #0b1524;
-    --s-body-text: #c9d4e1;
-    --s-title: #f3f8fd;
-    --s-icon: #c9d4e1;
-    --s-code-bg: #0f1d30;
-    --s-code-text: #d7e0ec;
-    --s-rule: rgba(255, 255, 255, 0.12);
-    --s-svg-card: #f5f8fc;
-    --s-svg-pad: 0.8rem;
-    --s-img-shadow: 0 10px 34px rgba(0, 0, 0, 0.45);
-    --tt-track: rgba(255, 255, 255, 0.16);
-  }
-}
-html[data-theme="dark"] body[class*="layout--synapse"] {
-  --synapse-ink: #eef4fb;
-  --synapse-accent: #8fd8ff;
-  --synapse-accent-soft: rgba(143, 216, 255, 0.13);
-  --synapse-muted: #93a1b4;
-  --s-bg: #0b1524;
-  --s-body-text: #c9d4e1;
-  --s-title: #f3f8fd;
-  --s-icon: #c9d4e1;
-  --s-code-bg: #0f1d30;
-  --s-code-text: #d7e0ec;
-  --s-rule: rgba(255, 255, 255, 0.12);
-  --s-svg-card: #f5f8fc;
-  --s-svg-pad: 0.8rem;
-  --s-img-shadow: 0 10px 34px rgba(0, 0, 0, 0.45);
-  --tt-track: rgba(255, 255, 255, 0.16);
-}
-
-/* ---- Page + chrome (repaint the theme's wrappers, which are always white) ---- */
-body[class*="layout--synapse"] { background: var(--s-bg); }
-body[class*="layout--synapse"] .wrapper,
-body[class*="layout--synapse"] .inner,
-body[class*="layout--synapse"] .sidebar-toggle-wrapper { background-color: var(--s-bg); }
-
-body[class*="layout--synapse"] .navicon,
-body[class*="layout--synapse"] .navicon::before,
-body[class*="layout--synapse"] .navicon::after { background: var(--s-icon); }
-body[class*="layout--synapse"] .sidebar-toggle-label { color: var(--s-icon); }
-
-body[class*="layout--synapse"] .site-title,
-body[class*="layout--synapse"] .site-title a,
-body[class*="layout--synapse"] .intro-title { color: var(--s-title); }
-body[class*="layout--synapse"] .entry-meta { color: var(--synapse-muted); }
-
-body[class*="layout--synapse"] .entry-content { color: var(--s-body-text); }
-body[class*="layout--synapse"] .entry-content strong { color: var(--synapse-ink); }
-body[class*="layout--synapse"] a,
-body[class*="layout--synapse"] .entry-content a { color: var(--synapse-accent); }
-
-body[class*="layout--synapse"] code,
-body[class*="layout--synapse"] pre {
-  background: var(--s-code-bg);
-  color: var(--s-code-text);
-}
-
-body[class*="layout--synapse"] .site-footer { color: var(--synapse-muted); }
-body[class*="layout--synapse"] .site-footer a { color: var(--synapse-accent); }
-body[class*="layout--synapse"] ::selection { background: var(--synapse-accent); color: var(--s-bg); }
 
 /* ---- The reading column ---- */
-.synapse-wrap { position: relative; }
+.synapse-wrap {
+  position: relative;
+}
 
 .synapse-badge {
   display: inline-flex;
@@ -131,7 +53,9 @@ body[class*="layout--synapse"] ::selection { background: var(--synapse-accent); 
 }
 
 /* Long-form reading: a touch more air than the tech section. */
-.synapse-wrap p { line-height: 1.75; }
+.synapse-wrap p {
+  line-height: 1.75;
+}
 
 .synapse-wrap h2 {
   margin-top: 2.4rem;
@@ -149,14 +73,6 @@ body[class*="layout--synapse"] ::selection { background: var(--synapse-accent); 
   color: var(--synapse-ink);
 }
 
-.synapse-wrap blockquote {
-  border-left: 3px solid var(--synapse-accent);
-  background: var(--synapse-accent-soft);
-  margin: 1.6rem 0;
-  padding: 0.8rem 1.1rem;
-  color: var(--synapse-ink);
-}
-
 .synapse-wrap img,
 .synapse-wrap svg,
 .synapse-wrap video {
@@ -164,14 +80,14 @@ body[class*="layout--synapse"] ::selection { background: var(--synapse-accent); 
   margin: 1.6rem auto 0.6rem;
 }
 
-/* Photos lift off the page; SVG diagrams (often drawn for white paper) get a
-   light card so they stay legible on dark. Both values are no-ops in light. */
-.synapse-wrap img { box-shadow: var(--s-img-shadow); }
+/* SVG diagrams are often drawn for white paper, so they get a light card to
+   stay legible on dark. A no-op in light. */
 .synapse-wrap svg,
-.synapse-wrap img[src$=".svg"] {
+.synapse-wrap img[src$='.svg'] {
   background: var(--s-svg-card);
   border-radius: 10px;
   padding: var(--s-svg-pad);
+  box-shadow: none;
 }
 
 /* Figure captions: the italic line under a diagram or video. Only an italic
@@ -200,73 +116,6 @@ body[class*="layout--synapse"] ::selection { background: var(--synapse-accent); 
   font-size: 0.92rem;
   color: var(--synapse-muted);
 }
-.synapse-outro a { color: var(--synapse-accent); }
-
-/* ---- Listing page (/synapse/) ---- */
-.synapse-list { list-style: none; margin: 2rem 0 0; padding: 0; }
-.synapse-item { padding: 1.2rem 0; border-top: 1px solid var(--s-rule); }
-.synapse-item-title {
-  font-size: 1.18rem;
-  font-weight: 700;
-  text-decoration: none;
-  color: var(--synapse-ink);
+.synapse-outro a {
+  color: var(--synapse-accent);
 }
-.synapse-item-title:hover { color: var(--synapse-accent); }
-.synapse-item-meta {
-  margin: 0.25rem 0 0.5rem;
-  font-size: 0.8rem;
-  color: var(--synapse-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-.synapse-item-excerpt { margin: 0; color: var(--s-body-text); line-height: 1.6; }
-
-/* ---- Light/dark toggle: a sliding switch on its own line at the top-right of
-   the column (margin-left:auto right-aligns it). The knob slides right and the
-   icon flips when dark is active. ---- */
-.synapse-theme-toggle {
-  position: relative;
-  display: block;
-  width: 3.7rem;
-  height: 1.95rem;
-  margin: 0 0 1rem auto;
-  padding: 0;
-  border: 0;
-  border-radius: 999px;
-  background: var(--tt-track);
-  -webkit-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.synapse-theme-toggle .tt-knob {
-  position: absolute;
-  top: 0.2rem;
-  left: 0.2rem;
-  display: grid;
-  place-items: center;
-  width: 1.55rem;
-  height: 1.55rem;
-  border-radius: 50%;
-  background: var(--synapse-accent);
-  transition: left 0.22s ease;
-}
-.synapse-theme-toggle[data-mode="dark"] .tt-knob {
-  left: calc(100% - 1.55rem - 0.2rem);
-}
-/* Reset: these icons live inside .synapse-wrap, so the content-SVG rules
-   (light card, margins) would otherwise treat them like a diagram. */
-.synapse-theme-toggle .tt-knob svg {
-  width: 13px;
-  height: 13px;
-  display: block;
-  margin: 0;
-  padding: 0;
-  background: none;
-  border-radius: 0;
-  color: var(--s-bg);
-}
-.synapse-theme-toggle .icon-sun { display: block; }
-.synapse-theme-toggle .icon-moon { display: none; }
-.synapse-theme-toggle[data-mode="dark"] .icon-sun { display: none; }
-.synapse-theme-toggle[data-mode="dark"] .icon-moon { display: block; }

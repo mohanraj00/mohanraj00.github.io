@@ -1,10 +1,13 @@
 # Blog operations. Usage: make help
 SHELL := /bin/bash
 
-.PHONY: help preview build check publish
+.PHONY: help assets preview build check publish
 
 help: ## Show this help
 	@grep -E '^[a-z-]+:.*##' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  \033[1m%-9s\033[0m %s\n", $$1, $$2}'
+
+assets: ## Generate hero images for new posts + the favicon set (needs Pillow)
+	python3 tools/gen-assets.py
 
 preview: ## Serve the site locally at http://localhost:4000 (Docker; matches GH Pages build)
 	docker run --rm -it -p 4000:4000 -v "$$PWD":/srv/jekyll -w /srv/jekyll ruby:3.3 \

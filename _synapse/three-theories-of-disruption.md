@@ -4,6 +4,8 @@ date: 2026-07-29
 synapse: 6
 tags: [economics, entrepreneurship, marketing, artificial-intelligence]
 excerpt: "Economics, entrepreneurship, and marketing each have their own theory of disruption, and none of the three mean the same thing by it. One widely used textbook even gets its own theorist's verdict wrong."
+image: /assets/heroes/three-theories-of-disruption.png
+hero_hue: 12
 ---
 
 Economics, entrepreneurship, and marketing each have their own theory of disruption, and none of the three mean the same thing by it. Worse: a widely used entrepreneurship textbook uses the word for a company, and the economist who defined the term says flatly that the textbook is wrong.
