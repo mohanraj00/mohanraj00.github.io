@@ -33,5 +33,6 @@ adding a post. Two kinds:
 | enceladus-tiger-stripes.webp | Close-up of the tiger stripe fractures themselves, July 14 2005 flyby (PIA06247, "Tiger Stripes Up Close") | NASA/JPL-Caltech, Cassini | PD (NASA) |
 | two-reframed-one-open.svg | Three questions about what life needs, tested against Enceladus: two reframed, one an open question (ocean age) | self-made | own work |
 | three-theories-llm-test.svg | Three theories of disruption (Schumpeter, Christensen, Marketing/Rogers) tested against the frontier LLM: fits, doesn't fit, fits | self-made | own work |
+| gpu-useful-life-divergence.svg | Assumed server useful life at Microsoft, Alphabet, Amazon and Meta, 2022 to 2026, showing the 1 Jan 2025 fork where Amazon shortened and Meta lengthened. Every value read directly from the firm's own 10-K | self-made | own work |
 
 Originals and their full provenance live with the video episodes in `~/Works/synapse-video/episodes/*/PROVENANCE.md`.
