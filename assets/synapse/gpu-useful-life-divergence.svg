@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 620" width="880" height="620" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" role="img" aria-labelledby="t d">
-  <title id="t">The assumed useful life of a server, as each of the four largest AI spenders states it in its own 10-K</title>
-  <desc id="d">A step chart running from 2022 to 2026, showing the number of years each firm assumes a server keeps earning before it is written off. Microsoft starts at four years and steps up to six from fiscal 2023. Alphabet starts at four years and steps up to six in January 2023. Amazon starts at five years, steps up to six in January 2024, then steps back down to five in January 2025 for a subset of its servers. Meta holds at five years and steps up to five and a half in January 2025. The two January 2025 changes take effect on the same day and move in opposite directions: Amazon's shortening cut its 2025 net income by one billion dollars, Meta's lengthening raised its 2025 net income by two point five nine billion dollars. A closing note reads: same asset class, same stated cause, same effective date, opposite conclusions.</desc>
+  <title id="t">The assumed useful life of a server at each of the four largest AI spenders, 2022 to 2026</title>
+  <desc id="d">Four rows, one per company, running left to right from 2022 to 2026. Each row is divided into blocks showing how many years that firm assumed a server would keep earning; darker blocks are longer assumed lives. Microsoft: four years, then six years from fiscal 2023. Alphabet: four years, then six years from January 2023. Amazon: five years, then six years from January 2024, then back down to five years for a subset of servers from January 2025, cutting its 2025 net income by one billion dollars. Meta: five years, then five and a half years for most servers from January 2025, raising its 2025 net income by two point five nine billion dollars. A vertical band marks 1 January 2025, where Amazon's row steps down and Meta's row steps up on the same date.</desc>
 
   <defs>
     <linearGradient id="cardG" x1="0" y1="0" x2="0" y2="1">
@@ -9,89 +9,80 @@
     <linearGradient id="noteG" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f7f9fc"/>
     </linearGradient>
-    <linearGradient id="forkG" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#c2603f" stop-opacity="0.10"/><stop offset="1" stop-color="#c2603f" stop-opacity="0.02"/>
-    </linearGradient>
     <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#1a2740" flood-opacity="0.10"/>
     </filter>
     <filter id="lift" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="#20344f" flood-opacity="0.12"/>
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#20344f" flood-opacity="0.11"/>
     </filter>
   </defs>
 
   <rect x="10" y="10" width="860" height="600" rx="20" fill="url(#cardG)" stroke="#e4e9f1" stroke-width="1.5" filter="url(#soft)"/>
 
   <text x="440" y="44" text-anchor="middle" font-size="11" font-weight="700" fill="#2f6f9f" letter-spacing="1.5">HOW LONG DOES A SERVER KEEP EARNING? EACH FIRM'S OWN 10-K ANSWER</text>
-  <text x="440" y="64" text-anchor="middle" font-size="11.5" fill="#5a6880">Assumed useful life for depreciation, per Microsoft, Alphabet, Amazon and Meta Form 10-K filings</text>
+  <text x="440" y="64" text-anchor="middle" font-size="11.5" fill="#5a6880">Assumed useful life for depreciation. Darker is a longer assumed life, and so a smaller annual expense.</text>
 
-  <!-- fork band -->
-  <rect x="567" y="94" width="20" height="336" rx="5" fill="url(#forkG)"/>
+  <!-- the shared moment -->
+  <rect x="575" y="98" width="17" height="300" rx="4" fill="#c2603f" opacity="0.13"/>
+  <text x="583" y="90" text-anchor="middle" font-size="10" font-weight="700" fill="#c2603f" letter-spacing="1.2">1 JANUARY 2025</text>
 
-  <!-- gridlines -->
-  <g stroke="#e1e7f0" stroke-width="1">
-    <line x1="122" y1="122" x2="800" y2="122"/>
-    <line x1="122" y1="190" x2="800" y2="190"/>
-    <line x1="122" y1="257" x2="800" y2="257"/>
-    <line x1="122" y1="393" x2="800" y2="393"/>
+  <!-- ── Microsoft ── -->
+  <text x="138" y="139" text-anchor="end" font-size="12.5" font-weight="700" fill="#12203a">Microsoft</text>
+  <g filter="url(#lift)">
+    <rect x="150" y="108" width="70" height="52" rx="8" fill="#cfdcea"/>
+    <rect x="224" y="108" width="576" height="52" rx="8" fill="#2f6f9f"/>
   </g>
-  <g font-size="11" fill="#5a6880" text-anchor="end">
-    <text x="112" y="126">6 yrs</text>
-    <text x="112" y="194">5.5</text>
-    <text x="112" y="261">5 yrs</text>
-    <text x="112" y="397">4 yrs</text>
-  </g>
+  <text x="185" y="139" text-anchor="middle" font-size="11.5" font-weight="700" fill="#3f5570">4 yrs</text>
+  <text x="512" y="139" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">6 yrs</text>
 
-  <!-- x axis -->
-  <line x1="122" y1="430" x2="800" y2="430" stroke="#c8d2e0" stroke-width="1.5"/>
+  <!-- ── Alphabet ── -->
+  <text x="138" y="213" text-anchor="end" font-size="12.5" font-weight="700" fill="#12203a">Alphabet</text>
+  <g filter="url(#lift)">
+    <rect x="150" y="182" width="142" height="52" rx="8" fill="#cfdcea"/>
+    <rect x="296" y="182" width="504" height="52" rx="8" fill="#2f6f9f"/>
+  </g>
+  <text x="221" y="213" text-anchor="middle" font-size="11.5" font-weight="700" fill="#3f5570">4 yrs</text>
+  <text x="548" y="213" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">6 yrs</text>
+
+  <!-- ── Amazon: up, then back down ── -->
+  <text x="138" y="287" text-anchor="end" font-size="12.5" font-weight="700" fill="#12203a">Amazon</text>
+  <g filter="url(#lift)">
+    <rect x="150" y="256" width="287" height="52" rx="8" fill="#8fb4d0"/>
+    <rect x="441" y="256" width="139" height="52" rx="8" fill="#2f6f9f"/>
+    <rect x="587" y="256" width="213" height="52" rx="8" fill="#8fb4d0"/>
+  </g>
+  <text x="293" y="287" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1f3852">5 yrs</text>
+  <text x="510" y="287" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">6 yrs</text>
+  <path d="M598,275 L612,275 L605,289 Z" fill="#c2603f"/>
+  <text x="708" y="279" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1f3852">back to 5 yrs (a subset)</text>
+  <text x="708" y="297" text-anchor="middle" font-size="10.5" font-weight="700" fill="#a8492a">−$1.0B net income</text>
+
+  <!-- ── Meta: up, on the same day ── -->
+  <text x="138" y="361" text-anchor="end" font-size="12.5" font-weight="700" fill="#12203a">Meta</text>
+  <g filter="url(#lift)">
+    <rect x="150" y="330" width="430" height="52" rx="8" fill="#8fb4d0"/>
+    <rect x="587" y="330" width="213" height="52" rx="8" fill="#4a86b4"/>
+  </g>
+  <text x="365" y="361" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1f3852">5 yrs</text>
+  <path d="M598,363 L612,363 L605,349 Z" fill="#ffffff"/>
+  <text x="708" y="353" text-anchor="middle" font-size="11.5" font-weight="700" fill="#ffffff">up to 5.5 yrs (most)</text>
+  <text x="708" y="371" text-anchor="middle" font-size="10.5" font-weight="700" fill="#d5eee6">+$2.59B net income</text>
+
+  <!-- time axis -->
+  <line x1="150" y1="398" x2="800" y2="398" stroke="#c8d2e0" stroke-width="1.5"/>
   <g font-size="11" fill="#5a6880" text-anchor="middle">
-    <text x="130" y="449">2022</text>
-    <text x="279" y="449">2023</text>
-    <text x="428" y="449">2024</text>
-    <text x="577" y="449">2025</text>
-    <text x="726" y="449">2026</text>
-  </g>
-
-  <!-- Microsoft: 4 yrs -> 6 yrs from FY2023 (July 2022 assessment) -->
-  <path d="M130,393 L204,393 L204,117 L800,117" fill="none" stroke="#2f6f9f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <!-- Alphabet: 4 yrs -> 6 yrs, January 2023 -->
-  <path d="M130,393 L279,393 L279,128 L800,128" fill="none" stroke="#5b7fa6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="9 6"/>
-
-  <!-- Amazon: 5 -> 6 (Jan 2024) -> 5 for a subset (Jan 2025) -->
-  <path d="M130,253 L428,253 L428,122 L577,122 L577,253 L800,253" fill="none" stroke="#c2603f" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <!-- Meta: 5 -> 5.5, January 2025 -->
-  <path d="M130,263 L577,263 L577,190 L800,190" fill="none" stroke="#2e7d6a" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <text x="577" y="88" text-anchor="middle" font-size="10.5" font-weight="700" fill="#c2603f" letter-spacing="1.2">1 JANUARY 2025</text>
-
-  <!-- effect badges; the direction cue lives here, not as a floating arrow -->
-  <g filter="url(#lift)"><rect x="596" y="146" width="184" height="30" rx="15" fill="#eef6f3" stroke="#bcdad1" stroke-width="1.5"/></g>
-  <path d="M612,153 L619,166 L605,166 Z" fill="#2e7d6a"/>
-  <text x="702" y="165" text-anchor="middle" font-size="11.5" font-weight="700" fill="#2e7d6a">Meta: +$2.59B net income</text>
-
-  <g filter="url(#lift)"><rect x="596" y="288" width="184" height="30" rx="15" fill="#fdf1ec" stroke="#e8c3b3" stroke-width="1.5"/></g>
-  <path d="M605,297 L619,297 L612,310 Z" fill="#c2603f"/>
-  <text x="702" y="307" text-anchor="middle" font-size="11.5" font-weight="700" fill="#c2603f">Amazon: −$1.0B net income</text>
-
-  <!-- series labels -->
-  <g font-size="11.5" font-weight="700">
-    <text x="240" y="108" fill="#2f6f9f">Microsoft</text>
-    <text x="316" y="148" fill="#5b7fa6">Alphabet</text>
-    <text x="440" y="112" fill="#c2603f">Amazon</text>
-    <text x="330" y="283" fill="#2e7d6a">Meta</text>
-  </g>
-
-  <!-- Amazon's reversal, the detail most commentary misses -->
-  <g font-size="10.5" fill="#8592a6">
-    <text x="552" y="228" text-anchor="end">Amazon had raised 5→6 just a year earlier</text>
+    <text x="150" y="417">2022</text>
+    <text x="294" y="417">2023</text>
+    <text x="439" y="417">2024</text>
+    <text x="583" y="417">2025</text>
+    <text x="728" y="417">2026</text>
   </g>
 
   <!-- closing note -->
-  <g filter="url(#lift)"><rect x="46" y="474" width="788" height="94" rx="14" fill="url(#noteG)" stroke="#dde3ec" stroke-width="1.5"/></g>
-  <text x="70" y="502" font-size="13" font-weight="700" fill="#12203a">Same asset class. Same stated cause. Same effective date. Opposite conclusions.</text>
-  <text x="70" y="524" font-size="11.5" fill="#5a6880">Amazon blamed "the increased pace of technology development, particularly in the area of artificial intelligence and machine</text>
-  <text x="70" y="541" font-size="11.5" fill="#5a6880">learning" for shortening. Microsoft had cited "advances in technology" for lengthening. Amazon's cut covers a subset of servers</text>
-  <text x="70" y="558" font-size="11.5" fill="#5a6880">and networking equipment; Meta's extension covers most servers and network assets. Neither firm restates the years already booked.</text>
+  <g filter="url(#lift)"><rect x="46" y="440" width="788" height="130" rx="14" fill="url(#noteG)" stroke="#dde3ec" stroke-width="1.5"/></g>
+  <text x="70" y="470" font-size="13" font-weight="700" fill="#12203a">Same asset class. Same stated cause. Same effective date. Opposite conclusions.</text>
+  <text x="70" y="494" font-size="11.5" fill="#5a6880">Amazon blamed "the increased pace of technology development, particularly in the area of artificial intelligence and machine</text>
+  <text x="70" y="512" font-size="11.5" fill="#5a6880">learning" for shortening. Microsoft had cited "advances in technology" for lengthening. Amazon's cut covers a subset of servers</text>
+  <text x="70" y="530" font-size="11.5" fill="#5a6880">and networking equipment; Meta's extension covers most servers and network assets. Amazon had raised the very same number</text>
+  <text x="70" y="548" font-size="11.5" fill="#5a6880">to six years just one year earlier. Neither firm restates the years already booked.</text>
 </svg>
