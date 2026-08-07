@@ -18,12 +18,6 @@
     <filter id="lift" x="-30%" y="-30%" width="160%" height="160%">
       <feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="#20344f" flood-opacity="0.12"/>
     </filter>
-    <marker id="down" markerWidth="10" markerHeight="10" refX="3" refY="7.5" orient="auto">
-      <path d="M0,0 L6,0 L3,7.5 Z" fill="#c2603f"/>
-    </marker>
-    <marker id="up" markerWidth="10" markerHeight="10" refX="3" refY="0" orient="auto">
-      <path d="M0,7.5 L6,7.5 L3,0 Z" fill="#2e7d6a"/>
-    </marker>
   </defs>
 
   <rect x="10" y="10" width="860" height="600" rx="20" fill="url(#cardG)" stroke="#e4e9f1" stroke-width="1.5" filter="url(#soft)"/>
@@ -70,18 +64,16 @@
   <!-- Meta: 5 -> 5.5, January 2025 -->
   <path d="M130,263 L577,263 L577,190 L800,190" fill="none" stroke="#2e7d6a" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- fork emphasis arrows -->
-  <line x1="590" y1="132" x2="590" y2="240" stroke="#c2603f" stroke-width="2" marker-end="url(#down)" opacity="0.75"/>
-  <line x1="564" y1="253" x2="564" y2="202" stroke="#2e7d6a" stroke-width="2" marker-end="url(#up)" opacity="0.75"/>
-
   <text x="577" y="88" text-anchor="middle" font-size="10.5" font-weight="700" fill="#c2603f" letter-spacing="1.2">1 JANUARY 2025</text>
 
-  <!-- effect badges -->
-  <g filter="url(#lift)"><rect x="606" y="146" width="150" height="30" rx="15" fill="#eef6f3" stroke="#bcdad1" stroke-width="1.5"/></g>
-  <text x="681" y="166" text-anchor="middle" font-size="11.5" font-weight="700" fill="#2e7d6a">Meta: +$2.59B net income</text>
+  <!-- effect badges; the direction cue lives here, not as a floating arrow -->
+  <g filter="url(#lift)"><rect x="596" y="146" width="184" height="30" rx="15" fill="#eef6f3" stroke="#bcdad1" stroke-width="1.5"/></g>
+  <path d="M612,153 L619,166 L605,166 Z" fill="#2e7d6a"/>
+  <text x="702" y="165" text-anchor="middle" font-size="11.5" font-weight="700" fill="#2e7d6a">Meta: +$2.59B net income</text>
 
-  <g filter="url(#lift)"><rect x="606" y="288" width="150" height="30" rx="15" fill="#fdf1ec" stroke="#e8c3b3" stroke-width="1.5"/></g>
-  <text x="681" y="308" text-anchor="middle" font-size="11.5" font-weight="700" fill="#c2603f">Amazon: −$1.0B net income</text>
+  <g filter="url(#lift)"><rect x="596" y="288" width="184" height="30" rx="15" fill="#fdf1ec" stroke="#e8c3b3" stroke-width="1.5"/></g>
+  <path d="M605,297 L619,297 L612,310 Z" fill="#c2603f"/>
+  <text x="702" y="307" text-anchor="middle" font-size="11.5" font-weight="700" fill="#c2603f">Amazon: −$1.0B net income</text>
 
   <!-- series labels -->
   <g font-size="11.5" font-weight="700">
