@@ -16,6 +16,13 @@ Then I checked what the four companies spending the most money in the world on A
 
 Not analysts arguing with companies. The companies disagreeing with each other, in public, about the same asset class, taking effect on the same date.
 
+<div class="synapse-watch" style="max-width:320px;margin:2rem auto;">
+  <div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px;">
+    <iframe src="https://www.youtube-nocookie.com/embed/nkf1UkoFxYo" title="The AI boom runs on a guess about how long a server lasts — a Midweek Synapse Short" loading="lazy" allowfullscreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+  </div>
+  <p style="text-align:center;margin:.6rem 0 0;font-size:.9rem;"><em>The 53-second version. Watch on <a href="https://youtube.com/shorts/nkf1UkoFxYo">YouTube</a> or <a href="https://www.instagram.com/p/DbxPv5ushud/">Instagram</a>.</em></p>
+</div>
+
 ## Why a number nobody talks about moves billions
 
 Depreciation spreads what you paid for something across the years you expect it to earn. Buy a server for six hundred thousand dollars, assume six years, and you book a hundred thousand a year as expense. Assume four years, and you book a hundred and fifty thousand. Same server, same cash out the door, different profit on the page.
