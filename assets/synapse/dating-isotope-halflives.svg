@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="880" height="430" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" role="img" aria-labelledby="t2 d2">
+  <title id="t2">Half-lives of the isotope pairs used for dating, on a logarithmic scale</title>
+  <desc id="d2">Five horizontal bars on a logarithmic scale of years, running from one thousand years on the left to one trillion years on the right. Carbon-14 decaying to nitrogen-14 has a half-life of 5,730 years and is the only pair archaeology uses. The remaining four are used on rock: potassium-40 to argon-40 at 1.248 billion years, uranium-238 to lead-206 at 4.47 billion years, rubidium-87 to strontium-87 at 48.8 billion years, and samarium-147 to neodymium-143 at 106 billion years. Because the scale is logarithmic, the gap between carbon-14 and the shortest of the rock pairs is more than five orders of magnitude, roughly a factor of two hundred thousand.</desc>
+
+  <defs>
+    <linearGradient id="cardG2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f3f6fa"/>
+    </linearGradient>
+    <filter id="soft2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#1a2740" flood-opacity="0.10"/>
+    </filter>
+    <filter id="lift2" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#20344f" flood-opacity="0.11"/>
+    </filter>
+  </defs>
+
+  <rect x="10" y="10" width="860" height="410" rx="20" fill="url(#cardG2)" stroke="#e4e9f1" stroke-width="1.5" filter="url(#soft2)"/>
+
+  <text x="440" y="44" text-anchor="middle" font-size="11" font-weight="700" fill="#2f6f9f" letter-spacing="1.5">ONE DECAY LAW, CLOCKS THAT DIFFER BY A FACTOR OF TWO HUNDRED THOUSAND</text>
+  <text x="440" y="64" text-anchor="middle" font-size="11.5" fill="#5a6880">Half-life of each parent isotope. Logarithmic scale, so every step right is a tenfold longer clock.</text>
+
+  <text x="220" y="96" text-anchor="end" font-size="10" font-weight="700" fill="#c2603f" letter-spacing="1.2">ARCHAEOLOGY</text>
+  <text x="220" y="188" text-anchor="end" font-size="10" font-weight="700" fill="#2f6f9f" letter-spacing="1.2">PLANETARY SCIENCE</text>
+
+  <!-- carbon-14 -->
+  <text x="220" y="125" text-anchor="end" font-size="11.5" font-weight="700" fill="#12203a">carbon-14 → nitrogen-14</text>
+  <g filter="url(#lift2)"><rect x="230" y="107" width="50" height="26" rx="7" fill="#c2603f"/></g>
+  <text x="290" y="125" font-size="12" font-weight="700" fill="#a8492a">5,730 years</text>
+
+  <!-- potassium-40 -->
+  <text x="220" y="217" text-anchor="end" font-size="11.5" font-weight="700" fill="#12203a">potassium-40 → argon-40</text>
+  <g filter="url(#lift2)"><rect x="230" y="199" width="400" height="26" rx="7" fill="#2f6f9f"/></g>
+  <text x="618" y="217" text-anchor="end" font-size="12" font-weight="700" fill="#ffffff">1.248 billion years</text>
+
+  <!-- uranium-238 -->
+  <text x="220" y="265" text-anchor="end" font-size="11.5" font-weight="700" fill="#12203a">uranium-238 → lead-206</text>
+  <g filter="url(#lift2)"><rect x="230" y="247" width="436" height="26" rx="7" fill="#2f6f9f"/></g>
+  <text x="654" y="265" text-anchor="end" font-size="12" font-weight="700" fill="#ffffff">4.47 billion years</text>
+
+  <!-- rubidium-87 -->
+  <text x="220" y="313" text-anchor="end" font-size="11.5" font-weight="700" fill="#12203a">rubidium-87 → strontium-87</text>
+  <g filter="url(#lift2)"><rect x="230" y="295" width="504" height="26" rx="7" fill="#2f6f9f"/></g>
+  <text x="722" y="313" text-anchor="end" font-size="12" font-weight="700" fill="#ffffff">48.8 billion years</text>
+
+  <!-- samarium-147 -->
+  <text x="220" y="361" text-anchor="end" font-size="11.5" font-weight="700" fill="#12203a">samarium-147 → neodymium-143</text>
+  <g filter="url(#lift2)"><rect x="230" y="343" width="526" height="26" rx="7" fill="#2f6f9f"/></g>
+  <text x="744" y="361" text-anchor="end" font-size="12" font-weight="700" fill="#ffffff">106 billion years</text>
+
+  <!-- axis -->
+  <line x1="230" y1="386" x2="820" y2="386" stroke="#c3ccd9" stroke-width="1.5"/>
+  <g font-size="10.5" fill="#5a6880" text-anchor="middle">
+    <line x1="230" y1="386" x2="230" y2="392" stroke="#c3ccd9" stroke-width="1.5"/><text x="230" y="406">1,000 yrs</text>
+    <line x1="427" y1="386" x2="427" y2="392" stroke="#c3ccd9" stroke-width="1.5"/><text x="427" y="406">1 million</text>
+    <line x1="624" y1="386" x2="624" y2="392" stroke="#c3ccd9" stroke-width="1.5"/><text x="624" y="406">1 billion</text>
+    <line x1="820" y1="386" x2="820" y2="392" stroke="#c3ccd9" stroke-width="1.5"/><text x="820" y="406">1 trillion</text>
+  </g>
+</svg>

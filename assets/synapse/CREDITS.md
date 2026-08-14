@@ -34,5 +34,7 @@ adding a post. Two kinds:
 | two-reframed-one-open.svg | Three questions about what life needs, tested against Enceladus: two reframed, one an open question (ocean age) | self-made | own work |
 | three-theories-llm-test.svg | Three theories of disruption (Schumpeter, Christensen, Marketing/Rogers) tested against the frontier LLM: fits, doesn't fit, fits | self-made | own work |
 | gpu-useful-life-divergence.svg | Assumed server useful life at Microsoft, Alphabet, Amazon and Meta, 2022 to 2026, showing the 1 Jan 2025 fork where Amazon shortened and Meta lengthened. Every value read directly from the firm's own 10-K | self-made | own work |
+| dating-isotope-halflives.svg | Half-lives of the five parent isotopes used for dating, on a log scale, split by which field uses which. Values from the NPS half-life table, except potassium-40 which uses the current 1.248 Bya figure rather than the older 1.31 carried by the textbook | self-made | own work |
+| apollo11-two-answers.svg | The two Apollo 11 ages published in 1970 (crystalline rocks at 3.65 Bya by Rb-Sr, soil and breccia at 4.6 to 4.66 Bya) plotted against the 4.567 Bya age of the solar system, which the soil ages exceed | self-made | own work |
 
 Originals and their full provenance live with the video episodes in `~/Works/synapse-video/episodes/*/PROVENANCE.md`.
