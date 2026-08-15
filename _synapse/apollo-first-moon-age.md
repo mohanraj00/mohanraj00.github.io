@@ -14,6 +14,13 @@ The solar system is 4.567 billion years old.
 
 Nothing in it can be older than that, so the number was impossible on its face. And yet the measurement was careful, the method was sound, and no one had made an arithmetic error. Getting to why takes you through the physics that dates a moon rock, which turns out to be the same physics that dates a mammoth bone.
 
+<div class="synapse-watch" style="max-width:320px;margin:2rem auto;">
+  <div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px;">
+    <iframe src="https://www.youtube-nocookie.com/embed/7KWyk2HSWcQ" title="Apollo's first Moon age came out older than the solar system — a Midweek Synapse Short" loading="lazy" allowfullscreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+  </div>
+  <p style="text-align:center;margin:.6rem 0 0;font-size:.9rem;"><em>The 56-second version. Watch on <a href="https://youtube.com/shorts/7KWyk2HSWcQ">YouTube</a> or <a href="https://www.instagram.com/p/DcCi-KdMQro/">Instagram</a>.</em></p>
+</div>
+
 ## One law, clocks that differ by a factor of two hundred thousand
 
 Radiocarbon dating and radiometric dating get talked about as cousins. They are closer than that. They are one measurement run twice.
