@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 380" width="880" height="380" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" role="img" aria-labelledby="thames-title thames-desc">
+  <title id="thames-title">The Thames freeze record against the lifetime of Old London Bridge, 1200 to 1900</title>
+  <desc id="thames-desc">A linear time axis from 1200 to 1900. An upper bar spans 1209 to 1831, the lifetime of medieval Old London Bridge and its nineteen narrow arches set on timber starlings. A lower bar spans 1400 to 1831, the window in which the Thames is recorded as freezing at London in roughly twenty-four winters, with tick marks at the six documented major frost fairs of 1608, 1684, 1716, 1740, 1789 and 1814. A vertical line at 1831 marks the opening of the five-arch replacement bridge. Both bars end at that line and the freeze record stops with it, showing that the engineering confound was removed before the climate changed.</desc>
+
+  <defs>
+    <linearGradient id="thCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f3f6fa"/>
+    </linearGradient>
+    <filter id="thSoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#1a2740" flood-opacity="0.10"/>
+    </filter>
+    <filter id="thLift" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#20344f" flood-opacity="0.11"/>
+    </filter>
+  </defs>
+
+  <rect x="10" y="10" width="860" height="360" rx="20" fill="url(#thCard)" stroke="#e4e9f1" stroke-width="1.5" filter="url(#thSoft)"/>
+
+  <text x="440" y="48" text-anchor="middle" font-size="11" font-weight="700" fill="#2f6f9f" letter-spacing="1.5">A CLIMATE SIGNAL WITH A LARGE ENGINEERING TERM IN IT</text>
+  <text x="440" y="70" text-anchor="middle" font-size="11.5" fill="#5a6880">When the Thames is recorded as freezing, against how long the bridge that dammed it stood.</text>
+
+  <!-- 1831: the replacement -->
+  <text x="830" y="104" text-anchor="end" font-size="10" font-weight="700" fill="#c2603f" letter-spacing="1.2">1831  FIVE-ARCH BRIDGE OPENS</text>
+  <line x1="768" y1="116" x2="768" y2="268" stroke="#c2603f" stroke-width="1.5" stroke-dasharray="5,4"/>
+
+  <!-- axis -->
+  <text x="200" y="136" text-anchor="middle" font-size="9" fill="#8794a8">1200</text>
+  <text x="290" y="136" text-anchor="middle" font-size="9" fill="#8794a8">1300</text>
+  <text x="380" y="136" text-anchor="middle" font-size="9" fill="#8794a8">1400</text>
+  <text x="470" y="136" text-anchor="middle" font-size="9" fill="#8794a8">1500</text>
+  <text x="560" y="136" text-anchor="middle" font-size="9" fill="#8794a8">1600</text>
+  <text x="650" y="136" text-anchor="middle" font-size="9" fill="#8794a8">1700</text>
+  <text x="740" y="136" text-anchor="middle" font-size="9" fill="#8794a8">1800</text>
+  <text x="830" y="136" text-anchor="middle" font-size="9" fill="#8794a8">1900</text>
+  <line x1="200" y1="144" x2="830" y2="144" stroke="#d5dde8" stroke-width="1"/>
+
+  <!-- lane 1: the bridge -->
+  <text x="188" y="184" text-anchor="end" font-size="12" font-weight="700" fill="#12203a">Old London Bridge</text>
+  <text x="188" y="198" text-anchor="end" font-size="9.5" fill="#7a8699">19 arches on starlings</text>
+  <g filter="url(#thLift)">
+    <rect x="208" y="172" width="560" height="28" rx="6" fill="#2f6f9f"/>
+  </g>
+  <text x="218" y="190" font-size="10.5" font-weight="700" fill="#ffffff">standing 1209 to 1831</text>
+
+  <!-- lane 2: the freeze record -->
+  <text x="188" y="240" text-anchor="end" font-size="12" font-weight="700" fill="#12203a">Thames frozen at London</text>
+  <text x="188" y="254" text-anchor="end" font-size="9.5" fill="#7a8699">recorded winters, 1400 to 1831</text>
+  <rect x="380" y="224" width="388" height="28" rx="6" fill="#cfdcea"/>
+  <text x="390" y="242" font-size="10.5" font-weight="700" fill="#3f5570">roughly 24 recorded freezes</text>
+
+  <!-- documented major frost fairs -->
+  <rect x="566" y="224" width="3" height="28" fill="#12203a" opacity="0.55"/>
+  <rect x="635" y="224" width="3" height="28" fill="#12203a" opacity="0.55"/>
+  <rect x="664" y="224" width="3" height="28" fill="#12203a" opacity="0.55"/>
+  <rect x="686" y="224" width="3" height="28" fill="#12203a" opacity="0.55"/>
+  <rect x="730" y="224" width="3" height="28" fill="#12203a" opacity="0.55"/>
+  <rect x="752" y="224" width="3" height="28" fill="#c2603f"/>
+
+  <!-- last fair callout -->
+  <line x1="753" y1="252" x2="753" y2="272" stroke="#c2603f" stroke-width="1"/>
+  <text x="746" y="286" text-anchor="end" font-size="10" font-weight="700" fill="#c2603f">last frost fair, 1 to 5 February 1814</text>
+
+  <!-- legend -->
+  <line x1="20" y1="302" x2="860" y2="302" stroke="#e4e9f1" stroke-width="1"/>
+  <rect x="20" y="313" width="3" height="10" fill="#12203a" opacity="0.55"/>
+  <text x="32" y="322" font-size="9.5" fill="#7a8699">documented major frost fairs: 1608, 1684, 1716, 1740, 1789, 1814</text>
+
+  <text x="20" y="344" font-size="10.5" fill="#5a6880">The freeze record begins and ends inside one bridge's lifetime. Nineteen narrow arches on timber starlings dammed the flow and let ice pack against them;</text>
+  <text x="20" y="360" font-size="10.5" fill="#5a6880">the five-arch replacement did not. Later embanking works of 1865 to 1870 deepened the channel further, but arrived after the freezing had already stopped.</text>
+</svg>
