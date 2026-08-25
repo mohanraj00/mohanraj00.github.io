@@ -134,7 +134,7 @@ Three pages needed correcting and a fourth needed writing, and none of those are
 
 The Little Ice Age page states a superseded explanation for Norse Greenland, needs the engineering confound attached to its Thames evidence, and has the 1410 date wrong. The Maunder Minimum page should say plainly that the Little Ice Age both predates and outlasts it. The solar constant page should acknowledge the proposed ultraviolet route and its contested standing. And nothing in my notes covers the volcanic and sea-ice mechanism that is now the leading account, which is a strange gap given it is the answer.
 
-There is one more thing I did not expect to find. Hvalsey Church is still standing, near Qaqortoq in South Greenland, inside a UNESCO landscape. The best-preserved Norse ruin in the country is the building where the last dated event in the whole record took place. It has gone on the list.
+There is one more thing I did not expect to find. Hvalsey Church is still standing, near Qaqortoq in South Greenland, inside Kujataa, the UNESCO world heritage site covering the Norse and Inuit farming country there. The best-preserved Norse ruin in the country is the building where the last dated event in the whole record took place. It has gone on the list.
 
 ## Sources
 
