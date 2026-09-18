@@ -18,6 +18,13 @@ It is also wrong, on three independent counts.
 
 What made this one worth writing up is not that a textbook overreached. It is that the refutation was already sitting in my own wiki, spread across three pages that had never once cited each other. I had all the pieces. I had filed them in different rooms.
 
+<div class="synapse-watch" style="max-width:320px;margin:2rem auto;">
+  <div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px;">
+    <iframe src="https://www.youtube-nocookie.com/embed/lMDJ5OEtvxE" title="The Sun went quiet for 70 years. The cold lasted 500. A Midweek Synapse Short" loading="lazy" allowfullscreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+  </div>
+  <p style="text-align:center;margin:.6rem 0 0;font-size:.9rem;"><em>The 64-second version. Watch on <a href="https://youtube.com/shorts/lMDJ5OEtvxE">YouTube</a> or <a href="https://www.instagram.com/p/DdcE8BPMRl_/">Instagram</a>.</em></p>
+</div>
+
 ## The dates do not line up, and I was holding both halves
 
 My page on the Maunder Minimum gives its span as 1645 to 1715.
