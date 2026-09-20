@@ -43,6 +43,8 @@ There is no agreed start date for the Little Ice Age. What every candidate has i
 
 Owens and colleagues put it flatly. The timing of the features, they write, is not suggestive of causation and should not, in isolation, be used as evidence of significant solar forcing of climate.
 
+*Correction, 20 September 2026.* A reader pointed out, rightly, that the Maunder Minimum was not the only quiet spell in the window. The carbon-14 and beryllium-10 records give a whole series of grand solar minima: Oort around 1040, Wolf around 1300, Spörer through the 1400s and early 1500s, Maunder, and a milder Dalton around 1800 ([Usoskin, 2017](https://link.springer.com/article/10.1007/s41116-017-0006-9)). Between them they cover most of the Little Ice Age on any of the chronologies above, and the Spörer Minimum sits under the fifteenth-century Pacific cold discussed below. So "one quiet Sun against five cold centuries" was the wrong framing, and the timing objection on its own cannot carry the argument. The next two objections, the size of the lever and the geography, are the ones that do.
+
 ## The lever is too small, and I was holding that too
 
 A third page in my notes, on the solar constant, records that the Sun's total output varies by only about 0.1 percent over a sunspot cycle, and probably by less than 1 percent over centuries.
@@ -150,6 +152,7 @@ There is one more thing I did not expect to find. Hvalsey Church is still standi
 - Neukom, R., et al. (2019). "No evidence for globally coherent warm and cold periods over the preindustrial Common Era." *Nature* 571, 550-554.
 - Zhao, B., et al. (2022). "Prolonged drying trend coincident with the demise of Norse settlement in southern Greenland." *Science Advances* 8(12).
 - Ineson, S., et al. (2011). "Solar forcing of winter climate variability in the Northern Hemisphere." *Nature Geoscience* 4, 753-757.
+- Usoskin, I. G. (2017). "A history of solar activity over millennia." *Living Reviews in Solar Physics* 14, 3. (Added with the 20 September 2026 correction.)
 - Chiodo, G., et al. (2019). "Insignificant influence of the 11-year solar cycle on the North Atlantic Oscillation." *Nature Geoscience* 12, 94-99.
 - IPCC (2021). *Climate Change 2021: The Physical Science Basis*, Working Group I contribution to the Sixth Assessment Report, Chapter 7.
 - [London Museum, "Frost fairs: festivities on a frozen River Thames."](https://www.londonmuseum.org.uk/collections/london-stories/frost-fairs-festivities-frozen-river-thames/)
