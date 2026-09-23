@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 560" width="640" height="560" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" role="img" aria-labelledby="dtd-title dtd-desc">
+  <title id="dtd-title">Delaware C corporation: two decisions in one name</title>
+  <desc id="dtd-desc">The phrase Delaware C corporation split into its two halves. The C corporation half is about how the company is taxed, and it buys three things: a tax break when owners sell their shares, known as QSBS; keeping the venture fund's own investors out of US tax; and real shares of stock, meaning preferred shares for investors and stock options for employees. The Delaware half is about where the company is registered, and it buys a specialist business court with judges and no juries, plus a long record of court decisions investors can predict. A footer notes that a C corporation in any state gets the three tax benefits, and Delaware adds the court.</desc>
+  <defs>
+    <linearGradient id="dtd-card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f3f6fa"/></linearGradient>
+    <linearGradient id="dtd-cool" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef4fa"/><stop offset="1" stop-color="#e3edf6"/></linearGradient>
+    <linearGradient id="dtd-pane" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f7f9fc"/></linearGradient>
+    <filter id="dtd-soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#1a2740" flood-opacity="0.10"/></filter>
+    <filter id="dtd-lift" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="#20344f" flood-opacity="0.12"/></filter>
+  </defs>
+  <rect x="10" y="10" width="620" height="540" rx="20" fill="url(#dtd-card)" stroke="#e4e9f1" stroke-width="1.5" filter="url(#dtd-soft)"/>
+
+  <text x="320" y="62" text-anchor="middle" font-size="26" font-weight="700" fill="#12203a"><tspan fill="#c2603f">Delaware</tspan> <tspan fill="#2f6f9f">C corporation</tspan></text>
+  <text x="320" y="90" text-anchor="middle" font-size="15" fill="#5a6880">sounds like one choice. It is two.</text>
+
+  <!-- C corp panel -->
+  <g filter="url(#dtd-lift)"><rect x="40" y="114" width="560" height="232" rx="14" fill="url(#dtd-cool)" stroke="#cdddec" stroke-width="1.5"/></g>
+  <text x="64" y="146" font-size="13" font-weight="700" fill="#2f6f9f" letter-spacing="1.4">C CORPORATION = HOW IT IS TAXED</text>
+  <g font-size="15" fill="#31405a">
+    <circle cx="80" cy="184" r="15" fill="#2f6f9f"/><text x="80" y="189" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">1</text>
+    <text x="108" y="182" font-size="17" font-weight="700" fill="#12203a">A tax break when owners sell</text>
+    <text x="108" y="204">part or all of the gain can be tax-free (QSBS)</text>
+    <circle cx="80" cy="248" r="15" fill="#2f6f9f"/><text x="80" y="253" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">2</text>
+    <text x="108" y="246" font-size="17" font-weight="700" fill="#12203a">Keeps the fund's investors out of US tax</text>
+    <text x="108" y="268">the pensions and universities behind the money</text>
+    <circle cx="80" cy="312" r="15" fill="#2f6f9f"/><text x="80" y="317" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">3</text>
+    <text x="108" y="310" font-size="17" font-weight="700" fill="#12203a">Real shares of stock</text>
+    <text x="108" y="332">preferred shares for investors, options for staff</text>
+  </g>
+
+  <!-- Delaware panel -->
+  <g filter="url(#dtd-lift)"><rect x="40" y="366" width="560" height="112" rx="14" fill="url(#dtd-pane)" stroke="#efcfc2" stroke-width="1.5"/></g>
+  <text x="64" y="398" font-size="13" font-weight="700" fill="#c2603f" letter-spacing="1.4">DELAWARE = WHERE IT IS REGISTERED</text>
+  <g font-size="15" fill="#31405a">
+    <text x="64" y="428" font-size="17" font-weight="700" fill="#12203a">A specialist business court</text>
+    <text x="64" y="452">judges, no juries, and decades of predictable rulings</text>
+  </g>
+
+  <text x="320" y="514" text-anchor="middle" font-size="15" font-weight="600" fill="#5a6880">A C corporation in any state gets 1, 2 and 3. Delaware adds the court.</text>
+</svg>

@@ -1,97 +1,95 @@
 ---
-title: "Why a two-person startup is organised around a university endowment"
+title: "Why nearly every startup is a Delaware C corporation"
 date: 2026-09-23
 synapse: 10
 tags: [entrepreneurship, accounting, finance, startups, venture-capital, tax, grounding]
-excerpt: "Every business textbook calls the C corporation the tax-expensive way to own a company. Nearly every venture-backed American startup is one anyway. The textbook's objection turns out to be aimed at a payment startups never make, and the real reason for the choice sits with the tax status of the fund's own investors, three layers up the capital chain."
+excerpt: "Business textbooks call the C corporation the expensive way to own a company, because its profits get taxed twice. Nearly every startup that raises venture money picks it anyway. The reason has less to do with the startup's own taxes than with a university endowment several steps up the chain of money."
 image: /assets/heroes/delaware-c-corporation-default.png
 hero_hue: 168
 ---
 
-Every business textbook teaches the same table. A C corporation pays tax on its profits, and then its shareholders pay tax again when those profits reach them as dividends. That is double taxation, and it sits in the minus column. The LLC exists largely to avoid it. Its income passes straight through to the owners and is taxed once.
+Start a company in the United States and you have to pick a legal form. Business textbooks warn that one of them, the C corporation, is the expensive choice, because its profits get taxed twice.
 
-And yet almost every venture-backed startup in the United States is a C corporation, usually incorporated in Delaware. These are the companies with the most expensive legal and tax advice in the economy, and they all pick the structure the textbook flags as the costly one.
+Yet nearly every startup that raises venture capital picks exactly that form, usually registered in Delaware. These companies have some of the best-paid lawyers and accountants in the economy, and they all choose the option the textbook flags as costly.
 
-The resolution has two parts. The objection barely applies to them. And the real reason for the choice has less to do with the startup's own tax bill than with the tax status of a university endowment three layers up the capital chain.
+The reason surprised me. It has less to do with the startup's own taxes than with a university endowment several steps up the chain of money.
 
-One note on scope. Everything here is US federal tax law. It describes why an institutional capital chain forces a particular legal structure. It is not advice on how any founder should organise a company.
+First, four terms that the rest of this depends on.
 
-## The objection is aimed at a dividend
+<img src="/assets/synapse/delaware-glossary.svg" alt="A glossary card with four entries. C corporation: a company that is a taxpayer in its own right, paying tax on its profits before its owners see any. LLC: a company whose profits pass straight to its owners untaxed, with the owners paying the tax on their own returns. Dividend: a share of the company's profits paid out to its owners in cash. Venture fund: a pool of money, much of it from pension funds, universities and foreign institutions, that buys stakes in startups." style="max-width:100%;height:auto;">
 
-Double taxation has a trigger, and the trigger is a distribution. The corporation pays tax once when it earns a profit. The shareholders pay a second time only when that after-tax profit is paid out to them.
+## "Taxed twice" mostly never happens
 
-A startup on the venture path does very little that pulls that trigger. In the early years it loses money, so there is no corporate profit to tax. When it does make money, it reinvests rather than paying dividends. And its founders, employees and investors get their return by selling shares, in an acquisition or an IPO, which is taxed as a capital gain in their own hands, once.
+The second tax has a trigger, and the trigger is a dividend. A company pays tax on its profit, then hands what is left to its owners, and the owners pay tax on it again.
 
-There is one exception. If a buyer purchases the company's *assets* rather than its shares, the corporation pays tax on its gain, and the shareholders pay again when the proceeds are distributed to them. That is the textbook's double tax, arriving at the finish line. It is one reason acquisitions of venture-backed companies are usually structured as mergers that the tax code treats as a sale of stock, with a single layer of tax.
+A startup almost never pulls that trigger. It loses money for years, so there is no profit to tax. When it does make money, it reinvests. And its owners get paid by selling their shares when the company is bought or goes public, which is taxed once, as a gain on the sale.
 
-So the minus column is real. It is real for a mature company that pays dividends, and it mostly never fires for a young one that does not.
+<img src="/assets/synapse/delaware-taxed-twice.svg" alt="Two columns of four steps. Left, a company that pays dividends: it earns 100 dollars of profit, pays 21 dollars of company tax, pays the remaining 79 dollars to its owners as a dividend, and the owners pay tax again on that 79 dollars. Labelled taxed twice. Right, a venture-backed startup: it loses money for years so there is no company tax, reinvests everything so no dividend is paid, its owners sell their shares in an acquisition or IPO, and they pay tax once on the gain. Labelled taxed once." style="max-width:100%;height:auto;">
 
-## Three things only a corporation can do
+*The $21 is the US federal corporate rate of 21 percent. The textbook's warning is real for the company on the left. It rarely applies to the one on the right.*
 
-If the cost is small, what is the benefit? It turns out to be three specific features, each available only to a corporation, and each one load-bearing.
+There is one exception worth knowing. If a buyer purchases the company's assets instead of its shares, the double tax comes back at the very end. That is one reason startup acquisitions are usually structured as a purchase of shares.
 
-**A tax break on the exit itself.** Section 1202 of the Internal Revenue Code covers what is called Qualified Small Business Stock. If you acquire shares directly from a qualifying small C corporation and hold them long enough, you can exclude much or all of your capital gain when you eventually sell. The gain it excludes is the gain from selling startup stock at an exit, which is the whole point of a venture-backed company.
+## Three things only a corporation can offer
 
-The conditions matter, because "founders pay no tax" is the wrong summary. The exclusion is capped per company, at the greater of $10 million or ten times what you paid, rising to $15 million for stock issued after 4 July 2025, when the rules were expanded. The company must be below a gross-assets ceiling when the stock is issued. The holding period is five years for older stock, with a tiered 50, 75 and 100 percent exclusion at three, four and five years for newer stock. And whole categories of business do not qualify at all, including law, health, consulting, finance and accounting ([26 U.S.C. §1202](https://www.law.cornell.edu/uscode/text/26/1202), the statute itself).
+If the cost is small, what is the benefit? Three things, and an LLC can offer none of them.
 
-The part that matters here is simpler. A company taxed as a partnership, which is what an LLC is by default, cannot issue this stock. Scored across the whole life of a successful startup, the C corporation comes out ahead on tax, because it is the only structure that can offer one of the largest breaks available to a founder.
+**1. A tax break when the owners sell.** A US rule known as QSBS, short for Qualified Small Business Stock, lets people who got their shares directly from a small C corporation, and held them for years, skip tax on part or all of their gain when they sell. The limits are real. The break is capped per company at $10 million or $15 million depending on when the shares were issued, or ten times what you paid if that is more. The holding period runs three to five years. And many kinds of business, including law, health, consulting and finance, do not qualify at all ([the statute](https://www.law.cornell.edu/uscode/text/26/1202)). But an LLC cannot offer it under any conditions.
 
-**The endowment three layers up.** This is the one that surprised me, and it has nothing to do with the startup's own taxes.
+**2. It keeps the investors' investors out of trouble.** This is the reason that has nothing to do with the startup's own taxes.
 
-A venture fund is usually itself a partnership. The money in it comes from its limited partners, and the [National Venture Capital Association](https://nvca.org/about-us/what-is-vc/) lists who they typically are: public and corporate pension funds, insurance companies, family offices, university endowments and foundations. Many of these are tax-exempt. Many others are foreign.
+A venture fund's money comes mostly from institutions: pension funds, university endowments, foundations, and foreign investors ([NVCA](https://nvca.org/about-us/what-is-vc/)). Many are tax-exempt, and many are not American.
 
-Now imagine the fund invests in a startup organised as an LLC. The LLC's business income is not taxed at the company. It passes up to its owners, which includes the fund. The fund is also a pass-through, so the income keeps going, up to the fund's own investors.
+If the fund owned part of an LLC, the LLC's profits would pass up through the fund and land on those institutions. A tax-exempt university would suddenly owe US tax. A foreign pension fund would have to file a US tax return. They joined the fund precisely to avoid that.
 
-At the top of the chain, that income is poison. For a tax-exempt endowment or pension fund it becomes unrelated business taxable income, and the institution owes US tax on it. For a foreign investor it becomes income effectively connected with a US business, which means filing a US tax return and having tax withheld.
+A C corporation stops it. The company pays its own tax, and nothing passes up the chain.
 
-<img src="/assets/synapse/delaware-capital-chain.svg" alt="Two side-by-side columns, each a three-layer capital chain: the fund's investors at the top (an endowment or pension fund, and a foreign institution), the venture fund in the middle, and the startup at the bottom. In the left column the startup is an LLC, and arrows carry its income up through the fund to both investors: the endowment now owes US tax on business income and the foreign institution has to file a US tax return. In the right column the startup is a C corporation, and a single short arrow ends at a label reading tax stops here, directly above the startup. The fund and investors above it are greyed out, with no tax filing." style="max-width:100%;height:auto;">
+<img src="/assets/synapse/delaware-capital-chain.svg" alt="Two columns, each the same three-step chain: the fund's investors at the top (pensions, universities, foreign institutions), the venture fund in the middle, the startup at the bottom. Left, the startup is an LLC: arrows carry its income up through the fund to the investors, who now owe US tax. Right, the startup is a C corporation: a label reading tax stops here sits on top of the startup, and the fund and investors above are greyed out with no US tax to deal with." style="max-width:100%;height:auto;">
 
-*The same startup, the same fund, the same investors. The only thing that changes is the legal form at the bottom, and it decides whose tax problem the startup's income becomes.*
+*Same startup, same fund, same investors. Only the legal form at the bottom changes, and it decides who ends up with the tax bill.*
 
-A C corporation stops all of this at the bottom. It is a taxpayer in its own right, so its income is taxed inside the company and goes no further. Nothing flows up to the fund, and nothing reaches the endowment until someone sells shares.
+Fund agreements commonly promise their tax-exempt investors to avoid this kind of income ([Morgan Lewis](https://www.morganlewis.com/-/media/files/special-topics/vcpefdeskbook/fundformation/vcpefdeskbook_accommodatingtaxexemptinvestors.pdf), a law firm guide for fund lawyers). So the simplest thing is for the startup to be a C corporation from day one.
 
-Fund agreements commonly promise tax-exempt investors that the fund will avoid generating this kind of income. The [Morgan Lewis deskbook on venture and private equity funds](https://www.morganlewis.com/-/media/files/special-topics/vcpefdeskbook/fundformation/vcpefdeskbook_accommodatingtaxexemptinvestors.pdf), a practitioner reference for fund lawyers, describes sponsors covenanting "not to incur, or to limit or minimize" it. When a fund does need to hold a pass-through business, it inserts a separate corporation between itself and the investment, which the trade calls a blocker. A startup that is already a C corporation does that blocking by itself, and it is simpler for everyone if it just starts that way.
+That is why a two-person company is set up around the tax status of a university it may never deal with directly.
 
-So the reason a two-person company is a C corporation has less to do with its own tax bill than with the tax status of a university endowment whose name it may never learn.
+**3. Real shares of stock.** Venture deals run on shares. Investors buy preferred shares, which come with extra rights such as being paid back first if the company is sold. Employees get stock options, and the tax-favoured kind can only be granted by a corporation ([the rule](https://www.law.cornell.edu/cfr/text/26/1.421-1)). An LLC has "membership interests" instead of shares, which fit none of this neatly.
 
-**Stock, in the literal sense.** The last feature is the plainest. The whole machinery of venture funding assumes shares of stock exist.
+What about the S corporation, the other form that avoids double tax? It is allowed only one class of shares, which rules out preferred shares, and a venture fund is not allowed to own it ([the statute](https://www.law.cornell.edu/uscode/text/26/1361)).
 
-Investors buy preferred stock, a separate class of shares with its own rights, such as getting paid back first in a sale. Employees receive stock options, and the tax-favoured kind, incentive stock options, can only be granted by a corporation. An LLC taxed as a partnership has membership interests rather than shares, and uses a different instrument called a profits interest. An LLC that elects to be taxed as a corporation can grant them, which is the exception that proves where the line sits ([Treas. Reg. §1.421-1](https://www.law.cornell.edu/cfr/text/26/1.421-1)).
+## Why Delaware, then?
 
-There is another single-tax structure, the S corporation, and it fails for venture use on its own terms. It is allowed only one class of stock, which rules out preferred stock, and it cannot have a partnership, a corporation or a nonresident alien as a shareholder, which rules out the fund ([26 U.S.C. §1361](https://www.law.cornell.edu/uscode/text/26/1361)).
+<img src="/assets/synapse/delaware-two-decisions.svg" alt="The phrase Delaware C corporation split into two halves. The C corporation half is how the company is taxed, and it buys three things: a tax break when owners sell, keeping the fund's investors out of US tax, and real shares of stock for investors and staff. The Delaware half is where the company is registered, and it buys a specialist business court with judges, no juries, and decades of predictable rulings. Footer: a C corporation in any state gets the three tax benefits; Delaware adds the court." style="max-width:100%;height:auto;">
 
-## Delaware is a separate decision
+"Delaware C corporation" is two choices bundled together. Everything above comes from being a C corporation, and a C corporation registered in Nevada or Wyoming would get all of it.
 
-"Delaware C corporation" sounds like one choice. It is two.
+Delaware adds a court. Its Court of Chancery hears business disputes before judges rather than juries ([Delaware Courts](https://www.courts.delaware.gov/chancery/judges.aspx)), and it has a long record of rulings, so investors can predict how a dispute will go.
 
-The C corporation half is everything above, the tax treatment and the instruments. The Delaware half is legal infrastructure. Delaware's Court of Chancery hears business disputes without juries, before a Chancellor and six Vice Chancellors ([Delaware Courts](https://www.courts.delaware.gov/chancery/judges.aspx)), and it has built a very deep body of precedent. That predictability is what investors pay for. Nothing about the tax reasons requires Delaware. A Nevada or Wyoming C corporation would get every one of them.
+Some large public companies have left Delaware since 2024, mostly for Nevada. It is fewer than the headlines suggested: 18 of the 28 reincorporation proposals at US public companies in 2025 were moves out of Delaware ([Glass Lewis](https://www.glasslewis.com/article/state-of-us-reincorporation-2025-growing-threat-reality-dexit)), a small fraction of the companies registered there ([Harvard Law School Forum](https://corpgov.law.harvard.edu/2026/01/29/is-dexit-real/)). Young startups still default to Delaware.
 
-The two halves are also under different kinds of pressure. Since 2024 some large public companies have moved out of Delaware, mostly to Nevada, after court decisions that controlling shareholders read as hostile. [Glass Lewis](https://www.glasslewis.com/article/state-of-us-reincorporation-2025-growing-threat-reality-dexit) counted 28 reincorporation proposals at US public companies in 2025, 18 of them leaving Delaware, and concluded that the fear was greater than the reality. A [January 2026 analysis on the Harvard Law School Forum on Corporate Governance](https://corpgov.law.harvard.edu/2026/01/29/is-dexit-real/) reached a similar view. The departures are visible, and they are a tiny fraction of Delaware's base. The movement is concentrated among mature, controller-dominated public companies. Early-stage startups still default to Delaware.
+## The $500,000 mistake
 
-The Delaware half rests on precedent, and precedent can shift. The C corporation half rests on the tax code's treatment of endowments and foreign investors, and that part has not moved.
+The real cost of all this is usually getting the structure wrong.
 
-## Where the cost actually shows up
+In a [2014 Stanford lecture](https://github.com/Atarity/How-To-Start-A-Startup), Y Combinator's general counsel, Carolynn Levy, told the story of a company that started as an LLC and later tried to convert into a Delaware corporation. The paperwork was done wrong. For a couple of years the company believed it was a Delaware corporation when legally it was still an LLC. The mistake surfaced in the middle of a big fundraise. Untangling it took four law firms, and the bill had reached $500,000 and was still climbing.
 
-The story that makes this concrete is one Carolynn Levy, Y Combinator's general counsel, told in a [2014 Stanford lecture](https://github.com/Atarity/How-To-Start-A-Startup) on the legal basics of starting a company.
+Nobody in that story paid double tax. What cost them was having the wrong structure when the investors arrived.
 
-A company was formed as an LLC, in a state she disguised with "I'll say Connecticut," and later converted into a Delaware corporation. The conversion was done wrong. For a couple of years the company believed it was a Delaware corporation while legally it was still an LLC. The mistake surfaced during a large fundraise, took four law firms to untangle, two in Delaware, one in the original state and one in Silicon Valley, and the bill at the time she told the story stood at five hundred thousand dollars and was still growing.
+## The takeaway
 
-Nobody in that story paid double taxation. The expensive thing was having the wrong structure when the capital chain arrived to check it.
+The textbook is right about companies that earn steady profits and pay dividends. A startup is a different kind of company: it gets paid by selling shares, its money comes from institutions with tax problems of their own, and its deals run on shares of stock.
 
-## What it means
+So a startup's legal form is decided less by what the startup does than by who stands behind the money.
 
-The textbook table is correct, and read on its own it is misleading. It scores entity types for a business that earns steady profits and pays them out, and for that business the C corporation's minus column is a real cost. A venture-backed startup is a different animal. Its return arrives as a stock sale, its owners include institutions with tax problems of their own, and its financing runs on classes of shares.
-
-So the legal form of a small company is set less by what the company does than by who is standing behind the money, and what the tax code does to them.
+*Everything here is US federal tax law, and it explains why the system works this way. It is not advice on how to set up your own company. Talk to a lawyer and an accountant for that.*
 
 ## Sources
 
-- [26 U.S.C. §1202](https://www.law.cornell.edu/uscode/text/26/1202), Qualified Small Business Stock, as amended in 2025 (statute text, Cornell LII).
-- [26 U.S.C. §1361](https://www.law.cornell.edu/uscode/text/26/1361), S corporation eligibility (statute text, Cornell LII).
-- [Treas. Reg. §1.421-1](https://www.law.cornell.edu/cfr/text/26/1.421-1), definitions for incentive stock options, including which entities count as corporations.
+- [26 U.S.C. §1202](https://www.law.cornell.edu/uscode/text/26/1202), Qualified Small Business Stock, as amended in 2025.
+- [26 U.S.C. §1361](https://www.law.cornell.edu/uscode/text/26/1361), S corporation rules.
+- [Treas. Reg. §1.421-1](https://www.law.cornell.edu/cfr/text/26/1.421-1), which entities can grant incentive stock options.
 - Morgan Lewis, [*VC/PE Funds Deskbook*: Accommodating Tax-Exempt Investors](https://www.morganlewis.com/-/media/files/special-topics/vcpefdeskbook/fundformation/vcpefdeskbook_accommodatingtaxexemptinvestors.pdf).
 - National Venture Capital Association, [What is Venture Capital?](https://nvca.org/about-us/what-is-vc/)
-- Delaware Courts, [Court of Chancery judges](https://www.courts.delaware.gov/chancery/judges.aspx).
-- Glass Lewis, [State of US Reincorporation 2025](https://www.glasslewis.com/article/state-of-us-reincorporation-2025-growing-threat-reality-dexit) (October 2025).
-- A&O Shearman, ["Is 'DExit' Real?"](https://corpgov.law.harvard.edu/2026/01/29/is-dexit-real/), Harvard Law School Forum on Corporate Governance (29 January 2026).
-- Carolynn Levy and Kirsty Nathoo, "Legal and Accounting Basics for Startups," Stanford CS183B *How to Start a Startup*, Lecture 18 (2014). [Transcript mirror](https://github.com/Atarity/How-To-Start-A-Startup).
+- Delaware Courts, [Court of Chancery](https://www.courts.delaware.gov/chancery/judges.aspx).
+- Glass Lewis, [State of US Reincorporation 2025](https://www.glasslewis.com/article/state-of-us-reincorporation-2025-growing-threat-reality-dexit).
+- A&O Shearman, ["Is 'DExit' Real?"](https://corpgov.law.harvard.edu/2026/01/29/is-dexit-real/), Harvard Law School Forum on Corporate Governance, January 2026.
+- Carolynn Levy and Kirsty Nathoo, "Legal and Accounting Basics for Startups," Stanford CS183B, Lecture 18 (2014). [Transcript](https://github.com/Atarity/How-To-Start-A-Startup).

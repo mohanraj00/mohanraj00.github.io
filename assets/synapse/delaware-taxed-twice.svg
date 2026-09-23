@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 620" width="640" height="620" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" role="img" aria-labelledby="dtt-title dtt-desc">
+  <title id="dtt-title">When the second tax actually hits</title>
+  <desc id="dtt-desc">Two columns of four steps each. Left column, a mature company that pays dividends: it earns a 100 dollar profit, pays 21 dollars of corporate tax, pays the remaining 79 dollars to shareholders as a dividend, and the shareholders pay tax again on that 79 dollars. Labelled taxed twice. Right column, a venture-backed startup: it loses money for years so there is no profit to tax, reinvests anything it makes so there is no dividend, its owners eventually sell their shares in an acquisition or IPO, and they pay tax once on their gain. Labelled taxed once.</desc>
+  <defs>
+    <linearGradient id="dtt-card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f3f6fa"/></linearGradient>
+    <linearGradient id="dtt-pane" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f7f9fc"/></linearGradient>
+    <linearGradient id="dtt-warm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fdf1ec"/><stop offset="1" stop-color="#fbe6dd"/></linearGradient>
+    <linearGradient id="dtt-cool" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef4fa"/><stop offset="1" stop-color="#e3edf6"/></linearGradient>
+    <filter id="dtt-soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#1a2740" flood-opacity="0.10"/></filter>
+    <filter id="dtt-lift" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="#20344f" flood-opacity="0.12"/></filter>
+    <marker id="dtt-arr" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto"><path d="M0,0 L6.5,3 L0,6 Z" fill="#93a3b5"/></marker>
+  </defs>
+  <rect x="10" y="10" width="620" height="600" rx="20" fill="url(#dtt-card)" stroke="#e4e9f1" stroke-width="1.5" filter="url(#dtt-soft)"/>
+
+  <text x="170" y="50" text-anchor="middle" font-size="13" font-weight="700" fill="#c2603f" letter-spacing="1.4">A COMPANY THAT</text>
+  <text x="170" y="68" text-anchor="middle" font-size="13" font-weight="700" fill="#c2603f" letter-spacing="1.4">PAYS DIVIDENDS</text>
+  <text x="470" y="50" text-anchor="middle" font-size="13" font-weight="700" fill="#2f6f9f" letter-spacing="1.4">A VENTURE-BACKED</text>
+  <text x="470" y="68" text-anchor="middle" font-size="13" font-weight="700" fill="#2f6f9f" letter-spacing="1.4">STARTUP</text>
+
+  <!-- Left column -->
+  <g font-size="15" fill="#31405a" text-anchor="middle">
+    <g filter="url(#dtt-lift)"><rect x="40" y="88" width="260" height="76" rx="12" fill="url(#dtt-pane)" stroke="#dde3ec" stroke-width="1.5"/></g>
+    <text x="170" y="120" font-size="17" font-weight="700" fill="#12203a">Earns $100 profit</text>
+    <text x="170" y="144">the company makes money</text>
+
+    <g filter="url(#dtt-lift)"><rect x="40" y="200" width="260" height="76" rx="12" fill="url(#dtt-warm)" stroke="#efcfc2" stroke-width="1.5"/></g>
+    <text x="170" y="232" font-size="17" font-weight="700" fill="#12203a">Pays $21 tax</text>
+    <text x="170" y="256" fill="#8a4a33">tax #1, at the company</text>
+
+    <g filter="url(#dtt-lift)"><rect x="40" y="312" width="260" height="76" rx="12" fill="url(#dtt-pane)" stroke="#dde3ec" stroke-width="1.5"/></g>
+    <text x="170" y="344" font-size="17" font-weight="700" fill="#12203a">Pays out $79</text>
+    <text x="170" y="368">as a dividend to owners</text>
+
+    <g filter="url(#dtt-lift)"><rect x="40" y="424" width="260" height="76" rx="12" fill="url(#dtt-warm)" stroke="#efcfc2" stroke-width="1.5"/></g>
+    <text x="170" y="456" font-size="17" font-weight="700" fill="#12203a">Owners pay tax again</text>
+    <text x="170" y="480" fill="#8a4a33">tax #2, on the same $79</text>
+  </g>
+  <path d="M 170 164 L 170 192" stroke="#93a3b5" stroke-width="2.5" stroke-linecap="round" marker-end="url(#dtt-arr)"/>
+  <path d="M 170 276 L 170 304" stroke="#93a3b5" stroke-width="2.5" stroke-linecap="round" marker-end="url(#dtt-arr)"/>
+  <path d="M 170 388 L 170 416" stroke="#93a3b5" stroke-width="2.5" stroke-linecap="round" marker-end="url(#dtt-arr)"/>
+  <g filter="url(#dtt-lift)"><rect x="90" y="526" width="160" height="44" rx="22" fill="#c2603f"/></g>
+  <text x="170" y="554" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" letter-spacing="1.2">TAXED TWICE</text>
+
+  <!-- Right column -->
+  <g font-size="15" fill="#31405a" text-anchor="middle">
+    <g filter="url(#dtt-lift)"><rect x="340" y="88" width="260" height="76" rx="12" fill="url(#dtt-pane)" stroke="#dde3ec" stroke-width="1.5"/></g>
+    <text x="470" y="120" font-size="17" font-weight="700" fill="#12203a">Loses money for years</text>
+    <text x="470" y="144">no profit, so no company tax</text>
+
+    <g filter="url(#dtt-lift)"><rect x="340" y="200" width="260" height="76" rx="12" fill="url(#dtt-pane)" stroke="#dde3ec" stroke-width="1.5"/></g>
+    <text x="470" y="232" font-size="17" font-weight="700" fill="#12203a">Reinvests everything</text>
+    <text x="470" y="256">no dividend is ever paid</text>
+
+    <g filter="url(#dtt-lift)"><rect x="340" y="312" width="260" height="76" rx="12" fill="url(#dtt-pane)" stroke="#dde3ec" stroke-width="1.5"/></g>
+    <text x="470" y="344" font-size="17" font-weight="700" fill="#12203a">Owners sell their shares</text>
+    <text x="470" y="368">in an acquisition or an IPO</text>
+
+    <g filter="url(#dtt-lift)"><rect x="340" y="424" width="260" height="76" rx="12" fill="url(#dtt-cool)" stroke="#cdddec" stroke-width="1.5"/></g>
+    <text x="470" y="456" font-size="17" font-weight="700" fill="#12203a">Owners pay tax once</text>
+    <text x="470" y="480" fill="#2f6f9f">on their gain from the sale</text>
+  </g>
+  <path d="M 470 164 L 470 192" stroke="#93a3b5" stroke-width="2.5" stroke-linecap="round" marker-end="url(#dtt-arr)"/>
+  <path d="M 470 276 L 470 304" stroke="#93a3b5" stroke-width="2.5" stroke-linecap="round" marker-end="url(#dtt-arr)"/>
+  <path d="M 470 388 L 470 416" stroke="#93a3b5" stroke-width="2.5" stroke-linecap="round" marker-end="url(#dtt-arr)"/>
+  <g filter="url(#dtt-lift)"><rect x="390" y="526" width="160" height="44" rx="22" fill="#2f6f9f"/></g>
+  <text x="470" y="554" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" letter-spacing="1.2">TAXED ONCE</text>
+</svg>

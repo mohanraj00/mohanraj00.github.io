@@ -1,97 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 640" width="880" height="640" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" role="img" aria-labelledby="dcc-title dcc-desc">
-  <title id="dcc-title">Where a startup's taxable income ends up, depending on its legal form</title>
-  <desc id="dcc-desc">Two side-by-side columns, each a three-layer capital chain: the fund's own investors at the top (a university endowment or pension fund, which is tax-exempt, and a foreign institution), the venture fund in the middle, which is a partnership that passes income through, and the startup at the bottom. In the left column the startup is an LLC: its income passes up through the fund to the investors, so the endowment owes US tax on unrelated business income and the foreign institution has to file a US tax return. In the right column the startup is a C corporation: its income is taxed inside the corporation and stops there, so nothing reaches the fund or its investors until they sell their shares.</desc>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="640" height="640" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" role="img" aria-labelledby="dcc-title dcc-desc">
+  <title id="dcc-title">Where a startup's income ends up, depending on its legal form</title>
+  <desc id="dcc-desc">Two columns, each the same three-step chain of money: the fund's own investors at the top (pension funds, universities and foreign institutions), the venture fund in the middle, and the startup at the bottom. Left column, the startup is an LLC: arrows carry its income up through the fund to the investors, who now owe US tax or must file US tax returns. Right column, the startup is a C corporation: a label reading tax stops here sits directly on top of the startup, and the fund and investors above it are greyed out with no US tax to deal with.</desc>
   <defs>
-    <linearGradient id="dcc-card" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f3f6fa"/>
-    </linearGradient>
-    <linearGradient id="dcc-pane" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f7f9fc"/>
-    </linearGradient>
-    <linearGradient id="dcc-warm" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#fdf1ec"/><stop offset="1" stop-color="#fbe6dd"/>
-    </linearGradient>
-    <linearGradient id="dcc-cool" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#eef4fa"/><stop offset="1" stop-color="#e3edf6"/>
-    </linearGradient>
-    <filter id="dcc-soft" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#1a2740" flood-opacity="0.10"/>
-    </filter>
-    <filter id="dcc-lift" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="5" stdDeviation="9" flood-color="#20344f" flood-opacity="0.13"/>
-    </filter>
+    <linearGradient id="dcc-card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f3f6fa"/></linearGradient>
+    <linearGradient id="dcc-pane" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f7f9fc"/></linearGradient>
+    <linearGradient id="dcc-warm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fdf1ec"/><stop offset="1" stop-color="#fbe6dd"/></linearGradient>
+    <linearGradient id="dcc-cool" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef4fa"/><stop offset="1" stop-color="#e3edf6"/></linearGradient>
+    <filter id="dcc-soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#1a2740" flood-opacity="0.10"/></filter>
+    <filter id="dcc-lift" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="#20344f" flood-opacity="0.12"/></filter>
     <marker id="dcc-arr-warm" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto"><path d="M0,0 L6.5,3 L0,6 Z" fill="#c2603f"/></marker>
     <marker id="dcc-arr-cool" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto"><path d="M0,0 L6.5,3 L0,6 Z" fill="#2f6f9f"/></marker>
   </defs>
+  <rect x="10" y="10" width="620" height="620" rx="20" fill="url(#dcc-card)" stroke="#e4e9f1" stroke-width="1.5" filter="url(#dcc-soft)"/>
 
-  <rect x="10" y="10" width="860" height="620" rx="20" fill="url(#dcc-card)" stroke="#e4e9f1" stroke-width="1.5" filter="url(#dcc-soft)"/>
+  <text x="170" y="50" text-anchor="middle" font-size="13" font-weight="700" fill="#c2603f" letter-spacing="1.4">IF THE STARTUP</text>
+  <text x="170" y="68" text-anchor="middle" font-size="13" font-weight="700" fill="#c2603f" letter-spacing="1.4">IS AN LLC</text>
+  <text x="470" y="50" text-anchor="middle" font-size="13" font-weight="700" fill="#2f6f9f" letter-spacing="1.4">IF THE STARTUP IS</text>
+  <text x="470" y="68" text-anchor="middle" font-size="13" font-weight="700" fill="#2f6f9f" letter-spacing="1.4">A C CORPORATION</text>
+  <line x1="320" y1="40" x2="320" y2="600" stroke="#e1e7ef" stroke-width="1.5"/>
 
-  <!-- Column headers -->
-  <text x="228" y="48" text-anchor="middle" font-size="11" font-weight="700" fill="#c2603f" letter-spacing="1.5">IF THE STARTUP IS AN LLC</text>
-  <text x="652" y="48" text-anchor="middle" font-size="11" font-weight="700" fill="#2f6f9f" letter-spacing="1.5">IF THE STARTUP IS A C CORPORATION</text>
-  <line x1="440" y1="36" x2="440" y2="600" stroke="#e1e7ef" stroke-width="1.5"/>
+  <!-- LEFT -->
+  <g text-anchor="middle" font-size="15">
+    <g filter="url(#dcc-lift)"><rect x="40" y="88" width="260" height="120" rx="14" fill="url(#dcc-warm)" stroke="#efcfc2" stroke-width="1.5"/></g>
+    <text x="170" y="118" font-size="17" font-weight="700" fill="#12203a">The fund's investors</text>
+    <text x="170" y="140" fill="#5a6880">pensions, universities,</text>
+    <text x="170" y="160" fill="#5a6880">foreign institutions</text>
+    <text x="170" y="190" font-weight="700" fill="#8a4a33">now owe US tax</text>
 
-  <!-- ===== LEFT: LLC ===== -->
-  <!-- Investors row -->
-  <g filter="url(#dcc-lift)"><rect x="48" y="68" width="172" height="112" rx="14" fill="url(#dcc-warm)" stroke="#efcfc2" stroke-width="1.5"/></g>
-  <text x="134" y="98" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">Endowment or</text>
-  <text x="134" y="116" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">pension fund</text>
-  <text x="134" y="140" text-anchor="middle" font-size="11.5" fill="#8a4a33">tax-exempt, but now</text>
-  <text x="134" y="156" text-anchor="middle" font-size="11.5" fill="#8a4a33">owes US tax on</text>
-  <text x="134" y="172" text-anchor="middle" font-size="11.5" fill="#8a4a33">business income</text>
+    <g filter="url(#dcc-lift)"><rect x="40" y="290" width="260" height="84" rx="14" fill="url(#dcc-pane)" stroke="#dde3ec" stroke-width="1.5"/></g>
+    <text x="170" y="324" font-size="17" font-weight="700" fill="#12203a">Venture fund</text>
+    <text x="170" y="348" fill="#5a6880">passes the income on</text>
 
-  <g filter="url(#dcc-lift)"><rect x="236" y="68" width="172" height="112" rx="14" fill="url(#dcc-warm)" stroke="#efcfc2" stroke-width="1.5"/></g>
-  <text x="322" y="98" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">Foreign</text>
-  <text x="322" y="116" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">institution</text>
-  <text x="322" y="140" text-anchor="middle" font-size="11.5" fill="#8a4a33">now has to file</text>
-  <text x="322" y="156" text-anchor="middle" font-size="11.5" fill="#8a4a33">a US tax return,</text>
-  <text x="322" y="172" text-anchor="middle" font-size="11.5" fill="#8a4a33">with withholding</text>
-
-  <!-- Fund -->
-  <g filter="url(#dcc-lift)"><rect x="92" y="272" width="272" height="84" rx="14" fill="url(#dcc-pane)" stroke="#dde3ec" stroke-width="1.5"/></g>
-  <text x="228" y="306" text-anchor="middle" font-size="14.5" font-weight="700" fill="#12203a">Venture fund</text>
-  <text x="228" y="330" text-anchor="middle" font-size="11.5" fill="#5a6880">a partnership: passes income through</text>
-
-  <!-- Startup -->
-  <g filter="url(#dcc-lift)"><rect x="92" y="456" width="272" height="84" rx="14" fill="url(#dcc-pane)" stroke="#dde3ec" stroke-width="1.5"/></g>
-  <text x="228" y="490" text-anchor="middle" font-size="14.5" font-weight="700" fill="#12203a">Startup, as an LLC</text>
-  <text x="228" y="514" text-anchor="middle" font-size="11.5" fill="#5a6880">a pass-through: its income is not taxed here</text>
-
-  <!-- Upward flow, startup -> fund -> both investors -->
-  <path d="M 228 456 L 228 366" fill="none" stroke="#c2603f" stroke-width="2.5" stroke-linecap="round" marker-end="url(#dcc-arr-warm)"/>
-  <text x="240" y="416" font-size="11.5" fill="#8a4a33">income passes up</text>
-  <path d="M 184 272 L 148 190" fill="none" stroke="#c2603f" stroke-width="2.5" stroke-linecap="round" marker-end="url(#dcc-arr-warm)"/>
-  <path d="M 272 272 L 308 190" fill="none" stroke="#c2603f" stroke-width="2.5" stroke-linecap="round" marker-end="url(#dcc-arr-warm)"/>
-
-  <text x="228" y="582" text-anchor="middle" font-size="12.5" font-weight="600" fill="#8a4a33">The tax bill lands on the investors three layers up.</text>
-
-  <!-- ===== RIGHT: C CORP ===== -->
-  <g opacity="0.55">
-    <g filter="url(#dcc-lift)"><rect x="472" y="68" width="172" height="112" rx="14" fill="url(#dcc-pane)" stroke="#dde3ec" stroke-width="1.5"/></g>
-    <text x="558" y="98" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">Endowment or</text>
-    <text x="558" y="116" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">pension fund</text>
-    <text x="558" y="148" text-anchor="middle" font-size="11.5" fill="#5a6880">no US tax filing</text>
-
-    <g filter="url(#dcc-lift)"><rect x="660" y="68" width="172" height="112" rx="14" fill="url(#dcc-pane)" stroke="#dde3ec" stroke-width="1.5"/></g>
-    <text x="746" y="98" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">Foreign</text>
-    <text x="746" y="116" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">institution</text>
-    <text x="746" y="148" text-anchor="middle" font-size="11.5" fill="#5a6880">no US tax return</text>
-
-    <g filter="url(#dcc-lift)"><rect x="516" y="272" width="272" height="84" rx="14" fill="url(#dcc-pane)" stroke="#dde3ec" stroke-width="1.5"/></g>
-    <text x="652" y="306" text-anchor="middle" font-size="14.5" font-weight="700" fill="#12203a">Venture fund</text>
-    <text x="652" y="330" text-anchor="middle" font-size="11.5" fill="#5a6880">nothing to pass through</text>
+    <g filter="url(#dcc-lift)"><rect x="40" y="456" width="260" height="84" rx="14" fill="url(#dcc-pane)" stroke="#dde3ec" stroke-width="1.5"/></g>
+    <text x="170" y="490" font-size="17" font-weight="700" fill="#12203a">Startup (LLC)</text>
+    <text x="170" y="514" fill="#5a6880">passes its income up</text>
   </g>
+  <path d="M 170 456 L 170 384" stroke="#c2603f" stroke-width="3" stroke-linecap="round" marker-end="url(#dcc-arr-warm)"/>
+  <path d="M 170 290 L 170 218" stroke="#c2603f" stroke-width="3" stroke-linecap="round" marker-end="url(#dcc-arr-warm)"/>
+  <text x="170" y="584" text-anchor="middle" font-size="15" font-weight="700" fill="#8a4a33">The tax lands at the top.</text>
 
-  <!-- Barrier chip between startup and fund -->
-  <g filter="url(#dcc-lift)"><rect x="540" y="384" width="224" height="40" rx="20" fill="url(#dcc-cool)" stroke="#cdddec" stroke-width="1.5"/></g>
-  <text x="652" y="409" text-anchor="middle" font-size="12.5" font-weight="700" fill="#2f6f9f">TAX STOPS HERE</text>
+  <!-- RIGHT -->
+  <g text-anchor="middle" font-size="15" opacity="0.55">
+    <g filter="url(#dcc-lift)"><rect x="340" y="88" width="260" height="120" rx="14" fill="url(#dcc-pane)" stroke="#dde3ec" stroke-width="1.5"/></g>
+    <text x="470" y="118" font-size="17" font-weight="700" fill="#12203a">The fund's investors</text>
+    <text x="470" y="140" fill="#5a6880">pensions, universities,</text>
+    <text x="470" y="160" fill="#5a6880">foreign institutions</text>
+    <text x="470" y="190" font-weight="700" fill="#5a6880">no US tax to deal with</text>
 
-  <g filter="url(#dcc-lift)"><rect x="516" y="456" width="272" height="84" rx="14" fill="url(#dcc-cool)" stroke="#cdddec" stroke-width="1.5"/></g>
-  <text x="652" y="490" text-anchor="middle" font-size="14.5" font-weight="700" fill="#12203a">Startup, as a C corporation</text>
-  <text x="652" y="514" text-anchor="middle" font-size="11.5" fill="#31405a">a taxpayer in its own right</text>
-
-  <path d="M 652 456 L 652 434" fill="none" stroke="#2f6f9f" stroke-width="2.5" stroke-linecap="round" marker-end="url(#dcc-arr-cool)"/>
-
-  <text x="652" y="582" text-anchor="middle" font-size="12.5" font-weight="600" fill="#2f6f9f">The company pays its own tax. Investors pay when they sell.</text>
+    <g filter="url(#dcc-lift)"><rect x="340" y="290" width="260" height="84" rx="14" fill="url(#dcc-pane)" stroke="#dde3ec" stroke-width="1.5"/></g>
+    <text x="470" y="324" font-size="17" font-weight="700" fill="#12203a">Venture fund</text>
+    <text x="470" y="348" fill="#5a6880">nothing to pass on</text>
+  </g>
+  <g filter="url(#dcc-lift)"><rect x="370" y="404" width="200" height="40" rx="20" fill="#2f6f9f"/></g>
+  <text x="470" y="430" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff" letter-spacing="1.2">TAX STOPS HERE</text>
+  <g text-anchor="middle" font-size="15">
+    <g filter="url(#dcc-lift)"><rect x="340" y="456" width="260" height="84" rx="14" fill="url(#dcc-cool)" stroke="#cdddec" stroke-width="1.5"/></g>
+    <text x="470" y="490" font-size="17" font-weight="700" fill="#12203a">Startup (C corp)</text>
+    <text x="470" y="514" fill="#31405a">pays its own tax</text>
+  </g>
+  <text x="470" y="584" text-anchor="middle" font-size="15" font-weight="700" fill="#2f6f9f">The tax stays at the bottom.</text>
 </svg>
