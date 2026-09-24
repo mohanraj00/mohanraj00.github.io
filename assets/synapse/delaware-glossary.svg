@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 468" width="640" height="468" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" role="img" aria-labelledby="dgl-title dgl-desc">
-  <title id="dgl-title">Four terms, in plain English</title>
+  <title id="dgl-title">Key terms</title>
   <desc id="dgl-desc">A glossary card with four entries. C corporation: a company that is a taxpayer in its own right, paying tax on its profits before anything reaches its owners. LLC: a company whose profits pass through untaxed to its owners, who pay the tax on their personal returns. Dividend: a share of the company's profits paid out to its owners in cash. Venture fund: a pool of money, largely from pension funds, university endowments and foreign institutions, that buys stakes in startups.</desc>
   <defs>
     <linearGradient id="dgl-card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f3f6fa"/></linearGradient>
     <filter id="dgl-soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#1a2740" flood-opacity="0.10"/></filter>
   </defs>
   <rect x="10" y="10" width="620" height="448" rx="20" fill="url(#dgl-card)" stroke="#e4e9f1" stroke-width="1.5" filter="url(#dgl-soft)"/>
-  <text x="44" y="52" font-size="13" font-weight="700" fill="#2f6f9f" letter-spacing="1.6">FOUR TERMS, IN PLAIN ENGLISH</text>
+  <text x="44" y="52" font-size="13" font-weight="700" fill="#2f6f9f" letter-spacing="1.6">KEY TERMS</text>
 
   <g font-size="16" fill="#31405a">
     <rect x="44" y="76" width="6" height="72" rx="3" fill="#2f6f9f"/>
