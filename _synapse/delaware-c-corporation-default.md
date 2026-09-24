@@ -14,6 +14,13 @@ Yet nearly every startup that raises venture capital picks exactly that form, us
 
 The reason surprised me. Follow the money behind a startup far enough and you often reach a university. Universities invest part of their endowments in venture funds, and venture funds invest in startups. That university, two steps away, turns out to be a big part of why the startup is a C corporation.
 
+<div class="synapse-watch" style="max-width:320px;margin:2rem auto;">
+  <div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px;">
+    <iframe src="https://www.youtube-nocookie.com/embed/gLm_dFGgCSs" title="Why nearly every startup picks the taxed twice company. A Midweek Synapse Short" loading="lazy" allowfullscreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+  </div>
+  <p style="text-align:center;margin:.6rem 0 0;font-size:.9rem;"><em>The 48-second version. Watch on <a href="https://youtube.com/shorts/gLm_dFGgCSs">YouTube</a> or <a href="https://www.instagram.com/p/DdrXesXMVe4/">Instagram</a>.</em></p>
+</div>
+
 First, four terms that the rest of this depends on.
 
 <img src="/assets/synapse/delaware-glossary.svg" alt="A glossary card with four entries. C corporation: a company that is a taxpayer in its own right, paying tax on its profits before its owners see any. LLC: a company whose profits pass straight to its owners untaxed, with the owners paying the tax on their own returns. Dividend: a share of the company's profits paid out to its owners in cash. Venture fund: a pool of money, much of it from pension funds, universities and foreign institutions, that buys stakes in startups." style="max-width:100%;height:auto;">
