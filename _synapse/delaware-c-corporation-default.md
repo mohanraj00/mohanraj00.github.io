@@ -12,7 +12,7 @@ Start a company in the United States and you have to pick a legal form. Business
 
 Yet nearly every startup that raises venture capital picks exactly that form, usually registered in Delaware. These companies have some of the best-paid lawyers and accountants in the economy, and they all choose the option the textbook flags as costly.
 
-The reason surprised me. It has less to do with the startup's own taxes than with a university endowment several steps up the chain of money.
+The reason surprised me. Follow the money behind a startup far enough and you often reach a university. Universities invest part of their endowments in venture funds, and venture funds invest in startups. That university, two steps away, turns out to be a big part of why the startup is a C corporation.
 
 First, four terms that the rest of this depends on.
 
@@ -32,25 +32,27 @@ There is one exception worth knowing. If a buyer purchases the company's assets 
 
 ## Three things only a C corporation can offer
 
-If the cost is small, what does a C corporation get in return? Three things no other legal form can match.
+So the famous downside barely applies. Meanwhile, a C corporation can do three things that no other legal form can.
 
 **1. A tax break when the owners sell.** A US rule known as QSBS, short for Qualified Small Business Stock, lets people who got their shares directly from a small C corporation, and held them for years, skip tax on part or all of their gain when they sell. The limits are real. The break is capped per company at $10 million or $15 million depending on when the shares were issued, or ten times what you paid if that is more. The holding period runs three to five years. And many kinds of business, including law, health, consulting and finance, do not qualify at all ([the statute](https://www.law.cornell.edu/uscode/text/26/1202)). But only a C corporation can offer it at all.
 
-**2. It keeps the investors' investors out of trouble.** This is the reason that has nothing to do with the startup's own taxes.
+**2. It protects the university at the top of the chain.** This is the one that has nothing to do with the startup's own taxes.
 
-A venture fund's money comes mostly from institutions: pension funds, university endowments, foundations, and foreign investors ([NVCA](https://nvca.org/about-us/what-is-vc/)). Many are tax-exempt, and many are not American.
+Here is the chain of money behind a typical startup. A university puts part of its endowment into a venture fund. So do pension funds, foundations and foreign institutions ([NVCA](https://nvca.org/about-us/what-is-vc/)). The venture fund then buys a stake in the startup.
 
-If the fund owned part of an LLC, the LLC's profits would pass up through the fund and land on those institutions. A tax-exempt university would suddenly owe US tax. A foreign pension fund would have to file a US tax return. They joined the fund precisely to avoid that.
+A university is a nonprofit, and it generally does not pay income tax on what its investments earn. Profits from running a business are the exception: those it has to pay tax on. A foreign institution, for its part, normally never has to file a US tax return. Both want to keep it that way.
 
-A C corporation stops it. The company pays its own tax, and nothing passes up the chain.
+Now suppose the startup is an LLC. Its profits are not taxed at the company. They pass up to its owners, which includes the venture fund. The fund is also a pass-through, so the profits keep going, up to the university. The university now has business income, and a tax bill it joined the fund to avoid. The foreign institution now has to file a US return.
 
-<img src="/assets/synapse/delaware-capital-chain.svg" alt="Two columns, each the same three-step chain: the fund's investors at the top (pensions, universities, foreign institutions), the venture fund in the middle, the startup at the bottom. Left, the startup is an LLC: arrows carry its income up through the fund to the investors, who now owe US tax. Right, the startup is a C corporation: a label reading tax stops here sits on top of the startup, and the fund and investors above are greyed out with no US tax to deal with." style="max-width:100%;height:auto;">
+A C corporation stops this at the bottom. It pays its own tax, and nothing passes up the chain to the university.
+
+<img src="/assets/synapse/delaware-capital-chain.svg" alt="Two columns, each the same three-step chain: the fund's investors at the top (universities, pensions, foreign institutions), the venture fund in the middle, the startup at the bottom. Left, the startup is an LLC: arrows carry its income up through the fund to the investors, who now owe US tax. Right, the startup is a C corporation: a label reading tax stops here sits on top of the startup, and the fund and investors above are greyed out with no US tax to deal with." style="max-width:100%;height:auto;">
 
 *Same startup, same fund, same investors. Only the legal form at the bottom changes, and it decides who ends up with the tax bill.*
 
-Fund agreements commonly promise their tax-exempt investors to avoid this kind of income ([Morgan Lewis](https://www.morganlewis.com/-/media/files/special-topics/vcpefdeskbook/fundformation/vcpefdeskbook_accommodatingtaxexemptinvestors.pdf), a law firm guide for fund lawyers). So the simplest thing is for the startup to be a C corporation from day one.
+Fund agreements commonly promise their tax-exempt investors to avoid this kind of income ([Morgan Lewis](https://www.morganlewis.com/-/media/files/special-topics/vcpefdeskbook/fundformation/vcpefdeskbook_accommodatingtaxexemptinvestors.pdf), a law firm guide for fund lawyers). So the fund asks the startup to be a C corporation, ideally from day one.
 
-That is why a two-person company is set up around the tax status of a university it may never deal with directly.
+That is how a two-person startup ends up choosing its legal form to suit a university it has never dealt with.
 
 **3. Real shares of stock.** Venture deals run on shares. Investors buy preferred shares, which come with extra rights such as being paid back first if the company is sold. Employees get stock options, and the tax-favoured kind can only be granted by a corporation ([the rule](https://www.law.cornell.edu/cfr/text/26/1.421-1)). An LLC has "membership interests" instead of shares, which fit none of this neatly.
 
@@ -76,9 +78,9 @@ Nobody in that story paid double tax. What cost them was having the wrong struct
 
 ## The takeaway
 
-The textbook is right about companies that earn steady profits and pay dividends. A startup is a different kind of company: it gets paid by selling shares, its money comes from institutions with tax problems of their own, and its deals run on shares of stock.
+The textbook is right about companies that earn steady profits and pay dividends. A startup is a different kind of company: it gets paid by selling shares, its money comes from universities and other institutions with tax rules of their own, and its deals run on shares of stock.
 
-So a startup's legal form is decided less by what the startup does than by who stands behind the money.
+So a startup's legal form is decided less by what the startup does than by who stands behind the money, a university among them.
 
 *Everything here is US federal tax law, and it explains why the system works this way. It is not advice on how to set up your own company. Talk to a lawyer and an accountant for that.*
 

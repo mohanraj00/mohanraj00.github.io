@@ -23,7 +23,7 @@
   <g text-anchor="middle" font-size="15">
     <g filter="url(#dcc-lift)"><rect x="40" y="88" width="260" height="120" rx="14" fill="url(#dcc-warm)" stroke="#efcfc2" stroke-width="1.5"/></g>
     <text x="170" y="118" font-size="17" font-weight="700" fill="#12203a">The fund's investors</text>
-    <text x="170" y="140" fill="#5a6880">pensions, universities,</text>
+    <text x="170" y="140" fill="#5a6880">universities, pensions,</text>
     <text x="170" y="160" fill="#5a6880">foreign institutions</text>
     <text x="170" y="190" font-weight="700" fill="#8a4a33">now owe US tax</text>
 
@@ -43,7 +43,7 @@
   <g text-anchor="middle" font-size="15" opacity="0.55">
     <g filter="url(#dcc-lift)"><rect x="340" y="88" width="260" height="120" rx="14" fill="url(#dcc-pane)" stroke="#dde3ec" stroke-width="1.5"/></g>
     <text x="470" y="118" font-size="17" font-weight="700" fill="#12203a">The fund's investors</text>
-    <text x="470" y="140" fill="#5a6880">pensions, universities,</text>
+    <text x="470" y="140" fill="#5a6880">universities, pensions,</text>
     <text x="470" y="160" fill="#5a6880">foreign institutions</text>
     <text x="470" y="190" font-weight="700" fill="#5a6880">no US tax to deal with</text>
 
