@@ -32,7 +32,7 @@ There is one exception worth knowing. If a buyer purchases the company's assets 
 
 ## Three things only a C corporation can offer
 
-If the cost is small, what does a C corporation get in return? Three things that no other legal form can offer.
+If the cost is small, what does a C corporation get in return? Three things no other legal form can match.
 
 **1. A tax break when the owners sell.** A US rule known as QSBS, short for Qualified Small Business Stock, lets people who got their shares directly from a small C corporation, and held them for years, skip tax on part or all of their gain when they sell. The limits are real. The break is capped per company at $10 million or $15 million depending on when the shares were issued, or ten times what you paid if that is more. The holding period runs three to five years. And many kinds of business, including law, health, consulting and finance, do not qualify at all ([the statute](https://www.law.cornell.edu/uscode/text/26/1202)). But only a C corporation can offer it at all.
 
