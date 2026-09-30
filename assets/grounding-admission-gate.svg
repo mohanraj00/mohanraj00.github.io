@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" role="img" aria-labelledby="gate-title gate-desc">
+  <title id="gate-title">The model proposes, the gate decides</title>
+  <desc id="gate-desc">Left to right. A document goes to an extractor, an LLM running through LangExtract, which proposes candidate facts, each with a value, a unit and a cited span. A dashed admission boundary separates proposing from deciding. On the deciding side, groundgate runs deterministic checks and sends each candidate to one of three outcomes: admitted into the dataset, needs verification and routed to a person with the evidence location, or rejected with a reason code. Below groundgate, a receipt records hashes of every input and can be re-derived by anyone.</desc>
+  <defs>
+    <linearGradient id="gate-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f3f6fa"/>
+    </linearGradient>
+    <filter id="gate-soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#1a2740" flood-opacity="0.10"/>
+    </filter>
+    <filter id="gate-lift" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#20344f" flood-opacity="0.11"/>
+    </filter>
+  </defs>
+  <rect x="10" y="10" width="860" height="420" rx="20" fill="url(#gate-card)" stroke="#e4e9f1" stroke-width="1.5" filter="url(#gate-soft)"/>
+  <text x="36" y="48" font-size="11" font-weight="700" fill="#2f6f9f" letter-spacing="1.5">OPERATING MODEL</text>
+  <text x="36" y="78" font-size="22" font-weight="700" fill="#12203a">The model proposes. The gate decides.</text>
+  <text x="36" y="128" font-size="10.5" font-weight="700" fill="#5a6880" letter-spacing="1.4">PROPOSE</text>
+  <text x="420" y="128" font-size="10.5" font-weight="700" fill="#5a6880" letter-spacing="1.4">DECIDE</text>
+  <rect x="36" y="214" width="124" height="64" rx="10" fill="#ffffff" stroke="#d5deea" stroke-width="1.5" filter="url(#gate-lift)"/>
+  <text x="98.0" y="241.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">Document</text>
+  <text x="98.0" y="260.5" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">public text</text>
+  <rect x="186" y="206" width="180" height="80" rx="10" fill="#ffffff" stroke="#d5deea" stroke-width="1.5" filter="url(#gate-lift)"/>
+  <text x="276.0" y="232.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">Extractor</text>
+  <text x="276.0" y="251.5" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">an LLM through LangExtract</text>
+  <text x="276.0" y="270.5" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">proposes candidates</text>
+  <line x1="160" y1="246" x2="178.0" y2="246.0" stroke="#2f6f9f" stroke-width="2"/>
+  <g transform="translate(186,246) rotate(0.0)"><path d="M0,0 L-10,-5 L-10,5 z" fill="#2f6f9f"/></g>
+  <line x1="388" y1="140" x2="388" y2="392" stroke="#c2603f" stroke-width="1.6" stroke-dasharray="6 6"/>
+  <text x="388" y="412" text-anchor="middle" font-size="10" font-weight="700" fill="#c2603f" letter-spacing="1.4">ADMISSION BOUNDARY</text>
+  <line x1="366" y1="246" x2="412.0" y2="246.0" stroke="#2f6f9f" stroke-width="2"/>
+  <g transform="translate(420,246) rotate(0.0)"><path d="M0,0 L-10,-5 L-10,5 z" fill="#2f6f9f"/></g>
+  <rect x="420" y="206" width="150" height="80" rx="10" fill="#fbeee8" stroke="#c2603f" stroke-width="1.5" filter="url(#gate-lift)"/>
+  <text x="495.0" y="232.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">groundgate</text>
+  <text x="495.0" y="251.5" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">deterministic</text>
+  <text x="495.0" y="270.5" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">checks</text>
+  <rect x="636" y="146" width="208" height="60" rx="10" fill="#e6eff7" stroke="#2f6f9f" stroke-width="1.5" filter="url(#gate-lift)"/>
+  <text x="740.0" y="171.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">Admitted</text>
+  <text x="740.0" y="190.5" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">into the dataset</text>
+  <rect x="636" y="216" width="208" height="60" rx="10" fill="#ffffff" stroke="#d5deea" stroke-width="1.5" filter="url(#gate-lift)"/>
+  <text x="740.0" y="241.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">Needs verification</text>
+  <text x="740.0" y="260.5" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">to a person, with the span</text>
+  <rect x="636" y="286" width="208" height="60" rx="10" fill="#ffffff" stroke="#d5deea" stroke-width="1.5" filter="url(#gate-lift)"/>
+  <text x="740.0" y="311.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">Rejected</text>
+  <text x="740.0" y="330.5" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">with a reason code</text>
+  <line x1="570" y1="236" x2="630.1" y2="181.4" stroke="#2f6f9f" stroke-width="2"/>
+  <g transform="translate(636,176) rotate(-42.3)"><path d="M0,0 L-10,-5 L-10,5 z" fill="#2f6f9f"/></g>
+  <line x1="570" y1="246" x2="628.0" y2="246.0" stroke="#2f6f9f" stroke-width="2"/>
+  <g transform="translate(636,246) rotate(0.0)"><path d="M0,0 L-10,-5 L-10,5 z" fill="#2f6f9f"/></g>
+  <line x1="570" y1="256" x2="630.1" y2="310.6" stroke="#2f6f9f" stroke-width="2"/>
+  <g transform="translate(636,316) rotate(42.3)"><path d="M0,0 L-10,-5 L-10,5 z" fill="#2f6f9f"/></g>
+  <line x1="495" y1="286" x2="495" y2="326" stroke="#8a9bb0" stroke-width="1.6" stroke-dasharray="3 4"/>
+  <rect x="420" y="326" width="150" height="56" rx="10" fill="#ffffff" stroke="#d5deea" stroke-width="1.5" filter="url(#gate-lift)"/>
+  <text x="495.0" y="349.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">Receipt</text>
+  <text x="495.0" y="368.5" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">hashes, re-derivable</text>
+</svg>
