@@ -4,7 +4,7 @@ date: 2026-09-29
 image: /assets/heroes/grounding-is-a-contract.png
 ---
 
-I'm building a stealth vertical AI platform that gets much of what it knows from documents. The numbers it extracts end up on money paths, so the failure I guard against most is a wrong number that looks right, a confident value backed by a citation to a real sentence in the source.
+I'm building a stealth vertical AI platform that extracts data from authoritative documents, the sources a decision has to answer to. Those numbers end up on money paths, so the failure I guard against most is a wrong number that looks right, a confident value backed by a citation to a real sentence in the source.
 
 My pipeline already runs value checks of its own on every fact. So when I evaluated [LangExtract](https://github.com/google/langextract), which promises to map "every extraction to its exact location in the source text", I wanted to know whether its grounding made those checks redundant. The question was narrow. When a model extracts the wrong value, does grounding catch it?
 
