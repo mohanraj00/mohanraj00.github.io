@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" role="img" aria-labelledby="gate-title gate-desc">
   <title id="gate-title">The model proposes, the gate decides</title>
-  <desc id="gate-desc">Left to right. A document goes to an extractor, an LLM running through LangExtract, which proposes candidate facts, each with a value, a unit and a cited span. A dashed admission boundary separates proposing from deciding. On the deciding side, groundgate runs deterministic checks and sends each candidate to one of three outcomes: admitted into the dataset, needs verification and routed to a person with the evidence location, or rejected with a reason code. Below groundgate, a receipt records hashes of every input and can be re-derived by anyone.</desc>
+  <desc id="gate-desc">Left to right. A document goes to an extractor, an LLM running through LangExtract, which proposes candidate facts, each with a value, a unit and a cited span. A dashed admission boundary separates proposing from deciding. On the deciding side, groundgate runs deterministic value, unit, qualifier and conflict checks and sends each candidate to one of three outcomes: admitted into the dataset, needs verification and routed to a person with the evidence location, or rejected with a reason code. Below groundgate, a receipt records hashes of every input and can be re-derived by anyone.</desc>
   <defs>
     <linearGradient id="gate-card" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f3f6fa"/>
@@ -19,7 +19,7 @@
   <text x="420" y="128" font-size="10.5" font-weight="700" fill="#5a6880" letter-spacing="1.4">DECIDE</text>
   <rect x="36" y="214" width="124" height="64" rx="10" fill="#ffffff" stroke="#d5deea" stroke-width="1.5" filter="url(#gate-lift)"/>
   <text x="98.0" y="241.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">Document</text>
-  <text x="98.0" y="260.5" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">public text</text>
+  <text x="98.0" y="260.5" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">source text</text>
   <rect x="186" y="206" width="180" height="80" rx="10" fill="#ffffff" stroke="#d5deea" stroke-width="1.5" filter="url(#gate-lift)"/>
   <text x="276.0" y="232.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">Extractor</text>
   <text x="276.0" y="251.5" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">an LLM through LangExtract</text>
@@ -32,8 +32,8 @@
   <g transform="translate(420,246) rotate(0.0)"><path d="M0,0 L-10,-5 L-10,5 z" fill="#2f6f9f"/></g>
   <rect x="420" y="206" width="150" height="80" rx="10" fill="#fbeee8" stroke="#c2603f" stroke-width="1.5" filter="url(#gate-lift)"/>
   <text x="495.0" y="232.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">groundgate</text>
-  <text x="495.0" y="251.5" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">deterministic</text>
-  <text x="495.0" y="270.5" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">checks</text>
+  <text x="495.0" y="251.5" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">value, unit, qualifier</text>
+  <text x="495.0" y="270.5" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">and conflict checks</text>
   <rect x="636" y="146" width="208" height="60" rx="10" fill="#e6eff7" stroke="#2f6f9f" stroke-width="1.5" filter="url(#gate-lift)"/>
   <text x="740.0" y="171.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">Admitted</text>
   <text x="740.0" y="190.5" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">into the dataset</text>
