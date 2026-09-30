@@ -4,9 +4,9 @@ date: 2026-09-29
 image: /assets/heroes/grounding-is-a-contract.png
 ---
 
-I'm building a stealth vertical AI platform. Much of what it knows comes from documents, and the numbers it extracts land on money paths. A wrong number on a money path rarely looks wrong. It arrives with a confident value and a citation to a real sentence.
+I'm building a stealth vertical AI platform that gets much of what it knows from documents. The numbers it extracts end up on money paths, so the failure I guard against most is a wrong number that looks right, a confident value backed by a citation to a real sentence in the source.
 
-Every fact in my pipeline already goes through value checks I wrote myself. [LangExtract](https://github.com/google/langextract) promises to map "every extraction to its exact location in the source text", and before building on it I needed to know whether that grounding made my checks redundant. The question was narrow: when a model extracts the wrong value, does grounding catch it?
+My pipeline already runs value checks of its own on every fact. So when I evaluated [LangExtract](https://github.com/google/langextract), which promises to map "every extraction to its exact location in the source text", I wanted to know whether its grounding made those checks redundant. The question was narrow. When a model extracts the wrong value, does grounding catch it?
 
 So I measured it. Seven models ran through LangExtract on 30 public-domain government documents, with a person-checked answer for every fact the benchmark asks for. They produced 117 wrong extractions. LangExtract's strictest setting accepted 115 of them.
 
