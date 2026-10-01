@@ -42,5 +42,7 @@ adding a post. Two kinds:
 | delaware-glossary.svg | Plain-English glossary card: C corporation, LLC, dividend, venture fund | self-made | own work |
 | delaware-taxed-twice.svg | A dividend-paying company taxed twice ($100 profit, $21 at the 21% federal corporate rate, tax again on the $79 dividend) against a venture-backed startup taxed once on the sale of shares | self-made | own work |
 | delaware-two-decisions.svg | "Delaware C corporation" split into its two halves: what the C corporation form buys (QSBS, tax stop for fund investors, stock) and what Delaware buys (the Court of Chancery) | self-made | own work |
+| genome-sequencing-cost-curve.svg | NHGRI production cost per human-sized genome, 2001–May 2022, on a logarithmic scale; January 2008 platform transition marked. Drawn from the institute's published 78-row spreadsheet, preserved locally as `genome-sequencing-cost-nhgri.csv` | self-made from NHGRI public data | own chart; US government data |
+| genome-sequencing-cost-curve-mobile.svg | Phone layout of the same 78-observation chart, with a simplified axis and separate value cards | self-made from NHGRI public data | own chart; US government data |
 
 Originals and their full provenance live with the video episodes in `~/Works/synapse-video/episodes/*/PROVENANCE.md`.

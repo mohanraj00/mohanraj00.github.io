@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="638" viewBox="0 0 960 638" role="img" aria-labelledby="title desc">
+<title id="title">The machine changed. The curve followed.</title>
+<desc id="desc">All 78 NHGRI production-cost observations from September 2001 to May 2022 on a logarithmic scale. The cost falls from 95.3 million dollars to 525 dollars. January 2008 marks the sequencing platform transition. No observations after May 2022 are shown.</desc>
+<rect x="1" y="1" width="958" height="636" rx="20" fill="#fff" stroke="#dce5ee" stroke-width="2"/>
+<text x="42" y="47" fill="#12203a" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="28" font-weight="750">The machine changed. The curve followed.</text>
+<text x="42" y="77" fill="#526178" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="15">Cost per human-sized genome · USD · logarithmic scale</text>
+<rect x="347.5" y="142" width="558.5" height="322" fill="#edf4f8"/>
+<line x1="105" y1="142.0" x2="906" y2="142.0" stroke="#d9e3ec"/>
+<text x="93" y="146.0" text-anchor="end" fill="#526178" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="13">$100m</text>
+<line x1="105" y1="195.7" x2="906" y2="195.7" stroke="#d9e3ec"/>
+<text x="93" y="199.7" text-anchor="end" fill="#526178" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="13">$10m</text>
+<line x1="105" y1="249.3" x2="906" y2="249.3" stroke="#d9e3ec"/>
+<text x="93" y="253.3" text-anchor="end" fill="#526178" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="13">$1m</text>
+<line x1="105" y1="303.0" x2="906" y2="303.0" stroke="#d9e3ec"/>
+<text x="93" y="307.0" text-anchor="end" fill="#526178" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="13">$100k</text>
+<line x1="105" y1="356.7" x2="906" y2="356.7" stroke="#d9e3ec"/>
+<text x="93" y="360.7" text-anchor="end" fill="#526178" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="13">$10k</text>
+<line x1="105" y1="410.3" x2="906" y2="410.3" stroke="#d9e3ec"/>
+<text x="93" y="414.3" text-anchor="end" fill="#526178" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="13">$1k</text>
+<line x1="105" y1="464.0" x2="906" y2="464.0" stroke="#d9e3ec"/>
+<text x="93" y="468.0" text-anchor="end" fill="#526178" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="13">$100</text>
+<text x="114.9" y="489" text-anchor="middle" fill="#526178" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="13">2002</text>
+<text x="231.2" y="489" text-anchor="middle" fill="#526178" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="13">2005</text>
+<text x="347.5" y="489" text-anchor="middle" fill="#526178" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="13">2008</text>
+<text x="463.7" y="489" text-anchor="middle" fill="#526178" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="13">2011</text>
+<text x="580.0" y="489" text-anchor="middle" fill="#526178" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="13">2014</text>
+<text x="696.3" y="489" text-anchor="middle" fill="#526178" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="13">2017</text>
+<text x="812.6" y="489" text-anchor="middle" fill="#526178" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="13">2020</text>
+<text x="890.1" y="489" text-anchor="middle" fill="#526178" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="13">2022</text>
+<line x1="347.5" y1="142" x2="347.5" y2="464" stroke="#c2603f" stroke-width="2" stroke-dasharray="5 5"/>
+<polyline points="105.00,143.13 124.34,150.25 143.76,153.35 163.10,156.47 185.81,163.26 195.60,171.03 205.15,179.00 214.91,179.59 224.67,181.30 234.36,182.58 243.80,184.48 253.56,184.45 263.33,188.16 273.12,190.31 282.56,191.94 292.32,192.50 302.09,194.59 311.88,197.09 321.32,198.00 331.08,198.31 340.85,203.49 350.64,223.24 360.19,242.29 369.95,255.97 379.71,274.31 389.39,283.31 398.84,292.83 408.60,301.19 418.36,311.20 428.15,320.71 437.60,329.92 447.36,330.20 457.12,331.78 466.91,339.42 476.36,344.70 486.12,355.54 495.78,362.63 505.67,362.86 515.22,368.96 524.99,368.63 534.75,366.29 544.43,369.89 553.88,370.39 563.64,370.39 573.40,372.38 583.19,377.98 592.64,373.20 602.40,373.27 612.16,369.64 621.95,378.20 631.39,376.83 641.16,403.11 650.92,405.22 673.55,406.56 683.31,400.76 692.97,403.24 702.44,409.98 712.20,403.63 721.97,407.40 731.62,396.07 741.20,405.47 750.96,401.46 760.73,401.40 770.38,402.63 779.96,410.49 786.54,421.99 796.30,411.72 809.14,418.80 818.72,420.57 828.59,418.59 838.35,419.03 848.01,425.94 857.48,414.10 867.24,428.74 877.00,423.76 886.66,424.17 896.24,425.37 906.00,425.37" fill="none" stroke="#2f6f9f" stroke-width="3.3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="105.0" cy="143.1" r="6" fill="#fff" stroke="#2f6f9f" stroke-width="3"/>
+<circle cx="350.6" cy="223.2" r="6" fill="#fff" stroke="#2f6f9f" stroke-width="3"/>
+<circle cx="906.0" cy="425.4" r="6" fill="#fff" stroke="#2f6f9f" stroke-width="3"/>
+<rect x="284.5" y="101" width="242" height="30" rx="8" fill="#fff7f2" stroke="#e6bcaa"/>
+<text x="298.5" y="121" fill="#c2603f" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="13" font-weight="700">JAN 2008 · PLATFORM SHIFT</text>
+<rect x="42" y="510" width="252" height="74" rx="12" fill="#f3f6fa"/>
+<text x="60" y="536" fill="#526178" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="12" font-weight="700">SEP 2001</text>
+<text x="60" y="568" fill="#12203a" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="26" font-weight="750">$95.3m</text>
+<rect x="354" y="510" width="252" height="74" rx="12" fill="#f3f6fa"/>
+<text x="372" y="536" fill="#526178" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="12" font-weight="700">JAN 2008</text>
+<text x="372" y="568" fill="#12203a" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="26" font-weight="750">$3.06m</text>
+<rect x="666" y="510" width="252" height="74" rx="12" fill="#f3f6fa"/>
+<text x="684" y="536" fill="#526178" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="12" font-weight="700">MAY 2022</text>
+<text x="684" y="568" fill="#12203a" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="26" font-weight="750">$525</text>
+<text x="42" y="610" fill="#526178" font-family="Inter,ui-sans-serif,system-ui,sans-serif" font-size="12">NHGRI, May 2022 table · all 78 observations · production cost only; excludes downstream analysis</text>
+</svg>
