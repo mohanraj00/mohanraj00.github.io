@@ -16,6 +16,13 @@ That is the moment genome sequencing pulled away from a comparison people know f
 
 *The line connects all 78 observations in [NHGRI's published table](https://www.genome.gov/sites/default/files/media/files/2023-05/Sequencing_Cost_Data_Table_May2022.xls); three points mark milestones. The vertical axis is logarithmic: equal distances represent equal ratios rather than equal dollar amounts. Open the chart to see it at full size.*
 
+<div class="synapse-watch" style="max-width:320px;margin:2rem auto;">
+  <div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px;">
+    <iframe src="https://www.youtube-nocookie.com/embed/muE3y2AWDKI" title="Genome sequencing, Moore's Law, and the AI hardware question. A Midweek Synapse Short" loading="lazy" allowfullscreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+  </div>
+  <p style="text-align:center;margin:.6rem 0 0;font-size:.9rem;"><em>The 53-second version. Watch on <a href="https://youtube.com/shorts/muE3y2AWDKI">YouTube</a> or <a href="https://www.instagram.com/p/Dd8DWeSMRe0/">Instagram</a>.</em></p>
+</div>
+
 ## The switch in the middle of the line
 
 Before 2008, the centers in NHGRI's series used Sanger sequencing. It reads DNA fragments with capillary instruments. From January 2008, their cost reports came from next-generation platforms, which read many fragments in parallel. NHGRI says the change is what started the sudden departure from its Moore's Law comparison. The decline then continued for years as the new platforms improved ([NHGRI's technology note](https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Costs-Data)).
