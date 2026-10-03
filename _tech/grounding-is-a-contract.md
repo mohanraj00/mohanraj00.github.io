@@ -2,112 +2,140 @@
 title: "Grounding is a contract, not a citation"
 date: 2026-09-29
 image: /assets/heroes/grounding-is-a-contract.png
-description: "Seven LLMs made 117 wrong extractions from 30 government documents. LangExtract's exact-match filter accepted 115. A deterministic value gate let 8 through."
+description: "LLMs get most extracted numbers right, and the wrong ones arrive with real citations. groundgate checks each value against its citation. Across 4,350 extractions it let 8 of 117 wrong values through; keeping only LangExtract's exact matches let 115."
 ---
 
-I'm building a stealth vertical AI platform that extracts data from authoritative documents. The numbers it extracts end up on money paths, so the failure I guard against most is a wrong number that looks right: a confident value with a citation to a real sentence.
+I'm building a stealth vertical AI platform that extracts data from authoritative documents, and the numbers it extracts end up on money paths. If you've pulled numbers out of a PDF with Gemini, NotebookLM or LangExtract, you've probably found that the models are usually right. My benchmark agrees. Across seven models and 30 government documents, 4,233 of 4,350 extractions were correct.
 
-My pipeline already runs value checks of its own on every fact. When I evaluated [LangExtract](https://github.com/google/langextract), an open-source library published under Google's GitHub organization that promises to map "every extraction to its exact location in the source text", I wanted to know whether its grounding made those checks redundant. So I rebuilt the checks from scratch as an open-source gate, groundgate, and measured both on the same benchmark.
+This post is about the other 117. That is about 1 in 37, and nothing on the page tells you which ones. Every one of them cited a real place in its document, and keeping only exact matches still let 115 through. I built [groundgate](https://github.com/mohanraj00/groundgate) to catch them, and it let 8 through.
 
-Seven models ran through LangExtract on 30 public-domain government documents and made 117 wrong extractions out of 4,350. Keeping only LangExtract's exact alignments, its strictest filter, let 115 of them through, each citing a real sentence in the source. groundgate let 8 through.
+## A wrong number with a real citation
 
-## What an exact match checks
+IRS Publication 560 has these two sentences, a few lines apart:
 
-LangExtract does what it promises. It finds where each extraction's quoted text sits in the source and reports how well the quote aligned. The value you store lives in the extraction's attributes, and nothing compares it with that text. Here is a planted error from the benchmark that LangExtract reports as an exact match:
+> The limit on elective deferrals, other than catch-up contributions, is <mark>$23,500</mark> for 2025 and $24,500 for 2026.
+>
+> The limit on salary reduction contributions, other than catch-up contributions, is <mark>$16,500</mark> for 2025 and increases to $17,000 for 2026.
 
-```text
-extraction_text:  "$8,000"
-attributes:       {"value": "80000", "unit": "USD"}
-alignment_status: MATCH_EXACT
-```
+The first is the 401(k) limit. The second is the SIMPLE plan limit, under its own heading.
 
-The quote is real. The number is off by ten, and nothing downstream has a reason to doubt it, because it carries a citation. LangExtract never claims to check values. The question is whether an exact alignment is enough evidence to admit a fact into your data.
+I asked for the 2025 elective deferral limit. In 4 of the 14 runs, the model answered with both numbers. Each answer quoted its sentence word for word, and LangExtract marked both as <abbr title="LangExtract's strictest alignment status: the quoted text appears in the source character for character.">MATCH_EXACT</abbr>. Open either citation and it checks out: the sentence is real, and the number is in it.
 
-A citation is half of a contract. It says where to look. The other half says what that span has to support: this value, in this unit, with nothing next to it that changes its meaning, for the condition the field asks about. LangExtract delivers the first half. groundgate enforces the second half except the condition, and six of the eight escapes came through that gap. The other two came through the unit rule.
+The model didn't invent anything. LangExtract sends a long document to the model in chunks, and the model answers each chunk as if it were the whole document. The two sentences landed in different chunks, at both chunk sizes, so the model reading the SIMPLE chunk gave the closest match in that chunk. A reviewer who opens that citation sees $16,500 in a sentence about contribution limits. Catching it means knowing what a SIMPLE plan is, and reading that carefully on every fact.
 
-## A gate between the model and the dataset
+The second example is simpler. Publication 15-B says supplemental wages over "$1 million" are withheld at 37%. GPT-5.6 Terra stored the threshold as 1, at both chunk sizes, and the quote "$1 million" matched exactly. A payroll rule that reads that field applies the 37% rate to anything over a dollar.
 
-An extraction pipeline asks what a document says. A pipeline that feeds a dataset or a decision also has to ask whether each fact gets in. I keep those questions in separate components for the same reason I keep [building and verifying apart for coding agents](/tech/parallel-coding-agents-authority/): the component that produces a fact never approves it. The model proposes candidates, and a deterministic gate admits each one, sends it to a person, or rejects it.
+## What groundgate checks
+
+LangExtract does what it promises: it finds where each quote sits in the source. The value you store is a separate attribute, and nothing compares it with the quote. LangExtract never claims to. A citation says where to look. The contract also says what that place must support: this value, in this unit, for this field, with nothing next to it that changes the meaning.
+
+groundgate checks that contract between the model and your data. For every proposed fact, it checks that:
+
+- the cited text contains the value as a number, and not as part of a longer number;
+- the field's unit is next to it;
+- no word next to it changes its meaning, such as "more than" before it or "million" after it;
+- no other proposal gives the same field a different value.
+
+Each fact gets one of three outcomes: admitted, sent to a person with the cited text to read, or rejected with a reason code. Both IRS examples go to a person. The deferral limit has two proposals that disagree, and "$1 million" has a scale word after the number. Every run writes a receipt that records each input's hash, and anyone can re-derive it with `groundgate verify`.
 
 <picture>
   <source media="(max-width: 600px)" srcset="/assets/grounding-admission-gate-mobile.svg">
   <img src="/assets/grounding-admission-gate.svg" alt="A document goes to an extractor, an LLM running through LangExtract, which proposes candidate facts, each with a value, a unit and a cited span. A dashed admission boundary separates proposing from deciding. On the deciding side, groundgate runs value, unit, qualifier and conflict checks and sends each candidate to one of three outcomes: admitted into the dataset, needs verification and routed to a person with the span, or rejected with a reason code. Next to groundgate, a receipt records hashes of every input and can be re-derived by anyone.">
 </picture>
-*Every candidate leaves with one outcome and its reason codes, and every run leaves a receipt.*
+*Every proposed fact leaves with one outcome and its reason codes. I use the same split for [coding agents](/tech/parallel-coding-agents-authority/): the component that produces a result never approves it.*
 
-[groundgate](https://github.com/mohanraj00/groundgate) is an Apache-2.0 Python library with no dependencies in its core. It takes the document, a schema of the fields you want, and the candidates an extractor proposed. For each candidate it checks that the cited span contains the value as a number, with the field's unit next to it. It flags a qualifier the field doesn't allow, such as "more than" in front of a value the field defines as a minimum, a scale word such as "million" after the number, and two proposals for one field that disagree. A candidate that fails a check is rejected with a stable reason code. One that trips a flag becomes `needs_verification` and goes to a person with the span to read.
+groundgate never calls a model, so the same inputs always give the same decisions. The whole benchmark went through it in 0.7 seconds, against about five hours of model time.
 
-It never calls a model, so the same inputs give the same decisions, and every run writes a receipt that `groundgate verify` re-derives from the inputs byte for byte. The rules live in a written [spec](https://github.com/mohanraj00/groundgate/blob/main/SPEC.md) with 107 language-neutral conformance cases, so an implementation in another language can check that it agrees. The gate is also cheap. Across all 420 benchmark documents it took 0.7 seconds on my laptop, 2.6 ms per document at the 95th percentile, against about five hours of model time.
+## Where it goes in your pipeline
 
-groundgate reads LangExtract's output directly and checks each extraction's value and unit at the place LangExtract aligned it. LangExtract stays in the pipeline, because its alignment is why the evidence spans exist at all.
+It goes after your extractor and before anything writes to your database. It is for pipelines that store extracted values; a NotebookLM chat has no such step. You keep your extractor. groundgate needs the document text, a schema of your fields, and the proposed facts with their citations. With LangExtract, that is one call:
 
-## How I measured it
+```python
+import langextract as lx
+from groundgate.adapters.langextract import admit_document
 
-I set the method before any model ran and scored against spec 0.1, frozen at one commit. One change came after the runs: a code fix that brought the implementation into line with that spec. It is described below, with the numbers from both sides of it.
+schema = {"fields": {
+    "elective_deferral_limit_2025": {"type": "integer", "unit": "USD"},
+    "supplemental_wage_threshold": {"type": "integer", "unit": "USD", "comparator": "gt"},  # "exceed"
+}}
 
-The documents are public domain: 10 FDA drug labels (dosage and strength sections), 10 NTSB aviation accident reports, and the first two pages of 10 IRS publications. I picked them by rules written before any model ran, and excluded the two documents I used while building groundgate. Each document gets its own fields, such as starting and maximum doses, pilot hours, weather readings, contribution limits and phase-out thresholds.
+result = lx.extract(text_or_documents=text, prompt_description=prompt, examples=examples)
+receipt = admit_document(result, schema)
 
-Claude drafted the gold, and I checked all 277 facts and 33 absent fields in 2.4 hours, in a labeling app that never shows the benchmarked models' output. Tables were the slowest part. PDF text flattens an IRS table into row labels followed by values, so the app links each document to its original page. The models read the same flattened text.
+for d in receipt.decisions:
+    if d.outcome == "admitted":
+        save(d.field, d.value)            # your database
+    elif d.outcome == "needs_verification":
+        review_queue.put(d)               # d.codes says why, d.evidence says where to read
+    else:
+        log_rejection(d)                  # rejected, with its reason codes
+```
 
-Each model ran through LangExtract at its default chunk size of 1,000 characters and again at 4,000, for 14 runs: Gemini 3.6 Flash and Gemini 3.8 Flash through the Antigravity CLI, GPT-5.6 Luna and GPT-5.6 Terra through Codex, and Claude Sonnet 5.5, Haiku 4.5 and Sonnet 4.6 through Claude Code. Every raw reply is cached, so CI rebuilds every score with no API key.
+Without LangExtract, call `groundgate.admit(text, schema, candidates)` with proposals that give the position of their quote in the text. The [guide](https://github.com/mohanraj00/groundgate/blob/main/docs/guide.md) covers schemas and the candidate format, and the command line also turns PDFs into the text groundgate checks.
 
-## What the gate caught
+Three decisions come with it:
+
+- **Who reviews.** One extraction in eight went to a person in my benchmark. That is the price of catching the wrong ones.
+- **Keep every answer.** A pipeline that keeps the last answer for each field throws away the disagreement that caught most errors. Pass all of them to the gate.
+- **Test a bigger chunk size.** On my documents, LangExtract's default 1,000-character chunks produced 86 wrong extractions, and 4,000-character chunks produced 31.
+
+## What the benchmark found
 
 <picture>
   <source media="(max-width: 600px)" srcset="/assets/grounding-benchmark-results-mobile.svg">
   <img src="/assets/grounding-benchmark-results.svg" alt="Pooled over 14 runs and 4,350 extractions. Wrong extractions accepted without review: LangExtract MATCH_EXACT 98.3 percent, groundgate 6.8 percent. Correct extractions citing the right place, rejected: MATCH_EXACT 4.6 percent, groundgate 0.3 percent. Extractions sent to a person: MATCH_EXACT none, groundgate 12.1 percent.">
 </picture>
-*groundgate let 8 of 117 wrong extractions through against 115 for MATCH_EXACT, and sent one in eight to a person. All 14 runs pooled. They share documents, so read the chart as an inventory of failures rather than a rate to expect; the per-run tables have intervals.*
+*All 14 runs pooled: 7 models, 2 chunk sizes, 30 documents. The runs share documents, so read this as an inventory of failures, not a rate to expect.*
 
-Only 117 of the 4,350 extractions were wrong, so the price of catching them is review. groundgate sent 526 extractions to a person, one in eight, and 92 of them were wrong. A random sample of the same size would have held about 14.
+Of the 117 wrong extractions, keeping only exact matches let 115 through. groundgate let 8 through. It rejected 17 outright and sent 526 extractions to a person, and those 526 held 92 of the wrong ones. A random sample of 526 would have held about 14.
 
-Among correct extractions that cited the right place, groundgate rejected 14. Filtering on MATCH_EXACT dropped 194, every one because the quote aligned approximately rather than exactly. groundgate also rejected 71 correct values that LangExtract had aligned to a place that doesn't state them. The value was right and the evidence wasn't, so those rejections are the gate doing its job.
+Review is the cost: 434 of the 526 were correct, and a person had to confirm them. Outright rejection of a correct value was rare. Of the correct extractions that cited the right place, groundgate rejected 0.3%. Keeping only exact matches dropped 4.6%, because a quote that aligns approximately fails that filter even when its value is right.
 
-A separate track plants one error at a time into correct extractions, with no model involved. It tests mechanisms, so its percentages are not error rates. MATCH_EXACT accepts every value ten times too large with the right quote, every comma read as a decimal point (184,500 as 184.5) and every wrong unit, and groundgate accepts none of them. A planted "more than" in front of the value gets past MATCH_EXACT every time. groundgate sends 90% of those to review, and the 8.5% it admits cite a second place that states the same value without the planted words. On clean extractions it costs 9%: 7.6% go to review and 1.4% are rejected.
+Disagreement did most of the work. Two answers for one field was the first reason code on 84 of the 109 wrong extractions groundgate stopped. I expected the value-in-text check to carry the benchmark, and it was first on 11.
 
-The one plant groundgate can't see is the one the real runs hit. Swap in another real number with the same unit from the same chunk, and groundgate admits 81%, because every check passes.
+## What got through
 
-## Disagreement caught 84 of 109
+All eight escapes cite a real sentence with the number in it, and all eight pass the unit check. Seven of them fill a field the document never states.
 
-I expected the value checks to carry the real runs. They caught 11. Hard rejections, from the type, unit and value-in-span checks together, accounted for 17 of the 109 wrong extractions groundgate stopped. Flags sent the other 92 to a person, and one flag did most of that work. `CONFLICTING_CANDIDATES`, raised when two proposals for a single-valued field disagree, was the first reason code on 84 of the 109.
+Five models gave metoprolol's maximum dose for hypertension as 200 mg, citing "up to 200 mg of metoprolol succinate". That is the heart failure maximum. The label states no maximum for hypertension. Each run gave that one answer, so there was no disagreement to flag, and no check on the cited text alone can see the problem. Two models gave levothyroxine's full replacement dose, 1.6 mcg/kg/day, as a flat 1.6 mcg starting dose. One gave lisinopril's renal impairment dose as the usual starting dose.
 
-In the conflicts I sampled, most pairs came from chunking. LangExtract sends a long document to the model a chunk at a time, and the model answers each chunk as if it were the whole document. The chunk with lisinopril's hypertension dosing says 10 mg. The chunk with renal impairment dosing says 5 mg. Both are real numbers, cited correctly, for the same field. groundgate can't tell which is right, so both go to a person, the right one included.
+Spec 0.2 takes this on. A field will name its condition, such as a dose for hypertension, and the gate will check that the condition's words are in the cited text or the heading above it. It will also read a compound unit such as mcg/kg/day to its end, which covers the levothyroxine pair. The fixes get measured on new documents, never on this benchmark, and the work is [tracked in the open](https://github.com/mohanraj00/groundgate/milestone/1).
 
-Chunk size moves both sides. LangExtract's default 1,000-character chunks produced 86 wrong extractions against 31 at 4,000, and conflicts were the first reason code on 69 of the 86. Bigger chunks cut the errors and also the disagreements that catch them: groundgate let 5 of 86 through at 1,000 characters and 3 of 31 at 4,000.
+<details class="inset" markdown="1">
+<summary>How I measured it</summary>
 
-## The eight that got through
+I wrote the method before any model ran and scored against spec 0.1, frozen at one commit.
 
-All eight are real numbers, cited correctly, with the right unit, and seven of them fill a field the document never states.
+The documents are public domain: 10 FDA drug labels (dosage and strength sections), 10 NTSB aviation accident reports, and the first two pages of 10 IRS publications. Selection rules were fixed in advance, and the two documents I used while building groundgate are excluded. Each document has its own fields, such as doses, pilot hours, weather readings and contribution limits.
 
-Five models answered metoprolol's maximum daily dose for hypertension with 200 mg, citing "up to 200 mg of metoprolol succinate". It passes every check: the span is real, 200 is in it, and mg sits next to it. It is the heart failure maximum, and the label states no maximum for hypertension. Two models gave levothyroxine's full replacement dose, 1.6 mcg/kg/day, as a flat 1.6 mcg starting dose. The unit rule found `mcg` right after the number and stopped looking. The eighth gave lisinopril's renal impairment dose as the usual starting dose.
+Claude drafted the gold answers. I checked all 277 facts and 33 absent fields by hand in 2.4 hours, in a labeling app that never shows the benchmarked models' output.
 
-Six of the eight took a value stated for another condition, and none of the v0.1 checks can see that. Pooling all seven models' proposals into one `admit` call caught one of the eight, GPT-5.6 Terra's lisinopril answer at 4,000 characters, because the other models had proposed 10 mg. Nobody disagreed with metoprolol's 200 mg. Five models gave it and the other two gave nothing.
+Each model ran through LangExtract at chunk sizes of 1,000 and 4,000 characters, for 14 runs. The models were Gemini 3.6 Flash and Gemini 3.8 Flash through the Antigravity CLI, GPT-5.6 Luna and GPT-5.6 Terra through Codex, and Claude Sonnet 5.5, Haiku 4.5 and Sonnet 4.6 through Claude Code. Every raw reply is cached, so CI rescores the benchmark byte for byte with no API key.
 
-Spec 0.2 takes this on. A field whose value depends on a condition, such as a dose per indication or a limit per filing year, will name the condition, and the gate will check that the condition's words sit in the cited text or the heading above it. The unit rule also needs to read a compound unit such as mcg/kg/day to its end. I left the spec frozen for this benchmark, because tuning rules on the test set would inflate the numbers. I also left in three weaknesses I found while building the scorer, and they cost false flags here. The fixes get measured on new documents, and the work is [tracked in the open](https://github.com/mohanraj00/groundgate/milestone/1).
+A second track plants one error at a time into correct extractions, with no model involved. Keeping only exact matches accepted every tenfold error, every comma read as a decimal point and every wrong unit. groundgate accepted none of them. Its blind spot is the one the real runs hit: swap in another real number with the same unit from the same chunk, and groundgate admits 81%.
 
-## The benchmark found a bug in my gate
+</details>
 
-At 4,000 characters, LangExtract's chunker cut "Altimeter Setting: 29.97" after "29.", and three models answered 29 from that chunk. The spec already said a span never reads a prefix of a longer number. My code ran that check only when the span ended on a digit. This span ended on the decimal point, so the gate admitted 29.
+<details class="inset" markdown="1">
+<summary>The benchmark found a bug in my gate</summary>
 
-I fixed the code, added the case to the evidence vectors, and report both numbers: 11 escapes before the fix, 8 after.
+At 4,000 characters, LangExtract's chunker cut "Altimeter Setting: 29.97" after "29.", and three models answered 29 from that chunk. The spec already said a value must never be read from part of a longer number. My code ran that check only when the cited text ended on a digit. This one ended on the decimal point, so the gate admitted 29.
 
-## What to do in any extraction pipeline
+I fixed the code, added the case to the conformance vectors, and report both numbers: 11 escapes before the fix, 8 after.
 
-- Check the value at the citation. A quote match says nothing about the number you stored, and in the planted track MATCH_EXACT accepted every tenfold, comma and unit error.
-- Keep every disagreement. Two answers to one field were the first reason code on 84 of the 109 wrong extractions stopped here, and a pipeline that keeps the last answer throws that signal away.
-- Give the gate a third outcome. 92 of those 109 went to a person rather than a hard reject, at a cost of 12% of extractions reviewed.
-- Let a field be absent, and name its condition. Seven of the eight escapes filled a field the document doesn't state.
-- Don't count on a second model. When five models agreed on metoprolol's 200 mg, pooling had nothing to flag.
-- Test the gate on real documents. My conformance cases missed a bug that one NTSB report found.
+</details>
 
-## Limits
+<details class="inset" markdown="1">
+<summary>Limits</summary>
 
-Thirty documents and seven models show where the failure classes are. They are not enough to rank models. Claude drafted the gold, and three of the seven models are Claude models. I never saw the benchmarked models' output while checking, but drafts anchor judgment. The check kept nearly all of the draft: it excluded one field, found one absence the draft had wrong, and added two evidence places. The Claude runs did not make the fewest wrong extractions; Gemini 3.8 Flash did.
+Thirty documents and seven models show where the failure classes are. They are not enough to rank models. Claude drafted the gold, and three of the seven models are Claude models. I never saw model output while checking, but a draft anchors judgment. The Claude runs did not make the fewest wrong extractions; Gemini 3.8 Flash did.
 
-Every model ran through a logged-in agent CLI rather than a raw API, sandboxed and told not to use tools, so the results describe these setups rather than API-level model ability. The run script would discard and retry a Codex reply that used a tool, or a Claude Code reply with more than one turn or from a fallback model. None needed it. LangExtract skipped 69 of 2,240 chunks whose replies it couldn't parse. I couldn't set the temperature, so a rerun gives different extractions. I scored the cached runs.
+Every model ran through a logged-in agent CLI, not a raw API, so the results describe these setups. I couldn't set the temperature, so a rerun gives different extractions; I scored the cached runs. LangExtract skipped 69 of 2,240 chunks whose replies it couldn't parse.
 
-The benchmark counts reviews. It doesn't measure how long a review takes or how often a reviewer gets it right. groundgate 0.1 also leaves out dates, lists of records and cross-document checks, and it never judges what a sentence means; the spec lists these as non-goals. The method, the caveats and every escape are in the [benchmark write-up](https://github.com/mohanraj00/groundgate/blob/main/bench/README.md) and the [results](https://github.com/mohanraj00/groundgate/blob/main/bench/RESULTS.md).
+The benchmark counts reviews. It doesn't measure how long a review takes or how often a reviewer gets it right. groundgate 0.1 leaves out dates, lists of records and cross-document checks, and it never judges what a sentence means.
 
-groundgate 0.1.0 is on [PyPI](https://pypi.org/project/groundgate/). Run `pip install groundgate`, and the README quickstart runs offline with no API key.
+</details>
+
+The method, every escape and the per-run tables are in the [benchmark write-up](https://github.com/mohanraj00/groundgate/blob/main/bench/README.md) and the [results](https://github.com/mohanraj00/groundgate/blob/main/bench/RESULTS.md). groundgate 0.1.0 is an Apache-2.0 Python library with no core dependencies, on [PyPI](https://pypi.org/project/groundgate/). Run `pip install groundgate`; the README quickstart runs offline with no API key.
 
 LangExtract locates the text. groundgate checks the number in it.

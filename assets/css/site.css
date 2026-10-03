@@ -259,6 +259,41 @@ h6,
   font-style: normal;
 }
 
+/* Highlighted words inside a quoted excerpt. Translucent so it reads on both
+   themes and on the blockquote tint. */
+.entry-content mark {
+  background: rgba(240, 180, 0, 0.32);
+  color: inherit;
+  padding: 0 0.15em;
+  border-radius: 3px;
+}
+
+/* A collapsed side note: method, limits and other detail a reader can skip. */
+.entry-content details.inset {
+  border: 1px solid var(--s-rule);
+  border-radius: 8px;
+  background: var(--s-card);
+  margin: 1.4rem 0;
+  padding: 0 1.1rem;
+}
+.entry-content details.inset > summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--ink);
+  padding: 0.7rem 0;
+}
+.entry-content details.inset[open] > summary {
+  border-bottom: 1px solid var(--s-rule);
+  margin-bottom: 0.9rem;
+}
+
+/* A term with a hover definition. */
+.entry-content abbr[title] {
+  text-decoration: underline dotted;
+  text-underline-offset: 0.2em;
+  cursor: help;
+}
+
 code,
 pre {
   background: var(--s-code-bg);
