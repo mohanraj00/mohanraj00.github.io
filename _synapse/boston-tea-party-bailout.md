@@ -13,6 +13,13 @@ A year earlier it had been hit by a financial crisis so serious that the British
 
 But a loan does not sell tea. For that, Parliament needed Americans buying the company's tea again.
 
+<div class="synapse-watch" style="max-width:320px;margin:2rem auto;">
+  <div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px;">
+    <iframe src="https://www.youtube-nocookie.com/embed/xUQPR89aiMU" title="The bailout behind the Boston Tea Party. A Midweek Synapse Short" loading="lazy" allowfullscreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+  </div>
+  <p style="text-align:center;margin:.6rem 0 0;font-size:.9rem;"><em>The 57-second version, drawn by hand in code. Watch on <a href="https://youtube.com/shorts/xUQPR89aiMU">YouTube</a> or <a href="https://www.instagram.com/p/DeJadhUMTmR/">Instagram</a>.</em></p>
+</div>
+
 ## A tax hidden inside a discount
 
 Here was the problem. Many Americans bought smuggled Dutch tea, which was [generally cheaper](https://www.history.com/articles/tea-act) than the legal kind. Many others refused legal tea on principle, because it carried a tax.
