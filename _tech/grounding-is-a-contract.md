@@ -99,7 +99,9 @@ All eight escapes cite a real sentence with the number in it, and all eight pass
 
 Five models gave metoprolol's maximum dose for hypertension as 200 mg, citing "up to 200 mg of metoprolol succinate". That is the heart failure maximum. The label states no maximum for hypertension. Each run gave that one answer, so there was no disagreement to flag, and no check on the cited text alone can see the problem. Two models gave levothyroxine's full replacement dose, 1.6 mcg/kg/day, as a flat 1.6 mcg starting dose. One gave lisinopril's renal impairment dose as the usual starting dose.
 
-Spec 0.2 takes this on. A field will name its condition, such as a dose for hypertension, and the gate will check that the condition's words are in the cited text or the heading above it. It will also read a compound unit such as mcg/kg/day to its end, which covers the levothyroxine pair. The fixes get measured on new documents, never on this benchmark, and the work is [tracked in the open](https://github.com/mohanraj00/groundgate/milestone/1).
+Spec 0.2 took this on. A field can now list its conditions, such as a drug's indications, and each proposed value names one. The gate checks that the condition is mentioned in the value's sentence or the nearest heading above it. A dose per kilogram also no longer passes as a flat dose.
+
+Rules written from these escapes can't be measured on these documents, so I picked 101 new ones by rules frozen before anyone read them. They were chosen to stress these cases, so spec 0.1 does worse there than here. On the 74 documents checked in full, spec 0.1 let 30.7% of wrong extractions through and spec 0.2 let 8.8% through. The price is review: 39.6% of extractions went to a person, up from 28.2%. Every escape is listed in the [second set's results](https://github.com/mohanraj00/groundgate/blob/main/bench/set2/RESULTS.md).
 
 <details class="inset" markdown="1">
 <summary>How I measured it</summary>
@@ -132,10 +134,10 @@ Thirty documents and seven models show where the failure classes are. They are n
 
 Every model ran through a logged-in agent CLI, not a raw API, so the results describe these setups. I couldn't set the temperature, so a rerun gives different extractions; I scored the cached runs. LangExtract skipped 69 of 2,240 chunks whose replies it couldn't parse.
 
-The benchmark counts reviews. It doesn't measure how long a review takes or how often a reviewer gets it right. groundgate 0.1 leaves out dates, lists of records and cross-document checks, and it never judges what a sentence means.
+The benchmark counts reviews. It doesn't measure how long a review takes or how often a reviewer gets it right. groundgate leaves out dates, lists of records and cross-document checks, and it never judges what a sentence means.
 
 </details>
 
-The method, every escape and the per-run tables are in the [benchmark write-up](https://github.com/mohanraj00/groundgate/blob/main/bench/README.md) and the [results](https://github.com/mohanraj00/groundgate/blob/main/bench/RESULTS.md). groundgate 0.1.0 is an Apache-2.0 Python library with no core dependencies, on [PyPI](https://pypi.org/project/groundgate/). Run `pip install groundgate`; the README quickstart runs offline with no API key.
+The method, every escape and the per-run tables are in the [benchmark write-up](https://github.com/mohanraj00/groundgate/blob/main/bench/README.md) and the [results](https://github.com/mohanraj00/groundgate/blob/main/bench/RESULTS.md). groundgate is an Apache-2.0 Python library with no core dependencies, on [PyPI](https://pypi.org/project/groundgate/). The current release is 0.3.0, and the numbers in this post are spec 0.1's. Run `pip install groundgate`; the README quickstart runs offline with no API key.
 
 LangExtract locates the text. groundgate checks the number in it.
