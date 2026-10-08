@@ -5,6 +5,8 @@ image: /assets/heroes/grounding-is-a-contract.png
 description: "LLMs get most extracted numbers right, and the wrong ones arrive with real citations. groundgate checks each value against its citation. Across 4,350 extractions it let 8 of 117 wrong values through; keeping only LangExtract's exact matches let 115."
 ---
 
+> **Update, 8 October 2026:** this post measures spec 0.1. groundgate is now at 0.5.1. [The review queue is the cost](/tech/the-review-queue-is-the-cost/) covers what changed: evidence for each part of a value, and recorded model judgments that can clear a flag but never admit a fact.
+
 I'm building a stealth vertical AI platform that extracts data from authoritative documents, and the numbers it extracts end up on money paths. If you've pulled numbers out of a PDF with Gemini, NotebookLM or LangExtract, you've probably found that the models are usually right. My benchmark agrees. Across seven models and 30 government documents, 4,233 of 4,350 extractions were correct.
 
 This post is about the other 117. That is about 1 in 37, and nothing on the page tells you which ones. Every one of them cited a real place in its document, and keeping only exact matches still let 115 through. I built [groundgate](https://github.com/mohanraj00/groundgate) to catch them, and it let 8 through.
@@ -138,6 +140,6 @@ The benchmark counts reviews. It doesn't measure how long a review takes or how 
 
 </details>
 
-The method, every escape and the per-run tables are in the [benchmark write-up](https://github.com/mohanraj00/groundgate/blob/main/bench/README.md) and the [results](https://github.com/mohanraj00/groundgate/blob/main/bench/RESULTS.md). groundgate is an Apache-2.0 Python library with no core dependencies, on [PyPI](https://pypi.org/project/groundgate/). The current release is 0.3.0, and the numbers in this post are spec 0.1's. Run `pip install groundgate`; the README quickstart runs offline with no API key.
+The method, every escape and the per-run tables are in the [benchmark write-up](https://github.com/mohanraj00/groundgate/blob/main/bench/README.md) and the [results](https://github.com/mohanraj00/groundgate/blob/main/bench/RESULTS.md). groundgate is an Apache-2.0 Python library with no core dependencies, on [PyPI](https://pypi.org/project/groundgate/). The numbers in this post are spec 0.1's. Run `pip install groundgate`; the README quickstart runs offline with no API key.
 
 LangExtract locates the text. groundgate checks the number in it.
