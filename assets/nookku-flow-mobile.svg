@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800" width="400" height="800" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" role="img" aria-labelledby="relaym-title relaym-desc">
+  <title id="relaym-title">The model sits out the test and judges the record</title>
+  <desc id="relaym-desc">The tester types in Claude Code or Codex. In relay mode, the relay, a plugin or project hooks, takes each prompt before the model sees it, so the model does not run. The relay sends the message through the tap to the chat agent, and the reply comes back the same way, byte for byte in both directions. The relay writes a relay record of what the tester saw, and the tap writes a tap record of what the agent received and sent. The audit compares the two records and names the breaks it finds. After the test, the model reads the transcript from the relay record.</desc>
+  <defs>
+    <linearGradient id="relaym-card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f3f6fa"/></linearGradient>
+    <filter id="relaym-soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#1a2740" flood-opacity="0.10"/></filter>
+    <filter id="relaym-lift" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#20344f" flood-opacity="0.11"/></filter>
+  </defs>
+  <rect x="10" y="10" width="380" height="780" rx="20" fill="url(#relaym-card)" stroke="#e4e9f1" stroke-width="1.5" filter="url(#relaym-soft)"/>
+  <text x="30.0" y="48.0" text-anchor="start" font-size="11" font-weight="700" fill="#2f6f9f" letter-spacing="1.5">HOW IT WORKS</text>
+  <text x="30.0" y="76.0" text-anchor="start" font-size="19" font-weight="700" fill="#12203a">The model sits out the test.</text>
+  <text x="30.0" y="100.0" text-anchor="start" font-size="19" font-weight="700" fill="#12203a">It judges the record.</text>
+  <rect x="30" y="130" width="220" height="64" rx="10" fill="#ffffff" stroke="#d5deea" stroke-width="1.5" filter="url(#relaym-lift)"/>
+  <text x="140.0" y="157.0" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">Tester</text>
+  <text x="140.0" y="176.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">types in Claude Code or Codex</text>
+  <rect x="30" y="236" width="220" height="76" rx="10" fill="#fbeee8" stroke="#c2603f" stroke-width="1.5" filter="url(#relaym-lift)"/>
+  <text x="140.0" y="259.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">Relay</text>
+  <text x="140.0" y="278.5" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">plugin or project hooks,</text>
+  <text x="140.0" y="297.5" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">takes the prompt first</text>
+  <rect x="30" y="354" width="220" height="64" rx="10" fill="#ffffff" stroke="#d5deea" stroke-width="1.5" filter="url(#relaym-lift)"/>
+  <text x="140.0" y="381.0" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">Tap</text>
+  <text x="140.0" y="400.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">records both directions</text>
+  <rect x="30" y="460" width="220" height="64" rx="10" fill="#ffffff" stroke="#d5deea" stroke-width="1.5" filter="url(#relaym-lift)"/>
+  <text x="140.0" y="487.0" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">Your chat agent</text>
+  <text x="140.0" y="506.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">unchanged</text>
+  <polyline points="126.0,194 126.0,228.0" fill="none" stroke="#2f6f9f" stroke-width="2"/>
+  <g transform="translate(126.0,236) rotate(90.0)"><path d="M0,0 L-10,-5 L-10,5 z" fill="#2f6f9f"/></g>
+  <polyline points="154.0,236 154.0,202.0" fill="none" stroke="#2f6f9f" stroke-width="2"/>
+  <g transform="translate(154.0,194) rotate(-90.0)"><path d="M0,0 L-10,-5 L-10,5 z" fill="#2f6f9f"/></g>
+  <polyline points="126.0,312 126.0,346.0" fill="none" stroke="#2f6f9f" stroke-width="2"/>
+  <g transform="translate(126.0,354) rotate(90.0)"><path d="M0,0 L-10,-5 L-10,5 z" fill="#2f6f9f"/></g>
+  <polyline points="154.0,354 154.0,320.0" fill="none" stroke="#2f6f9f" stroke-width="2"/>
+  <g transform="translate(154.0,312) rotate(-90.0)"><path d="M0,0 L-10,-5 L-10,5 z" fill="#2f6f9f"/></g>
+  <polyline points="126.0,418 126.0,452.0" fill="none" stroke="#2f6f9f" stroke-width="2"/>
+  <g transform="translate(126.0,460) rotate(90.0)"><path d="M0,0 L-10,-5 L-10,5 z" fill="#2f6f9f"/></g>
+  <polyline points="154.0,460 154.0,426.0" fill="none" stroke="#2f6f9f" stroke-width="2"/>
+  <g transform="translate(154.0,418) rotate(-90.0)"><path d="M0,0 L-10,-5 L-10,5 z" fill="#2f6f9f"/></g>
+  <text x="166.0" y="443.0" text-anchor="start" font-size="11" font-weight="700" fill="#2f6f9f">byte for byte, both ways</text>
+  <rect x="286" y="244" width="84" height="60" rx="10" fill="#f1f3f6" stroke="#d5deea" stroke-width="1.5" stroke-dasharray="5 4" filter="url(#relaym-lift)"/>
+  <text x="328.0" y="269.0" text-anchor="middle" font-size="13.5" font-weight="700" fill="#5a6880">Model</text>
+  <text x="328.0" y="288.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">sits out</text>
+  <line x1="250" y1="274" x2="286" y2="274" stroke="#c2603f" stroke-width="1.6" stroke-dasharray="4 4"/>
+  <line x1="262" y1="268" x2="274" y2="280" stroke="#c2603f" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="262" y1="280" x2="274" y2="268" stroke="#c2603f" stroke-width="2.4" stroke-linecap="round"/>
+  <rect x="30" y="572" width="160" height="56" rx="10" fill="#ffffff" stroke="#d5deea" stroke-width="1.5" filter="url(#relaym-lift)"/>
+  <text x="110.0" y="595.0" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">Tap record</text>
+  <text x="110.0" y="614.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">what the agent got</text>
+  <rect x="210" y="572" width="160" height="56" rx="10" fill="#ffffff" stroke="#d5deea" stroke-width="1.5" filter="url(#relaym-lift)"/>
+  <text x="290.0" y="595.0" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">Relay record</text>
+  <text x="290.0" y="614.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">what the tester saw</text>
+  <rect x="130" y="676" width="140" height="56" rx="10" fill="#e6eff7" stroke="#2f6f9f" stroke-width="1.5" filter="url(#relaym-lift)"/>
+  <text x="200.0" y="699.0" text-anchor="middle" font-size="13.5" font-weight="700" fill="#12203a">Audit</text>
+  <text x="200.0" y="718.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#5a6880">names the breaks</text>
+  <polyline points="110,628 110,704 122.0,704.0" fill="none" stroke="#2f6f9f" stroke-width="2"/>
+  <g transform="translate(130,704) rotate(0.0)"><path d="M0,0 L-10,-5 L-10,5 z" fill="#2f6f9f"/></g>
+  <polyline points="290,628 290,704 278.0,704.0" fill="none" stroke="#2f6f9f" stroke-width="2"/>
+  <g transform="translate(270,704) rotate(180.0)"><path d="M0,0 L-10,-5 L-10,5 z" fill="#2f6f9f"/></g>
+  <polyline points="328,572 328.0,312.0" fill="none" stroke="#2f6f9f" stroke-width="2" stroke-dasharray="6 5"/>
+  <g transform="translate(328,304) rotate(-90.0)"><path d="M0,0 L-10,-5 L-10,5 z" fill="#2f6f9f"/></g>
+  <text x="318.0" y="552.0" text-anchor="end" font-size="11" font-weight="700" fill="#2f6f9f">after the test, it reads the transcript</text>
+</svg>
