@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="800" height="360" font-family="'Segoe UI', system-ui, -apple-system, 'Noto Sans Tamil', 'Tamil Sangam MN', sans-serif" role="img" aria-labelledby="tnd-t tnd-d">
+<title id="tnd-t">The five tinai: each landscape stands for one stage of love</title><desc id="tnd-d">Five cards. Kurinji: hills, lovers meet. Mullai: forest and pasture, patient waiting. Marutam: farmland, sulking. Neytal: seashore, pining. Palai: no land of its own, separation. Kurinji is highlighted with a note: poem 40 is filed under kurinji, and the label alone sets the scene, a hillside at midnight in the cold season, with two lovers who meet in secret.</desc>
+<defs><linearGradient id="tnd-card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f3f6fa"/></linearGradient>
+<filter id="tnd-soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#1a2740" flood-opacity="0.10"/></filter></defs>
+<rect width="800" height="360" fill="#ffffff"/>
+<text x="400.0" y="40" text-anchor="middle" font-size="12.5" letter-spacing="2.2" fill="#2f6f9f" font-weight="600">ONE LABEL, A WHOLE SCENE</text>
+<rect x="26" y="70" width="140" height="170" rx="12" fill="url(#tnd-card)" stroke="#c2603f" stroke-width="2" filter="url(#tnd-soft)"/>
+<text x="96.0" y="106" text-anchor="middle" font-size="19" font-weight="700" fill="#c2603f">குறிஞ்சி</text>
+<text x="96.0" y="128" text-anchor="middle" font-size="13" font-style="italic" fill="#5b6b82">kurinji</text>
+<line x1="44" y1="144" x2="148" y2="144" stroke="#e1e6ee"/>
+<text x="96.0" y="166" text-anchor="middle" font-size="9.5" letter-spacing="1.6" fill="#2f6f9f" font-weight="600">LAND</text>
+<text x="96.0" y="185" text-anchor="middle" font-size="13.5" fill="#12203a">Hills</text>
+<text x="96.0" y="210" text-anchor="middle" font-size="9.5" letter-spacing="1.6" fill="#2f6f9f" font-weight="600">STAGE OF LOVE</text>
+<text x="96.0" y="229" text-anchor="middle" font-size="13.5" font-weight="600" fill="#12203a">Lovers meet</text>
+<rect x="178" y="70" width="140" height="170" rx="12" fill="url(#tnd-card)" stroke="#d6dde7" stroke-width="1.2" filter="url(#tnd-soft)"/>
+<text x="248.0" y="106" text-anchor="middle" font-size="19" font-weight="700" fill="#12203a">முல்லை</text>
+<text x="248.0" y="128" text-anchor="middle" font-size="13" font-style="italic" fill="#5b6b82">mullai</text>
+<line x1="196" y1="144" x2="300" y2="144" stroke="#e1e6ee"/>
+<text x="248.0" y="166" text-anchor="middle" font-size="9.5" letter-spacing="1.6" fill="#2f6f9f" font-weight="600">LAND</text>
+<text x="248.0" y="185" text-anchor="middle" font-size="13.5" fill="#12203a">Forest and pasture</text>
+<text x="248.0" y="210" text-anchor="middle" font-size="9.5" letter-spacing="1.6" fill="#2f6f9f" font-weight="600">STAGE OF LOVE</text>
+<text x="248.0" y="229" text-anchor="middle" font-size="13.5" font-weight="600" fill="#12203a">Patient waiting</text>
+<rect x="330" y="70" width="140" height="170" rx="12" fill="url(#tnd-card)" stroke="#d6dde7" stroke-width="1.2" filter="url(#tnd-soft)"/>
+<text x="400.0" y="106" text-anchor="middle" font-size="19" font-weight="700" fill="#12203a">மருதம்</text>
+<text x="400.0" y="128" text-anchor="middle" font-size="13" font-style="italic" fill="#5b6b82">marutam</text>
+<line x1="348" y1="144" x2="452" y2="144" stroke="#e1e6ee"/>
+<text x="400.0" y="166" text-anchor="middle" font-size="9.5" letter-spacing="1.6" fill="#2f6f9f" font-weight="600">LAND</text>
+<text x="400.0" y="185" text-anchor="middle" font-size="13.5" fill="#12203a">Farmland</text>
+<text x="400.0" y="210" text-anchor="middle" font-size="9.5" letter-spacing="1.6" fill="#2f6f9f" font-weight="600">STAGE OF LOVE</text>
+<text x="400.0" y="229" text-anchor="middle" font-size="13.5" font-weight="600" fill="#12203a">Sulking</text>
+<rect x="482" y="70" width="140" height="170" rx="12" fill="url(#tnd-card)" stroke="#d6dde7" stroke-width="1.2" filter="url(#tnd-soft)"/>
+<text x="552.0" y="106" text-anchor="middle" font-size="19" font-weight="700" fill="#12203a">நெய்தல்</text>
+<text x="552.0" y="128" text-anchor="middle" font-size="13" font-style="italic" fill="#5b6b82">neytal</text>
+<line x1="500" y1="144" x2="604" y2="144" stroke="#e1e6ee"/>
+<text x="552.0" y="166" text-anchor="middle" font-size="9.5" letter-spacing="1.6" fill="#2f6f9f" font-weight="600">LAND</text>
+<text x="552.0" y="185" text-anchor="middle" font-size="13.5" fill="#12203a">Seashore</text>
+<text x="552.0" y="210" text-anchor="middle" font-size="9.5" letter-spacing="1.6" fill="#2f6f9f" font-weight="600">STAGE OF LOVE</text>
+<text x="552.0" y="229" text-anchor="middle" font-size="13.5" font-weight="600" fill="#12203a">Pining</text>
+<rect x="634" y="70" width="140" height="170" rx="12" fill="#fbfcfd" stroke="#9aa7b8" stroke-width="1.2" stroke-dasharray="6 5"/>
+<text x="704.0" y="106" text-anchor="middle" font-size="19" font-weight="700" fill="#12203a">பாலை</text>
+<text x="704.0" y="128" text-anchor="middle" font-size="13" font-style="italic" fill="#5b6b82">palai</text>
+<line x1="652" y1="144" x2="756" y2="144" stroke="#e1e6ee"/>
+<text x="704.0" y="166" text-anchor="middle" font-size="9.5" letter-spacing="1.6" fill="#2f6f9f" font-weight="600">LAND</text>
+<text x="704.0" y="185" text-anchor="middle" font-size="13.5" fill="#c2603f">No land of its own</text>
+<text x="704.0" y="210" text-anchor="middle" font-size="9.5" letter-spacing="1.6" fill="#2f6f9f" font-weight="600">STAGE OF LOVE</text>
+<text x="704.0" y="229" text-anchor="middle" font-size="13.5" font-weight="600" fill="#12203a">Separation</text>
+<line x1="96.0" y1="240" x2="96.0" y2="268" stroke="#c2603f" stroke-width="2"/>
+<rect x="26" y="268" width="748" height="66" rx="12" fill="#fdf5f1" stroke="#c2603f" stroke-width="1.2"/>
+<text x="46" y="294" font-size="14" fill="#12203a"><tspan font-weight="700" fill="#c2603f">Poem 40 is filed under kurinji.</tspan> The label alone sets the scene:</text>
+<text x="46" y="317" font-size="14" fill="#12203a">a hillside, at midnight, in the cold season, with two lovers who meet in secret.</text>
+</svg>

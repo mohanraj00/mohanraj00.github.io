@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 620" width="360" height="620" font-family="'Segoe UI', system-ui, -apple-system, 'Noto Sans Tamil', 'Tamil Sangam MN', sans-serif" role="img" aria-labelledby="tnm-t tnm-d">
+<title id="tnm-t">The five tinai: each landscape stands for one stage of love</title><desc id="tnm-d">Five cards. Kurinji: hills, lovers meet. Mullai: forest and pasture, patient waiting. Marutam: farmland, sulking. Neytal: seashore, pining. Palai: no land of its own, separation. Kurinji is highlighted with a note: poem 40 is filed under kurinji, and the label alone sets the scene, a hillside at midnight in the cold season, with two lovers who meet in secret.</desc>
+<defs><linearGradient id="tnm-card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f3f6fa"/></linearGradient>
+<filter id="tnm-soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#1a2740" flood-opacity="0.10"/></filter></defs>
+<rect width="360" height="620" fill="#ffffff"/>
+<text x="180.0" y="34" text-anchor="middle" font-size="12" letter-spacing="2" fill="#2f6f9f" font-weight="600">ONE LABEL, A WHOLE SCENE</text>
+<rect x="16" y="60" width="328" height="74" rx="12" fill="url(#tnm-card)" stroke="#c2603f" stroke-width="2" filter="url(#tnm-soft)"/>
+<text x="34" y="93" font-size="18" font-weight="700" fill="#c2603f">குறிஞ்சி</text>
+<text x="34" y="115" font-size="12.5" font-style="italic" fill="#5b6b82">kurinji</text>
+<text x="326" y="93" text-anchor="end" font-size="13.5" font-weight="600" fill="#12203a">Lovers meet</text>
+<text x="326" y="115" text-anchor="end" font-size="12.5" fill="#12203a">Hills</text>
+<rect x="16" y="144" width="328" height="74" rx="12" fill="url(#tnm-card)" stroke="#d6dde7" stroke-width="1.2" filter="url(#tnm-soft)"/>
+<text x="34" y="177" font-size="18" font-weight="700" fill="#12203a">முல்லை</text>
+<text x="34" y="199" font-size="12.5" font-style="italic" fill="#5b6b82">mullai</text>
+<text x="326" y="177" text-anchor="end" font-size="13.5" font-weight="600" fill="#12203a">Patient waiting</text>
+<text x="326" y="199" text-anchor="end" font-size="12.5" fill="#12203a">Forest and pasture</text>
+<rect x="16" y="228" width="328" height="74" rx="12" fill="url(#tnm-card)" stroke="#d6dde7" stroke-width="1.2" filter="url(#tnm-soft)"/>
+<text x="34" y="261" font-size="18" font-weight="700" fill="#12203a">மருதம்</text>
+<text x="34" y="283" font-size="12.5" font-style="italic" fill="#5b6b82">marutam</text>
+<text x="326" y="261" text-anchor="end" font-size="13.5" font-weight="600" fill="#12203a">Sulking</text>
+<text x="326" y="283" text-anchor="end" font-size="12.5" fill="#12203a">Farmland</text>
+<rect x="16" y="312" width="328" height="74" rx="12" fill="url(#tnm-card)" stroke="#d6dde7" stroke-width="1.2" filter="url(#tnm-soft)"/>
+<text x="34" y="345" font-size="18" font-weight="700" fill="#12203a">நெய்தல்</text>
+<text x="34" y="367" font-size="12.5" font-style="italic" fill="#5b6b82">neytal</text>
+<text x="326" y="345" text-anchor="end" font-size="13.5" font-weight="600" fill="#12203a">Pining</text>
+<text x="326" y="367" text-anchor="end" font-size="12.5" fill="#12203a">Seashore</text>
+<rect x="16" y="396" width="328" height="74" rx="12" fill="#fbfcfd" stroke="#9aa7b8" stroke-width="1.2" stroke-dasharray="6 5"/>
+<text x="34" y="429" font-size="18" font-weight="700" fill="#12203a">பாலை</text>
+<text x="34" y="451" font-size="12.5" font-style="italic" fill="#5b6b82">palai</text>
+<text x="326" y="429" text-anchor="end" font-size="13.5" font-weight="600" fill="#12203a">Separation</text>
+<text x="326" y="451" text-anchor="end" font-size="12.5" fill="#c2603f">No land of its own</text>
+<rect x="16" y="490" width="328" height="110" rx="12" fill="#fdf5f1" stroke="#c2603f" stroke-width="1.2"/>
+<text x="34" y="516" font-size="13.5" font-weight="700" fill="#c2603f">Poem 40 is filed under kurinji.</text>
+<text x="34" y="535" font-size="13.5" fill="#12203a">The label alone sets the scene:</text>
+<text x="34" y="554" font-size="13.5" fill="#12203a">a hillside, at midnight, in the cold</text>
+<text x="34" y="573" font-size="13.5" fill="#12203a">season, with two lovers who meet</text>
+<text x="34" y="592" font-size="13.5" fill="#12203a">in secret.</text>
+</svg>
