@@ -27,6 +27,13 @@ That is all of it. It is poem 40 of the *Kuruntokai* (குறுந்தொ�
 
 So how does five lines carry a love story? The poem names no one, describes no place, and gives no time. Even its poet is unknown. Tradition calls him Cempulappeyanirar (செம்புலப் பெயனீரார்), "the poet of rain on red earth", after the simile in line four.
 
+<div class="synapse-watch" style="max-width:320px;margin:2rem auto;">
+  <div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px;">
+    <iframe src="https://www.youtube-nocookie.com/embed/pwvyk6bikL8" title="A whole love story in five lines. A Midweek Synapse Short" loading="lazy" allowfullscreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+  </div>
+  <p style="text-align:center;margin:.6rem 0 0;font-size:.9rem;"><em>The 52-second version, with the five landscapes. Watch on <a href="https://youtube.com/shorts/pwvyk6bikL8">YouTube</a> or <a href="https://www.instagram.com/p/DeurHFNs-dO/">Instagram</a>.</em></p>
+</div>
+
 ## The grammar holds the scenery
 
 The answer is the *Tolkappiyam* (தொல்காப்பியம்), one of the oldest surviving grammars in the world. It is considered to have been compiled in layers from around the turn of the common era to about the fifth century. Its third book is about poetry, and it is strict.
