@@ -55,6 +55,7 @@ PHOTO_HEROES = {
     "what-enceladus-doesnt-need": ("enceladus-tiger-stripes.webp", 0.5),
     "geomythology-oral-tradition-as-geological-memory": ("crater-lake.jpg", 0.45),
     "culture-anthropology-marketing": ("iceberg-underside.webp", 0.5),
+    "why-ancient-tamil-love-poems-are-short": ("kurinji-night.png", 0.5),
 }
 
 FAVICON_TEXT = "வி"

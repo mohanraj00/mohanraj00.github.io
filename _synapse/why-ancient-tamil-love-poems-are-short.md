@@ -3,7 +3,7 @@ title: "Why ancient Tamil love poems are so short"
 date: 2026-10-18
 synapse: 21
 tags: [tamil, sangam, tolkappiyam, poetics, distributional-semantics]
-image: /assets/heroes/why-ancient-tamil-love-poems-are-short.png
+image: /assets/heroes/why-ancient-tamil-love-poems-are-short.jpg
 hero_hue: 14
 excerpt: "A whole love story in five lines, with no names and no scenery. It works because a two-thousand-year-old grammar carries the rest."
 ---
