@@ -2,7 +2,7 @@
 title: "The bailout behind the Boston Tea Party"
 date: 2026-10-06
 synapse: 14
-image: /assets/heroes/boston-tea-party-bailout.png
+image: /assets/heroes/boston-tea-party-bailout.jpg
 tags: [history, economics, east-india-company, bailout, tea]
 excerpt: "The tea dumped into Boston Harbor arrived under a law built to rescue a failing company. That law made tea cheaper, with a tax hidden inside, and that was exactly the problem."
 ---

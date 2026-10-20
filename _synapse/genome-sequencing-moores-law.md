@@ -4,7 +4,7 @@ date: 2026-09-30
 synapse: 11
 tags: [genomics, sequencing, moores-law, technology, ai]
 excerpt: "The cost of sequencing a human-sized genome fell from $95 million to $525 in NHGRI's series. The crucial break came when laboratories switched methods in 2008. That makes the curve a useful lesson for every technology forecast built from a smooth line."
-image: /assets/heroes/genome-sequencing-moores-law.png
+image: /assets/heroes/genome-sequencing-moores-law.jpg
 hero_hue: 190
 ---
 

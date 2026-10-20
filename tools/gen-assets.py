@@ -55,7 +55,16 @@ PHOTO_HEROES = {
     "what-enceladus-doesnt-need": ("enceladus-tiger-stripes.webp", 0.5),
     "geomythology-oral-tradition-as-geological-memory": ("crater-lake.jpg", 0.45),
     "culture-anthropology-marketing": ("iceberg-underside.webp", 0.5),
-    "why-ancient-tamil-love-poems-are-short": ("kurinji-night.png", 0.5),
+    "why-ancient-tamil-love-poems-are-short": ("kurinji-night-titled.png", 0.5),
+    "apollo-first-moon-age": ("apollo-moon-rock.png", 0.5),
+    "boston-tea-party-bailout": ("boston-harbor-tea.png", 0.5),
+    "delaware-c-corporation-default": ("delaware-chancery-lines.png", 0.5),
+    "genome-sequencing-moores-law": ("genome-helix-curve.png", 0.5),
+    "gpu-useful-life-and-the-ai-buildout": ("server-row-fading.png", 0.5),
+    "the-sun-and-the-little-ice-age": ("frost-fair-quiet-sun.png", 0.5),
+    "three-theories-of-disruption": ("three-beams-road.png", 0.5),
+    "turing-nobel-double": ("two-medals-network.png", 0.5),
+    "parallel-coding-agents-authority": ("agent-lanes-coordinator.png", 0.5),
 }
 
 FAVICON_TEXT = "வி"

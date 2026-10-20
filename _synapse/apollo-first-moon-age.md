@@ -4,7 +4,7 @@ date: 2026-08-12
 synapse: 8
 tags: [astronomy, archaeology, radiometric-dating, apollo, isotopes]
 excerpt: "In January 1970 the first published radiometric age for lunar material was 4.66 billion years. The solar system is 4.567 billion years old. The number was impossible, nobody had made a mistake, and the gap turned out to be the finding."
-image: /assets/heroes/apollo-first-moon-age.png
+image: /assets/heroes/apollo-first-moon-age.jpg
 hero_hue: 215
 ---
 

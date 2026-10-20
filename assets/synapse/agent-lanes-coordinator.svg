@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 840" width="1600" height="840">
+<style>@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@1,8..60,400&amp;display=swap');</style>
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="840" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#06121a"/><stop offset="1" stop-color="#0b1a2a"/></linearGradient>
+<radialGradient id="hub" cx="1300" cy="440" r="220" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#7fe6ff" stop-opacity="0.4"/><stop offset="1" stop-color="#7fe6ff" stop-opacity="0"/></radialGradient>
+<linearGradient id="scrim" x1="0" y1="0" x2="1100" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#050a18" stop-opacity="0.92"/><stop offset="0.5" stop-color="#050a18" stop-opacity="0.72"/><stop offset="1" stop-color="#050a18" stop-opacity="0"/></linearGradient>
+<filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+<filter id="blur12" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<rect width="1600" height="840" fill="url(#sky)"/>
+<path d="M800 180 L1080 180 C1180 180 1200 440 1300 440" fill="none" stroke="#5ad1b0" stroke-width="3" opacity="0.75"/>
+<circle cx="844" cy="180" r="7" fill="#06121a" stroke="#5ad1b0" stroke-width="3"/>
+<circle cx="886" cy="180" r="7" fill="#06121a" stroke="#5ad1b0" stroke-width="3"/>
+<circle cx="935" cy="180" r="7" fill="#06121a" stroke="#5ad1b0" stroke-width="3"/>
+<circle cx="982" cy="180" r="7" fill="#06121a" stroke="#5ad1b0" stroke-width="3"/>
+<rect x="1030" y="164" width="40" height="32" rx="6" fill="#5ad1b0" opacity="0.9"/>
+<path d="M800 300 L1080 300 C1180 300 1200 440 1300 440" fill="none" stroke="#7fb4ff" stroke-width="3" opacity="0.75"/>
+<circle cx="841" cy="300" r="7" fill="#06121a" stroke="#7fb4ff" stroke-width="3"/>
+<circle cx="891" cy="300" r="7" fill="#06121a" stroke="#7fb4ff" stroke-width="3"/>
+<circle cx="942" cy="300" r="7" fill="#06121a" stroke="#7fb4ff" stroke-width="3"/>
+<circle cx="990" cy="300" r="7" fill="#06121a" stroke="#7fb4ff" stroke-width="3"/>
+<rect x="1030" y="284" width="40" height="32" rx="6" fill="#7fb4ff" opacity="0.9"/>
+<path d="M800 420 L1080 420 C1180 420 1200 440 1300 440" fill="none" stroke="#c79bff" stroke-width="3" opacity="0.75"/>
+<circle cx="850" cy="420" r="7" fill="#06121a" stroke="#c79bff" stroke-width="3"/>
+<circle cx="884" cy="420" r="7" fill="#06121a" stroke="#c79bff" stroke-width="3"/>
+<circle cx="937" cy="420" r="7" fill="#06121a" stroke="#c79bff" stroke-width="3"/>
+<circle cx="998" cy="420" r="7" fill="#06121a" stroke="#c79bff" stroke-width="3"/>
+<rect x="1030" y="404" width="40" height="32" rx="6" fill="#c79bff" opacity="0.9"/>
+<path d="M800 540 L1080 540 C1180 540 1200 440 1300 440" fill="none" stroke="#ffb86b" stroke-width="3" opacity="0.75"/>
+<circle cx="860" cy="540" r="7" fill="#06121a" stroke="#ffb86b" stroke-width="3"/>
+<circle cx="904" cy="540" r="7" fill="#06121a" stroke="#ffb86b" stroke-width="3"/>
+<circle cx="940" cy="540" r="7" fill="#06121a" stroke="#ffb86b" stroke-width="3"/>
+<circle cx="984" cy="540" r="7" fill="#06121a" stroke="#ffb86b" stroke-width="3"/>
+<rect x="1030" y="524" width="40" height="32" rx="6" fill="#ffb86b" opacity="0.9"/>
+<path d="M800 660 L1080 660 C1180 660 1200 440 1300 440" fill="none" stroke="#6fe0ff" stroke-width="3" opacity="0.75"/>
+<circle cx="862" cy="660" r="7" fill="#06121a" stroke="#6fe0ff" stroke-width="3"/>
+<circle cx="886" cy="660" r="7" fill="#06121a" stroke="#6fe0ff" stroke-width="3"/>
+<circle cx="942" cy="660" r="7" fill="#06121a" stroke="#6fe0ff" stroke-width="3"/>
+<circle cx="993" cy="660" r="7" fill="#06121a" stroke="#6fe0ff" stroke-width="3"/>
+<rect x="1030" y="644" width="40" height="32" rx="6" fill="#6fe0ff" opacity="0.9"/>
+<circle cx="1300" cy="440" r="220" fill="url(#hub)"/>
+<circle cx="1300" cy="440" r="80" fill="none" stroke="#bff3ff" stroke-width="2" opacity="0.25"/>
+<circle cx="1300" cy="440" r="60" fill="none" stroke="#bff3ff" stroke-width="2" opacity="0.4"/>
+<circle cx="1300" cy="440" r="36" fill="#e9fbff"/><line x1="1336" y1="440" x2="1600" y2="440" stroke="#e9fbff" stroke-width="8"/>
+<circle cx="1400" cy="440" r="9" fill="#06121a" stroke="#e9fbff" stroke-width="3"/>
+<circle cx="1460" cy="440" r="9" fill="#06121a" stroke="#e9fbff" stroke-width="3"/>
+<circle cx="1520" cy="440" r="9" fill="#06121a" stroke="#e9fbff" stroke-width="3"/>
+<circle cx="1580" cy="440" r="9" fill="#06121a" stroke="#e9fbff" stroke-width="3"/>
+<rect width="1600" height="840" fill="url(#scrim)"/>
+<text x="110" y="293" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="600" letter-spacing="3.5" fill="#8fd8ff">AGENT OPERATIONS</text>
+<text x="108" y="379" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="60" font-weight="700" letter-spacing="-1" fill="#ffffff">Parallel coding agents</text>
+<text x="108" y="445" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="60" font-weight="700" letter-spacing="-1" fill="#ffffff">fail at authority, not</text>
+<text x="108" y="511" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="60" font-weight="700" letter-spacing="-1" fill="#ffffff">isolation</text>
+<text x="110" y="579" font-family="'Source Serif 4', Charter, Georgia, serif" font-size="31" font-style="italic" fill="#d9def0">Every arrow to main passes through one identity.</text>
+</svg>

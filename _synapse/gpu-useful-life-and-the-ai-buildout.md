@@ -4,7 +4,7 @@ date: 2026-08-05
 synapse: 7
 tags: [accounting, artificial-intelligence, finance, capital-expenditure]
 excerpt: "Depreciation turns AI spending into reported profit through a number that accounting rules openly call an estimate. On the same day in January 2025, citing the same cause, Amazon shortened it and Meta lengthened it."
-image: /assets/heroes/gpu-useful-life-and-the-ai-buildout.png
+image: /assets/heroes/gpu-useful-life-and-the-ai-buildout.jpg
 hero_hue: 32
 ---
 

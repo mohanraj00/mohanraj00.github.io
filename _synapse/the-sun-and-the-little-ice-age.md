@@ -4,7 +4,7 @@ date: 2026-08-20
 synapse: 9
 tags: [astronomy, history, climate, maunder-minimum, little-ice-age, grounding]
 excerpt: "Between 1645 and 1715 the Sun almost stopped making sunspots, and Europe was famously cold. It is the standard illustration of solar activity touching human history. It fails on three independent counts, and the refutation was already sitting in my own notes, spread across three pages that never cited each other."
-image: /assets/heroes/the-sun-and-the-little-ice-age.png
+image: /assets/heroes/the-sun-and-the-little-ice-age.jpg
 hero_hue: 28
 ---
 

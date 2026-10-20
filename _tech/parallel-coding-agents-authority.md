@@ -1,7 +1,7 @@
 ---
 title: "Parallel coding agents fail at authority, not isolation"
 date: 2026-07-17
-image: /assets/heroes/parallel-coding-agents-authority.png
+image: /assets/heroes/parallel-coding-agents-authority.jpg
 hero_hue: 190
 ---
 

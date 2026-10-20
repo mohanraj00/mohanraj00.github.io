@@ -4,7 +4,7 @@ date: 2026-07-12
 synapse: 3
 tags: [artificial-intelligence, history-of-ai, bounded-rationality, deep-learning]
 excerpt: "Both are AI researchers, on opposite sides of the field's oldest argument. The neat story is that each proved the other wrong. The truth is better."
-image: /assets/heroes/turing-nobel-double.png
+image: /assets/heroes/turing-nobel-double.jpg
 hero_hue: 285
 ---
 

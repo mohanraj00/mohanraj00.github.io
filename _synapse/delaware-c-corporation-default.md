@@ -4,7 +4,7 @@ date: 2026-09-23
 synapse: 10
 tags: [entrepreneurship, accounting, finance, startups, venture-capital, tax, grounding]
 excerpt: "Business textbooks call the C corporation the expensive way to own a company, because its profits get taxed twice. Nearly every startup that raises venture money picks it anyway. The reason has less to do with the startup's own taxes than with a university endowment several steps up the chain of money."
-image: /assets/heroes/delaware-c-corporation-default.png
+image: /assets/heroes/delaware-c-corporation-default.jpg
 hero_hue: 168
 ---
 
