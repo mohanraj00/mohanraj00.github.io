@@ -8,9 +8,15 @@ assets/synapse/CREDITS.md for the rule). One PNG per post serves as both the
 on-page hero and the og:image for social cards, so there is exactly one file
 per post to keep track of. The on-page fade-out is a CSS mask, not baked in.
 
-Hue comes from the post slug by default, so a new post gets a hero with no
-config at all. Override with `hero_hue: 205` in the post's frontmatter when the
-generated colour fights the subject.
+Every post hero must be a titled scene: an abstract drawing of the subject with
+a kicker, the title and a tagline (Mohan, 2026-10-20: a plain gradient looks
+blank in LinkedIn and X cards). Draw it in tools/scene-heroes.py, then add a
+PHOTO_HEROES entry so this script turns the PNG into the JPEG hero.
+
+A post with no PHOTO_HEROES entry and no committed hero gets a gradient
+placeholder, and the script then exits with status 1. Do not publish a post
+with the placeholder. `hero_hue: 205` in the frontmatter sets the placeholder
+colour only.
 
 Assets are committed. Re-run only when adding a post or changing the design;
 existing heroes are left alone unless --force is passed.
@@ -263,6 +269,7 @@ def main():
     wanted = [(s, hue_for(s, fm)) for s, _, fm in posts() if s not in PHOTO_HEROES]
     wanted += list(PAGE_HEROES.items())
 
+    placeholders = []
     for slug, hue in wanted:
         out = HERO_DIR / f"{slug}.png"
         if out.exists() and not force:
@@ -270,6 +277,15 @@ def main():
             continue
         kb = make_hero(slug, hue, out) // 1024
         print(f"hero  {out.name}  hue={hue}  {kb}KB")
+        if slug not in PAGE_HEROES:
+            placeholders.append(slug)
+
+    if placeholders:
+        print("\nERROR: these posts have only a gradient placeholder hero:")
+        for slug in placeholders:
+            print(f"  {slug}")
+        print("Draw a titled scene in tools/scene-heroes.py and add a PHOTO_HEROES entry.")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
