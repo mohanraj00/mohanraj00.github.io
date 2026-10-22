@@ -2,6 +2,7 @@
 title: "Bring your Claude Code to Kubernetes, not a new agent platform"
 date: 2026-10-22
 image: /assets/heroes/introducing-koodam.png
+brand: koodam
 description: "My Claude Code and Codex sessions outgrew my laptop. The Kubernetes agent projects I found want me to rebuild my agents for their platform. Koodam moves the setup I already have to my cluster: my subscription login, my skills, my sessions and the Claude desktop app."
 ---
 

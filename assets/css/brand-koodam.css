@@ -1,0 +1,70 @@
+/* Koodam brand touches for posts with `brand: koodam` in the front matter.
+   Layered over site.css. Only the post body changes; the masthead, the type
+   and the light and dark themes stay the site's. */
+
+:root {
+  --kd-ink: #16213a;
+  --kd-light: #eef1f6;
+  --kd-saffron: #f5a524;
+  --kd-muted: #8f9bb3;
+  --kd-row: #fff6e5;
+}
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme='light']) {
+    --kd-ink: #0e1628;
+    --kd-row: rgba(245, 165, 36, 0.12);
+  }
+}
+html[data-theme='dark'] {
+  --kd-ink: #0e1628;
+  --kd-row: rgba(245, 165, 36, 0.12);
+}
+
+/* A saffron pod in front of each section heading, flat side up like the mark. */
+.entry-content h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.entry-content h2::before {
+  content: "";
+  flex: none;
+  width: 0.8rem;
+  height: 0.7rem;
+  background: var(--kd-saffron);
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+}
+
+/* Code on ink in both themes, with saffron keys and muted comments. */
+.entry-content pre,
+.entry-content .highlight pre {
+  background: var(--kd-ink);
+  color: var(--kd-light);
+  border-radius: 10px;
+}
+.entry-content pre code {
+  background: none;
+  color: inherit;
+}
+.entry-content .highlight .na,
+.entry-content .highlight .nt {
+  color: var(--kd-saffron);
+}
+.entry-content .highlight .c,
+.entry-content .highlight .c1 {
+  color: var(--kd-muted);
+  font-style: normal;
+}
+.entry-content .highlight .pi,
+.entry-content .highlight .s {
+  color: var(--kd-light);
+}
+
+/* The comparison table ends with the Koodam row. Mark it. */
+.entry-content table tbody tr:last-child td {
+  background: var(--kd-row);
+  font-weight: 600;
+}
+.entry-content table tbody tr:last-child td:first-child {
+  box-shadow: inset 3px 0 0 var(--kd-saffron);
+}
