@@ -26,7 +26,7 @@ I didn't want a new platform on top of my cluster. I wanted a small part that ad
 
 ## Koodam
 
-[Koodam](https://github.com/mohanraj00/koodam) (short for தொழில்கூடம், "workspace") is that part: a Helm chart and a CLI. The chart uses your LiteLLM gateway, or installs one with PostgreSQL.
+[Koodam](https://github.com/mohanraj00/koodam) (short for தொழிற்கூடம், "workspace") is that part: a Helm chart and a CLI. The chart uses your LiteLLM gateway, or installs one with PostgreSQL.
 
 **A Workspace holds my long-running sessions.** It is a StatefulSet pod with a home on a PVC and tmux. I connect over SSH from a terminal or the Claude desktop app. When I disconnect, the sessions keep running. If the pod restarts, the home stays and the tmux sessions don't.
 
