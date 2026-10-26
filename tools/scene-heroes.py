@@ -452,6 +452,36 @@ def kurinji(rng):
     return "", f"<g>{inner}</g>"
 
 
+def archive(rng):
+    defs = "\n".join([
+        vgrad("sky", [(0, "#070d1c"), (1, "#0e1a30")]),
+        glow("stray", 1390, 690, 170, "#ffc46b", 0.45),
+        glow("kept", 1120, 470, 420, "#5fa8ff", 0.16),
+    ])
+    body = [f'<rect width="{W}" height="{H}" fill="url(#sky)"/>',
+            '<circle cx="1120" cy="470" r="420" fill="url(#kept)"/>']
+    cols, rows, x0, y0, cw, rh = 6, 7, 800, 70, 112, 74
+    lit = {(rng.randrange(cols), rng.randrange(rows)) for _ in range(6)}
+    for r in range(rows):
+        for c in range(cols):
+            x, y = x0 + c * cw, y0 + r * rh
+            # Upper rows fade: what the institution no longer has a use for.
+            op = 0.25 + 0.6 * r / (rows - 1)
+            fill, edge = ("#2b5d9a", "#9cc8ff") if (c, r) in lit else ("#13233d", "#4a6a96")
+            body.append(f'<rect x="{x}" y="{y}" width="{cw - 14}" height="{rh - 14}" rx="5" '
+                        f'fill="{fill}" stroke="{edge}" stroke-width="2" opacity="{op:.2f}"/>')
+            body.append(f'<rect x="{x + cw / 2 - 22:.0f}" y="{y + rh / 2 - 10:.0f}" width="30" height="6" '
+                        f'rx="3" fill="{edge}" opacity="{op:.2f}"/>')
+    # The thing with no drawer: a round object beside a grid of square slots.
+    body.append('<circle cx="1390" cy="690" r="170" fill="url(#stray)"/>')
+    body.append('<rect x="1312" y="632" width="156" height="116" rx="16" fill="#1a1408" '
+                'stroke="#ffd48a" stroke-width="4"/>')
+    body.append('<circle cx="1390" cy="690" r="40" fill="none" stroke="#ffd48a" stroke-width="5"/>'
+                '<circle cx="1390" cy="690" r="18" fill="#ffe3b0"/>'
+                '<rect x="1330" y="616" width="40" height="16" rx="4" fill="#ffd48a"/>')
+    return defs, "\n".join(body)
+
+
 # name, slug, scene, kicker, title, tagline
 HEROES = [
     ("apollo-moon-rock", "apollo-first-moon-age", apollo, "Midweek Synapse #8",
@@ -481,6 +511,9 @@ HEROES = [
      "Every arrow to main passes through one identity."),
     ("kurinji-night-titled", "why-ancient-tamil-love-poems-are-short", kurinji, "Midweek Synapse #21",
      "Why ancient Tamil love poems are so short", "A whole love story in five lines."),
+    ("archive-stray-camera", "the-company-that-forgets-what-it-knows", archive, "Midweek Synapse #23",
+     "The company that forgets what it knows",
+     "An institution remembers only what it has a place for."),
 ]
 
 

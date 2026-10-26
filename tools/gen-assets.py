@@ -71,6 +71,7 @@ PHOTO_HEROES = {
     "three-theories-of-disruption": ("three-beams-road.png", 0.5),
     "turing-nobel-double": ("two-medals-network.png", 0.5),
     "parallel-coding-agents-authority": ("agent-lanes-coordinator.png", 0.5),
+    "the-company-that-forgets-what-it-knows": ("archive-stray-camera.png", 0.5),
 }
 
 FAVICON_TEXT = "வி"
